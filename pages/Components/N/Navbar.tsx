@@ -82,16 +82,17 @@ const Navbar = () => {
           </div>
         </div>
       </header>
+
       <div className="dropdown">
         <nav className="flex justify-around px-8 items-center">
           <div className="max-[890px]:relative max-[890px]:left-[35%]">
-          <Image
-            className="mt-3 "
-            src={logo}
-            width={150}
-            height={130}
-            alt="logo"
-          />
+            <Image
+              className="mt-3 "
+              src={logo}
+              width={150}
+              height={130}
+              alt="logo"
+            />
           </div>
           <div
             id="hee"
@@ -102,7 +103,7 @@ const Navbar = () => {
             <Link href="/">Home</Link>
 
             <div className="d">
-              <Link className="d-btn" href={"/OurServices"}>
+              <Link className="d-btn" href={"/Services"}>
                 Services <FaChevronDown />
               </Link>
               <div className="d-content">
@@ -274,7 +275,7 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <Link href="/AboutUS">About</Link>
+            <Link href="/About">About</Link>
             <Link href="/Contact">Contact</Link>
           </div>
           <div className="flex max-[890px]:none relative bottom-3 flex-nowrap">
@@ -294,61 +295,52 @@ const Navbar = () => {
             )}
             <button>
               <div className="search-btnn" onClick={toggleSearchInputs}>
-                
                 <FaBars />
               </div>
             </button>
           </div>
 
-
-
-
           {/* toggle button */}
-        <div  className="relative right-[80%] tab-mob-menu-ico-list">
-          <button id="togglebutton" onClick={handleClick}>
-            <FaBars />
-          </button>
+          <div className="relative right-[80%] tab-mob-menu-ico-list">
+            <button id="togglebutton" onClick={handleClick}>
+              <FaBars />
+            </button>
 
-          {isActive && (
-            <ul className="absolute  bg-black text-white px-[100px] pt-3">
-              <Link href={"/pages"}>
-                <li className="flex gap-[50px] justify-around items-center">
-                  <b className="px-2 text-[25px] ">Home</b>
-                 
-                </li>
-              </Link>
-              <Link href={"/OurServices"}>
-                <li className="flex justify-between items-center">
-                  <b className="px-2 text-[25px]">Services</b>
-                 
-                </li>
-              </Link>
+            {isActive && (
+              <ul className="absolute  bg-black text-white px-[100px] pt-3">
+                <Link href={"/"}>
+                  <li className="flex gap-[50px] justify-around items-center">
+                    <b className="px-2 text-[25px] ">Home</b>
+                  </li>
+                </Link>
+                <Link href={"/Services"}>
+                  <li className="flex justify-between items-center">
+                    <b className="px-2 text-[25px]">Services</b>
+                  </li>
+                </Link>
 
-              <Link href={"/certificate"}>
-                <li className="flex justify-between items-center">
-                  <b className="px-2 text-[25px]">Tools</b>
-                 
-                </li>
-              </Link>
+                <Link href={"/certificate"}>
+                  <li className="flex justify-between items-center">
+                    <b className="px-2 text-[25px]">Tools</b>
+                  </li>
+                </Link>
 
-              <Link href={"/About"}>
-                <li className="flex justify-between items-center">
-                  <b className="px-2 text-[25px]">About</b>
-                </li>
-              </Link>
+                <Link href={"/About"}>
+                  <li className="flex justify-between items-center">
+                    <b className="px-2 text-[25px]">About</b>
+                  </li>
+                </Link>
 
-              <Link href={"/contact"}>
-                <li className="flex justify-between items-center">
-                  <b className="px-2 text-[25px]">Contact</b>
-                 
-                </li>
-              </Link>
-            </ul>
-          )}
-        </div>
-        {/* toggle button */}
+                <Link href={"/Contact"}>
+                  <li className="flex justify-between items-center">
+                    <b className="px-2 text-[25px]">Contact</b>
+                  </li>
+                </Link>
+              </ul>
+            )}
+          </div>
+          {/* toggle button */}
         </nav>
-        
       </div>
     </div>
   );

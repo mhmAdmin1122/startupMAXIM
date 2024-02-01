@@ -977,6 +977,10 @@ dropdown-Tool h1 {
   @apply my-[30px] px-9 ml-[20px] py-3 font-bold bg-[#00bf63] text-[#c4ff69] rounded-lg transition-shadow duration-300;
   box-shadow: 0 7px 0 0 #c4ff69;
 }
+/* background removing from btn back */
+.slick-next, .slick-prev {
+  background-color: transparent !important;
+}
 .hero-section .btn:hover {
   @apply shadow-none text-[#00bf63] bg-[#c4ff69] transition-all ease-in-out duration-500;
 }
