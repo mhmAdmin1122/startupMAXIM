@@ -40,7 +40,7 @@ const Testimonials = () => {
           rows: 1,
           slidesPerRow: 1,
           autoplaySpeed: 5000,
-        }
+        },
       },
       {
         breakpoint: 355,
@@ -53,8 +53,8 @@ const Testimonials = () => {
           rows: 1,
           slidesPerRow: 1,
           autoplaySpeed: 5000,
-        }
-      }
+        },
+      },
     ],
   };
   return (
@@ -89,9 +89,9 @@ const Testimonials = () => {
                       Project Manager, The Heritage Company
                     </p>
                     <p className="mt-[10px] text-[14px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
-                      "I can't even begin to express how happy I am with these
-                      services. I have gotten at least 50 times the value from
-                      your company. Thanks guys, keep up the good work"
+                      {'"'}I can{"'"}t even begin to express how happy I am with
+                      these services. I have gotten at least 50 times the value
+                      from your company. Thanks guys, keep up the good work{'"'}
                     </p>
                   </div>
                 </div>
@@ -117,9 +117,9 @@ const Testimonials = () => {
                       Project Manager, The Heritage Company
                     </p>
                     <p className="mt-[10px] text-[14px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
-                      "I can't even begin to express how happy I am with these
-                      services. I have gotten at least 50 times the value from
-                      your company. Thanks guys, keep up the good work"
+                      {'"'}I can{"'"}t even begin to express how happy I am with
+                      these services. I have gotten at least 50 times the value
+                      from your company. Thanks guys, keep up the good work{'"'}
                     </p>
                   </div>
                 </div>
@@ -145,9 +145,9 @@ const Testimonials = () => {
                       Project Manager, The Heritage Company
                     </p>
                     <p className="mt-[10px] text-[14px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
-                      "I can't even begin to express how happy I am with these
-                      services. I have gotten at least 50 times the value from
-                      your company. Thanks guys, keep up the good work"
+                      {'"'}I can{"'"}t even begin to express how happy I am with
+                      these services. I have gotten at least 50 times the value
+                      from your company. Thanks guys, keep up the good work{'"'}
                     </p>
                   </div>
                 </div>
@@ -173,9 +173,9 @@ const Testimonials = () => {
                       Project Manager, The Heritage Company
                     </p>
                     <p className="mt-[10px] text-[14px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
-                      "I can't even begin to express how happy I am with these
-                      services. I have gotten at least 50 times the value from
-                      your company. Thanks guys, keep up the good work"
+                      {'"'}I can{"'"}t even begin to express how happy I am with
+                      these services. I have gotten at least 50 times the value
+                      from your company. Thanks guys, keep up the good work{'"'}
                     </p>
                   </div>
                 </div>
@@ -201,9 +201,9 @@ const Testimonials = () => {
                       Project Manager, The Heritage Company
                     </p>
                     <p className="mt-[10px] text-[14px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
-                      "I can't even begin to express how happy I am with these
-                      services. I have gotten at least 50 times the value from
-                      your company. Thanks guys, keep up the good work"
+                      {'"'}I can{"'"}t even begin to express how happy I am with
+                      these services. I have gotten at least 50 times the value
+                      from your company. Thanks guys, keep up the good work{'"'}
                     </p>
                   </div>
                 </div>
@@ -229,9 +229,9 @@ const Testimonials = () => {
                       Project Manager, The Heritage Company
                     </p>
                     <p className="mt-[10px] text-[14px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
-                      "I can't even begin to express how happy I am with these
-                      services. I have gotten at least 50 times the value from
-                      your company. Thanks guys, keep up the good work"
+                      {'"'}I can{"'"}t even begin to express how happy I am with
+                      these services. I have gotten at least 50 times the value
+                      from your company. Thanks guys, keep up the good work{'"'}
                     </p>
                   </div>
                 </div>
