@@ -7,9 +7,9 @@ const ServiceCard = ({ imageUrl, title, desc, linkurl }: any) => {
   return (
     <div
       id="card1"
-      className="flex flex-col hover:shadow-md hover:shadow-gray-300 h-[400px] pt-10 items-center w-[300px]"
+      className="flex flex-col hover:shadow-md hover:shadow-gray-300 h-auto pt-10 items-center w-[300px]"
     >
-      <Image src={`${imageUrl}`} className="pb-6" alt="user-pic" />
+      <Image src={imageUrl} className="pb-6" alt="user-pic" width={80} height={80} />
       <h1 className="text-2xl pb-3 font-bold">{title}</h1>
       <p className="text-center pb-3 text-[#82847e]">{desc}</p>
       <Link
