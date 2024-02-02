@@ -39,7 +39,7 @@ const HomeSection = () => {
       <section className="flex gap-8 flex-wrap mt-16 justify-center">
         <div>
           <h1 id="section1-h1" className="text-3xl text-md-right text-sm-center column-title">
-            Affordable Digital <br /> Marketing Services <br /><b>For Startups</b> .
+            Affordable Digital <br /> Marketing Services <br /><b>For Startups</b>.
           </h1>
         </div>
         <div className="border-l-[5px] pl-8 max-[500px]:pl-3 max-[500px]:w-[90%] text-[#9f9f9f] border-orange-600 w-[50%]">
