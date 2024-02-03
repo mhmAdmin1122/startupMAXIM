@@ -46,8 +46,11 @@ const HomeSection = () => {
             <br />StatupMAXIM helps you generate results at every stage of your startup, from ideation to MVP, facilitating seamless scaling towards a successful exit, 
             to elevating your brand to new heights, StartupMAXIM offers tailored solutions for every stage of your entrepreneurial journey. 
             <br /><strong>Worlds first dedicated marketing agency for startups.</strong>
+<<<<<<< HEAD
+=======
           
           <button className="p-4 pl-6 max-[385px]:mb-4 pr-6  bg-[#fa6742] hover:bg-[#2e2c2d] text-white font-bold rounded-full mr-5 mt-5">LEARN MORE</button>
+>>>>>>> 0ba99be062212f44b5551d3c009777551ee22463
         </div>
       </section>
 
@@ -55,22 +58,26 @@ const HomeSection = () => {
         <ServiceCard
           imageUrl={card1}
           title="Socail Marketing"
-          desc="Start working with an company that provide  everything working with an company that you need any
-            awareness drive"
+          desc="We do Social Media Marketing to educate your auduince about your startup, it's products, services, and offering powerfully."
           linkurl="/"
         />
         <ServiceCard
           imageUrl={card2}
-          title="SEO Optimization"
-          desc="Start working with an company that provide everything working with an company that you need any
-            awareness drive"
+          title="Search Engine Optimization (SEO)"
+          desc="We offer updated SEO strategies for startups in all three domains of SEO; on-page, off-page, and technical SEO."
           linkurl="/"
         />
         <ServiceCard
           imageUrl={card3}
-          title="SEO Management"
-          desc="Start working with an company that provide everything working with an company that you need any
-            awareness drive"
+          title="Search Engine Marketing"
+          desc="Startups need to bid for paid traffic but ROI matters here. We guarantee atleast 3X return on SEM investment with maximum results."
+          linkurl="/"
+        />
+         <ServiceCard
+          imageUrl={card4}
+          title="Website & Web App Development"
+          desc="StartupMAXIM has a department of developers who expertly manage their develoopment projects in such a way that provides speed, qaulity, 
+          and creativity in website and application development"
           linkurl="/"
         />
       </section>
