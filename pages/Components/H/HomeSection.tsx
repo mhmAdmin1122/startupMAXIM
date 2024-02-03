@@ -28,9 +28,9 @@ import work_process from "@/public/img/work_process.png";
 import pricing_icon1 from "@/public/img/pricing_icon1.png";
 import pricing_icon2 from "@/public/img/pricing_icon2.png";
 import pricing_icon3 from "@/public/img/pricing_icon3.png";
-import post1 from "@/public/img/post1.jpg"
-import post2 from "@/public/img/post2.jpg"
-import post3 from "@/public/img/post3.jpg"
+import post1 from "@/public/img/post1.jpg";
+import post2 from "@/public/img/post2.jpg";
+import post3 from "@/public/img/post3.jpg";
 import Marque from "../M/Marque";
 import Homecard from "../S/homecard";
 const HomeSection = () => {
@@ -38,16 +38,26 @@ const HomeSection = () => {
     <div>
       <section className="flex gap-8 flex-wrap mt-16 justify-center">
         <div>
-          <h1 id="section1-h1" className="text-3xl text-md-right text-sm-center column-title">
-            Affordable Digital <br /> Marketing Services <br /><b>For Startups</b>.
+          <h1
+            id="section1-h1"
+            className="text-3xl text-md-right text-sm-center column-title"
+          >
+            Affordable Digital <br /> Marketing Services <br />
+            <b>For Startups</b>.
           </h1>
         </div>
         <div className="border-l-[5px] pl-8 max-[500px]:pl-3 max-[500px]:w-[90%] text-[#9f9f9f] border-orange-600 w-[50%]">
-            <br />StatupMAXIM helps you generate results at every stage of your startup, from ideation to MVP, facilitating seamless scaling towards a successful exit, 
-            to elevating your brand to new heights, StartupMAXIM offers tailored solutions for every stage of your entrepreneurial journey. 
-            <br /><strong>Worlds first dedicated marketing agency for startups.</strong>
-          
-          <button className="p-4 pl-6 max-[385px]:mb-4 pr-6  bg-[#fa6742] hover:bg-[#2e2c2d] text-white font-bold rounded-full mr-5 mt-5">LEARN MORE</button>
+          <br />
+          StatupMAXIM helps you generate results at every stage of your startup,
+          from ideation to MVP, facilitating seamless scaling towards a
+          successful exit, to elevating your brand to new heights, StartupMAXIM
+          offers tailored solutions for every stage of your entrepreneurial
+          journey.
+          <br />
+          <strong>Worlds first dedicated marketing agency for startups.</strong>
+          <button className="p-4 pl-6 max-[385px]:mb-4 pr-6  bg-[#fa6742] hover:bg-[#2e2c2d] text-white font-bold rounded-full mr-5 mt-5">
+            LEARN MORE
+          </button>
         </div>
       </section>
 
@@ -70,7 +80,7 @@ const HomeSection = () => {
           desc="Startups need to bid for paid traffic but ROI matters here. We guarantee atleast 3X return on SEM investment with maximum results."
           linkurl="/"
         />
-         <ServiceCard
+        <ServiceCard
           imageUrl={card4}
           title="Website & Web App Development"
           desc="StartupMAXIM has a department of developers who expertly manage their develoopment projects in such a way that provides speed, qaulity, 
@@ -79,7 +89,10 @@ const HomeSection = () => {
         />
       </section>
 
-      <section id="homesection3" className="flex justify-center mt-20 mb-24  gap-4 ">
+      <section
+        id="homesection3"
+        className="flex justify-center mt-20 mb-24  gap-4 "
+      >
         <div className="w-fit">
           <Image
             className=""
@@ -93,7 +106,9 @@ const HomeSection = () => {
           <h1 className="text-4xl font-bold text-black">
             A better website means <br /> better user experience
           </h1>
-          <div className="mt-5"><Marque /></div>
+          <div className="mt-5">
+            <Marque />
+          </div>
           <p className="mt-16 text-[#9f9f9f]">
             Start working with an company that can provide everything <br />
             you need to generate awareness, drive traffic, connect with <br />{" "}
@@ -126,7 +141,10 @@ const HomeSection = () => {
             alt="img"
           />
         </div>
-        <div id="homesection4" className="flex flex-wrap max-[1370px]:gap-[140px] max-[1310px]:gap-[105px] gap-[140px]">
+        <div
+          id="homesection4"
+          className="flex flex-wrap max-[1370px]:gap-[140px] max-[1310px]:gap-[105px] gap-[140px]"
+        >
           <div className="flex flex-col gap-4 items-center">
             <Image src={fact1} width={60} height={60} alt="img" />
             <h1 className="text-[22px] font-bold">Active clients</h1>
@@ -165,7 +183,9 @@ const HomeSection = () => {
           <h1 className="text-5xl font-bold" id="homesection4-h1">
             Our Best <span className="text-[#fa6742]">Services</span>
           </h1>
-          <div className="mt-6"><Marque /></div>
+          <div className="mt-6">
+            <Marque />
+          </div>
         </div>
         <div className="flex w-full justify-center gap-12 mt-14 flex-wrap ">
           <ServiceCard
@@ -214,31 +234,44 @@ const HomeSection = () => {
           <h1 className="text-5xl pt-3 font-bold" id="homesection6-h1">
             Our <span className="text-[#fa6742]">Case Study</span>
           </h1>
-          <div className="mt-6"><Marque /></div>
+          <div className="mt-6">
+            <Marque />
+          </div>
         </div>
         <div className="flex max-[650px]:flex-col gap-11 p-8 pt-20 justify-center">
           <div className="homesection6-card">
-           <div className="flex justify-center"> <Image className="bg-[#fa6742] p-2" src={casestudy1} alt="img" /></div>
+            <div className="flex justify-center">
+              {" "}
+              <Image className="bg-[#fa6742] p-2" src={casestudy1} alt="img" />
+            </div>
             <div className="homesection6-heading">
-            <h1 className="heading1">Web Traffic Management</h1>
-            <h1 className="flex justify-center pr-12 pt-1 text-[#9f9f9f]">
-              SEO, Marketing
-            </h1>
+              <h1 className="heading1">Web Traffic Management</h1>
+              <h1 className="flex justify-center pr-12 pt-1 text-[#9f9f9f]">
+                SEO, Marketing
+              </h1>
             </div>
           </div>
           <div className="homesection6-card">
-            <div className="flex justify-center"><Image className="bg-[#2bc2a7] p-2" src={casestudy2} alt="img" /></div>
-            <div className="homesection6-heading"><h1 className="heading1">Cloaking & Doorway Pages</h1>
-            <h1 className="flex justify-center text-[#9f9f9f] pt-1">
-              Social, SEO
-            </h1></div>
+            <div className="flex justify-center">
+              <Image className="bg-[#2bc2a7] p-2" src={casestudy2} alt="img" />
+            </div>
+            <div className="homesection6-heading">
+              <h1 className="heading1">Cloaking & Doorway Pages</h1>
+              <h1 className="flex justify-center text-[#9f9f9f] pt-1">
+                Social, SEO
+              </h1>
+            </div>
           </div>
           <div className="homesection6-card">
-            <div className="flex justify-center"><Image className="bg-[#ffb72f] p-2" src={casestudy3} alt="img" /></div>
-            <div className="homesection6-heading"><h1 className="heading1">Hosting company rank</h1>
-            <h1 className="flex justify-center pt-1 text-[#9f9f9f]">
-              Hosting, Marketing
-            </h1></div>
+            <div className="flex justify-center">
+              <Image className="bg-[#ffb72f] p-2" src={casestudy3} alt="img" />
+            </div>
+            <div className="homesection6-heading">
+              <h1 className="heading1">Hosting company rank</h1>
+              <h1 className="flex justify-center pt-1 text-[#9f9f9f]">
+                Hosting, Marketing
+              </h1>
+            </div>
           </div>
         </div>
         <div className="flex pt-12 justify-center">
@@ -251,25 +284,66 @@ const HomeSection = () => {
       <section>
         <div className="flex flex-col mt-14 pb-20 mb-20 items-center">
           <h1 className="text-[#9f9f9f]">EASE STEPS</h1>
-          <h1 className="text-5xl pt-3 font-bold"  id="homesection7-h1">
+          <h1 className="text-5xl pt-3 font-bold" id="homesection7-h1">
             Our Working<span className="text-[#fa6742]">Process</span>
           </h1>
-          <div className="mt-8"><Marque /></div>
+          <div className="mt-8">
+            <Marque />
+          </div>
         </div>
         <div className="mt-20">
-          <Image src={work_process} className="max-[1000px]:hidden " width={1900} height={800} alt="img" />
+          <Image
+            src={work_process}
+            className="max-[1000px]:hidden "
+            width={1900}
+            height={800}
+            alt="img"
+          />
         </div>
-        <div id="homesection7" className="flex relative bottom-[120px] max-[1000px]:pt-20 justify-around items-center">
-          <div id="process1" className="max-[550px]:bottom-0 max-[860px]:p-[40px]  bg-[#32cc73] relative bottom-[65px] p-[60px] w-fit  rounded-full">
-            <Image src={process1}  className=" max-[860px]:w-[50px] " width={80} height={80} alt="" />
+        <div
+          id="homesection7"
+          className="flex relative bottom-[120px] max-[1000px]:pt-20 justify-around items-center"
+        >
+          <div
+            id="process1"
+            className="max-[550px]:bottom-0 max-[860px]:p-[40px]  bg-[#32cc73] relative bottom-[65px] p-[60px] w-fit  rounded-full"
+          >
+            <Image
+              src={process1}
+              className=" max-[860px]:w-[50px] "
+              width={80}
+              height={80}
+              alt=""
+            />
           </div>
-          <div id="process2" className=" max-[860px]:p-[30px]  bg-[#fa6742] px-[80px] p-[60px] w-fit  rounded-full">
-            <Image src={process2} className=" max-[860px]:w-[70px]  max-[860px]:p-[5px]  max-[860px]:px-[16px] " width={60} height={60} alt="" />
+          <div
+            id="process2"
+            className=" max-[860px]:p-[30px]  bg-[#fa6742] px-[80px] p-[60px] w-fit  rounded-full"
+          >
+            <Image
+              src={process2}
+              className=" max-[860px]:w-[70px]  max-[860px]:p-[5px]  max-[860px]:px-[16px] "
+              width={60}
+              height={60}
+              alt=""
+            />
           </div>
-          <div id="process3" className="max-[550px]:bottom-0 max-[860px]:p-[40px]  bg-[#478fff] relative bottom-[65px] p-[60px] w-fit  rounded-full">
-            <Image src={process3} className="max-[860px]:p-[0px]  max-[860px]:w-[55px] " width={80} height={60} alt="" />
+          <div
+            id="process3"
+            className="max-[550px]:bottom-0 max-[860px]:p-[40px]  bg-[#478fff] relative bottom-[65px] p-[60px] w-fit  rounded-full"
+          >
+            <Image
+              src={process3}
+              className="max-[860px]:p-[0px]  max-[860px]:w-[55px] "
+              width={80}
+              height={60}
+              alt=""
+            />
           </div>
-          <div id="process4" className=" max-[860px]:p-[40px]  max-[860px]:w-[132px]  bg-[#f5b02d] p-[60px] w-fit  rounded-full">
+          <div
+            id="process4"
+            className=" max-[860px]:p-[40px]  max-[860px]:w-[132px]  bg-[#f5b02d] p-[60px] w-fit  rounded-full"
+          >
             <Image src={process4} width={80} height={80} alt="" />
           </div>
         </div>
@@ -283,10 +357,12 @@ const HomeSection = () => {
       <section>
         <div className="flex flex-col mb-10 items-center">
           <h1 className="text-[#9f9f9f] ">PRICING TABLE</h1>
-          <h1 className="text-5xl pt-3 font-bold"  id="homesection8-h1">
+          <h1 className="text-5xl pt-3 font-bold" id="homesection8-h1">
             Our<span className="text-[#fa6742]">Pricing</span>
           </h1>
-          <div className="mt-8"><Marque /></div>
+          <div className="mt-8">
+            <Marque />
+          </div>
         </div>
         <div className="flex items-center pb-20 max-[420px]:flex-col justify-center">
           <div className="">
@@ -300,92 +376,111 @@ const HomeSection = () => {
             </button>
           </div>
         </div>
-        <div id="section8" className="flex  max-[760px]:gap-4 max-[760px]:flex-col max-[760px]:justify-center justify-around mt-20">
+        <div
+          id="section8"
+          className="flex  max-[760px]:gap-4 max-[760px]:flex-col max-[760px]:justify-center justify-around mt-20"
+        >
           <div className="w-[30%] flex flex-col gap-8 items-center hover:shadow-md hover:shadow-gray-300">
-            <div><Image src={pricing_icon1} alt="img" /></div>
-            <div><h1 className="text-3xl font-bold">Entrepreneur</h1></div>
-           <div  className=" text-[#9f9f9f] flex flex-col items-center gap-1 text-[18px]">
-           <p>25 Analytics Compaign</p>
-            <p>1,300 Keywords</p>
-            <p>25 social media reviews</p>
-            <p>1 Free Optimization</p>
-           </div>
+            <div>
+              <Image src={pricing_icon1} alt="img" />
+            </div>
+            <div>
+              <h1 className="text-3xl font-bold">Entrepreneur</h1>
+            </div>
+            <div className=" text-[#9f9f9f] flex flex-col items-center gap-1 text-[18px]">
+              <p>25 Analytics Compaign</p>
+              <p>1,300 Keywords</p>
+              <p>25 social media reviews</p>
+              <p>1 Free Optimization</p>
+            </div>
             <div className="pricing-price">
               <sup>$</sup>
               <strong>9</strong>
               <small>Month</small>
             </div>
             <div className="flex justify-center">
-            <button className="p-4 mb-20 pl-10 pr-10 bg-[#2E2C2D] hover:bg-[#fa6742] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
-              SHOW NOW
-            </button>
-          </div>
+              <button className="p-4 mb-20 pl-10 pr-10 bg-[#2E2C2D] hover:bg-[#fa6742] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
+                SHOW NOW
+              </button>
+            </div>
           </div>
 
           <div className="w-[30%] flex flex-col gap-8 items-center relative bottom-[50px] hover:shadow-md hover:shadow-gray-300">
-            <div><Image src={pricing_icon2} alt="img" /></div>
-            <div><h1 className="text-3xl font-bold">Entrepreneur</h1></div>
-           <div  className=" text-[#9f9f9f] flex flex-col items-center gap-1 text-[18px]">
-           <p>25 Analytics Compaign</p>
-            <p>1,300 Keywords</p>
-            <p>25 social media reviews</p>
-            <p>1 Free Optimization</p>
-           </div>
+            <div>
+              <Image src={pricing_icon2} alt="img" />
+            </div>
+            <div>
+              <h1 className="text-3xl font-bold">Entrepreneur</h1>
+            </div>
+            <div className=" text-[#9f9f9f] flex flex-col items-center gap-1 text-[18px]">
+              <p>25 Analytics Compaign</p>
+              <p>1,300 Keywords</p>
+              <p>25 social media reviews</p>
+              <p>1 Free Optimization</p>
+            </div>
             <div className="pricing-price">
               <sup>$</sup>
               <strong>29</strong>
               <small>Month</small>
             </div>
             <div className="flex justify-center">
-            <button className="p-4 mb-20 pl-10 pr-10 bg-[#2E2C2D] hover:bg-[#fa6742] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
-              SHOW NOW
-            </button>
-          </div>
+              <button className="p-4 mb-20 pl-10 pr-10 bg-[#2E2C2D] hover:bg-[#fa6742] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
+                SHOW NOW
+              </button>
+            </div>
           </div>
 
           <div className="w-[30%] flex flex-col gap-8 items-center relative bottom-[50px]  hover:shadow-md hover:shadow-gray-300">
-            <div><Image src={pricing_icon3} alt="img" /></div>
-            <div><h1 className="text-3xl font-bold">Entrepreneur</h1></div>
-           <div  className=" text-[#9f9f9f] flex flex-col items-center gap-1 text-[18px]">
-           <p>25 Analytics Compaign</p>
-            <p>1,300 Keywords</p>
-            <p>25 social media reviews</p>
-            <p>1 Free Optimization</p>
-           </div>
+            <div>
+              <Image src={pricing_icon3} alt="img" />
+            </div>
+            <div>
+              <h1 className="text-3xl font-bold">Entrepreneur</h1>
+            </div>
+            <div className=" text-[#9f9f9f] flex flex-col items-center gap-1 text-[18px]">
+              <p>25 Analytics Compaign</p>
+              <p>1,300 Keywords</p>
+              <p>25 social media reviews</p>
+              <p>1 Free Optimization</p>
+            </div>
             <div className="pricing-price">
               <sup>$</sup>
               <strong>49</strong>
               <small>Month</small>
             </div>
             <div className="flex justify-center">
-            <button className="p-4 mb-20 pl-10 pr-10 bg-[#2E2C2D] hover:bg-[#fa6742] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
-              SHOW NOW
-            </button>
+              <button className="p-4 mb-20 pl-10 pr-10 bg-[#2E2C2D] hover:bg-[#fa6742] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
+                SHOW NOW
+              </button>
+            </div>
           </div>
-          </div>
-      </div>
+        </div>
       </section>
 
-    <section>
-    <div className="flex flex-col mb-20 items-center">
+      <section>
+        <div className="flex flex-col mb-20 items-center">
           <h1 className="text-[#9f9f9f] ">OUR BLOG</h1>
           <h1 className="text-5xl pt-3 font-bold" id="section9-h1">
-          Latest<span className="text-[#fa6742]">Blog</span>
+            Latest<span className="text-[#fa6742]">Blog</span>
           </h1>
-          <div className="mt-6"><Marque /></div>
-        </div>
-     <div id="section9-card" className="flex flex-wrap justify-center gap-12">
-      <Homecard imageUrl={post1}/>
-     <Homecard imageUrl={post2}/>
-     <Homecard imageUrl={post3}/>
-     </div>
-     <div className="flex justify-center mt-14">
-            <button className="p-4 mb-20 pl-10 pr-10 bg-[#fa6742] hover:bg-[#2E2C2D] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
-              VIEW ALL
-            </button>
+          <div className="mt-6">
+            <Marque />
           </div>
-    </section>
-
+        </div>
+        <div
+          id="section9-card"
+          className="flex flex-wrap justify-center gap-12"
+        >
+          <Homecard imageUrl={post1} />
+          <Homecard imageUrl={post2} />
+          <Homecard imageUrl={post3} />
+        </div>
+        <div className="flex justify-center mt-14">
+          <button className="p-4 mb-20 pl-10 pr-10 bg-[#fa6742] hover:bg-[#2E2C2D] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
+            VIEW ALL
+          </button>
+        </div>
+      </section>
     </div>
   );
 };
