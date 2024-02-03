@@ -1,13 +1,17 @@
 import React from "react";
 import Image from "next/image";
-import logo from "@/public/img/about-team.png";
+import logo from "@/public/img/about-team.svg";
 
 const HeroSection = () => {
   return (
     <section className="hero-section">
       <div className="first-section">
-        <h1 className="heading">We Can Reach Your</h1>
-        <h1 className="heading-1">Startup At Maximum</h1>
+        <h1 className="heading">
+          We Can Reach Your
+        </h1>
+        <h1 className="heading-1">
+        Startup At Maximum
+        </h1>
         <p className="para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
           illo nisi eius architecto nulla porro tempora dolorum minima,
