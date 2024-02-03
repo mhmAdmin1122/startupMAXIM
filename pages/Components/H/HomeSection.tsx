@@ -48,7 +48,7 @@ const HomeSection = () => {
             to elevating your brand to new heights, StartupMAXIM offers tailored solutions for every stage of your entrepreneurial journey. 
             <br /><strong>Worlds first dedicated marketing agency for startups.</strong>
           </p>
-          <div class="" bis_skin_checked="1"><button class="p-4 pl-6 max-[385px]:mb-4 pr-6  bg-[#fa6742] hover:bg-[#2e2c2d] text-white font-bold rounded-full mr-5 mt-5">LEARN MORE</button><button class="p-4 pl-6 pr-6 bg-[#ffb72f] hover:bg-[#2e2c2d] text-white font-bold rounded-full">MEET NOW</button></div>
+          <button class="p-4 pl-6 max-[385px]:mb-4 pr-6  bg-[#fa6742] hover:bg-[#2e2c2d] text-white font-bold rounded-full mr-5 mt-5">LEARN MORE</button>
         </div>
       </section>
 
