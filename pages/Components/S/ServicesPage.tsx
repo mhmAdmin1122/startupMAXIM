@@ -6,6 +6,7 @@ import Service1 from "@/public/img/service1.png";
 import Service2 from "@/public/img/service2.png";
 import Service3 from "@/public/img/service3.png";
 import Link from "next/link";
+import Marque from "../M/Marque";
 
 const ServicesPage = () => {
   function SampleNextArrow(props:any) {
@@ -63,16 +64,15 @@ const ServicesPage = () => {
   };
   return (
     <main>
-      {/* <section className="uper-section">
-        <h1 className="font-black text-[40px]">Our Services</h1>
-        <p className="">Home / Services</p>
-      </section> */}
       <section className="flex flex-wrap my-[70px] justify-center px-[20px] gap-[40px]">
         <div className="w-[25%] max-[916px]:w-full">
           <h1 className="text-[40px] font-extrabold ">All</h1>
           <h1 className="text-[40px] font-extrabold text-[var(--background-color)]">
             Services
           </h1>
+          <div className="services-loader">
+            <Marque />
+          </div>
           <p className="text-gray-500 pr-[30px] mt-[20px]">
             Start working with an company that provide everything you need to
             anything is going very well but you dont know.
@@ -136,6 +136,9 @@ const ServicesPage = () => {
               Features
             </h1>
           </div>
+          <div className="loader">
+            <Marque />
+          </div>
         </div>
         <div className="flex flex-wrap gap-[50px] justify-center">
           <div className="w-[250px] px-[10px] text-center flex flex-col align-middle items-center">
@@ -185,7 +188,7 @@ const ServicesPage = () => {
           </div>
         </div>
       </section>
-      <section className="grid grid-cols-2 px-[60px] my-[20px]">
+      <section className="flex max-[650px]:flex-wrap max-[400px]:px-[0px] px-[60px] my-[20px]">
         <div className="px-[30px]">
           <h1 className="text-[35px] font-bold">Feel free to contact us</h1>
           <p className="my-[30px] text-gray-600 pr-[10px]">

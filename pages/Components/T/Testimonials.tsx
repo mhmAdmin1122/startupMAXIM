@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
 import Review1 from "@/public/img/BrianJames-1.jpeg";
+import Marque from "../M/Marque";
 
 const Testimonials = () => {
   const settings = {
@@ -64,6 +65,9 @@ const Testimonials = () => {
         <div className="heading">
           <h1>Love From </h1>
           <h1 className="text-[var(--background-color)]">Clients</h1>
+        </div>
+        <div className="loader">
+          <Marque />
         </div>
       </section>
       <div className="w-full">

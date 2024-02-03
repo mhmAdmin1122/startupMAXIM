@@ -1,11 +1,12 @@
 import React from "react";
 import Slider from "react-slick";
 import Image from "next/image";
-import Company1 from "@/public/img/about-team.png";
-import Company2 from "@/public/img/about-team.png";
-import Company3 from "@/public/img/about-team.png";
+import Company1 from "@/public/img/about-team.svg";
+import Company2 from "@/public/img/about-team.svg";
+import Company3 from "@/public/img/about-team.svg";
+import Marque from "../M/Marque";
 
-const SlickSlider = () => {
+const ClientSlider = () => {
   const settings = {
     infinite: true,
     slidesToShow: 4,
@@ -51,6 +52,9 @@ const SlickSlider = () => {
               Clients
             </h1>
           </div>
+          <div className="loader">
+            <Marque />
+          </div>
         </div>
       </section>
       <Slider {...settings} className="client-slider">
@@ -77,4 +81,4 @@ const SlickSlider = () => {
   );
 };
 
-export default SlickSlider;
+export default ClientSlider;

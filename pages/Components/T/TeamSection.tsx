@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import TeamImage1 from "@/public/img/thomas-shelby-1200x1437.jpg";
 import Link from "next/link";
 import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa6";
+import Marque from "../M/Marque";
 
 const TeamSection = () => {
   var settings = {
@@ -52,257 +53,281 @@ const TeamSection = () => {
           <p className="text-[var(--text-gray)]">OUR TEAM</p>
           <div className="team-heading">
             <h1>Our Best </h1>
-            <h1 className="text-[var(--background-color)]">
-              Experts
-            </h1>
+            <h1 className="text-[var(--background-color)]">Experts</h1>
+          </div>
+          <div className="loader">
+            <Marque />
           </div>
         </div>
       </section>
       <section className="slider-section">
         <div className="w-[95%]">
-        <Slider {...settings} className="mx-[30px]">
-        <div>
-          <div className="card">
-            <div className="card-inner">
-              <div className="card-front">
-                <Image
-                  src={TeamImage1}
-                  className="person-image"
-                  alt="logo-pic"
-                />
-              </div>
-              <div className="card-back">
-                <div className="person-info">
-                  <h1 className="font-bold">John Doe</h1>
-                  <p>Senior Web Developer</p>
-                  <p className="person-info-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <Slider {...settings} className="mx-[30px]">
+            <div>
+              <div className="card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <Image
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
+                    />
+                  </div>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div>
-          <div className="card">
-            <div className="card-inner">
-              <div className="card-front">
-                <Image
-                  src={TeamImage1}
-                  className="person-image"
-                  alt="logo-pic"
-                />
-              </div>
-              <div className="card-back">
-                <div className="person-info">
-                  <h1 className="font-bold">John Doe</h1>
-                  <p>Senior Web Developer</p>
-                  <p className="person-info-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div>
+              <div className="card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <Image
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
+                    />
+                  </div>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div>
-          <div className="card">
-            <div className="card-inner">
-              <div className="card-front">
-                <Image
-                  src={TeamImage1}
-                  className="person-image"
-                  alt="logo-pic"
-                />
-              </div>
-              <div className="card-back">
-                <div className="person-info">
-                  <h1 className="font-bold">John Doe</h1>
-                  <p>Senior Web Developer</p>
-                  <p className="person-info-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div>
+              <div className="card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <Image
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
+                    />
+                  </div>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div>
-          <div className="card">
-            <div className="card-inner">
-              <div className="card-front">
-                <Image
-                  src={TeamImage1}
-                  className="person-image"
-                  alt="logo-pic"
-                />
-              </div>
-              <div className="card-back">
-                <div className="person-info">
-                  <h1 className="font-bold">John Doe</h1>
-                  <p>Senior Web Developer</p>
-                  <p className="person-info-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div>
+              <div className="card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <Image
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
+                    />
+                  </div>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div>
-          <div className="card">
-            <div className="card-inner">
-              <div className="card-front">
-                <Image
-                  src={TeamImage1}
-                  className="person-image"
-                  alt="logo-pic"
-                />
-              </div>
-              <div className="card-back">
-                <div className="person-info">
-                  <h1 className="font-bold">John Doe</h1>
-                  <p>Senior Web Developer</p>
-                  <p className="person-info-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div>
+              <div className="card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <Image
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
+                    />
+                  </div>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div>
-          <div className="card">
-            <div className="card-inner">
-              <div className="card-front">
-                <Image
-                  src={TeamImage1}
-                  className="person-image"
-                  alt="logo-pic"
-                />
-              </div>
-              <div className="card-back">
-                <div className="person-info">
-                  <h1 className="font-bold">John Doe</h1>
-                  <p>Senior Web Developer</p>
-                  <p className="person-info-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div>
+              <div className="card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <Image
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
+                    />
+                  </div>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div>
-          <div className="card">
-            <div className="card-inner">
-              <div className="card-front">
-                <Image
-                  src={TeamImage1}
-                  className="person-image"
-                  alt="logo-pic"
-                />
-              </div>
-              <div className="card-back">
-                <div className="person-info">
-                  <h1 className="font-bold">John Doe</h1>
-                  <p>Senior Web Developer</p>
-                  <p className="person-info-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div>
+              <div className="card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <Image
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
+                    />
+                  </div>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div>
-          <div className="card">
-            <div className="card-inner">
-              <div className="card-front">
-                <Image
-                  src={TeamImage1}
-                  className="person-image"
-                  alt="logo-pic"
-                />
-              </div>
-              <div className="card-back">
-                <div className="person-info">
-                  <h1 className="font-bold">John Doe</h1>
-                  <p>Senior Web Developer</p>
-                  <p className="person-info-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div>
+              <div className="card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <Image
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
+                    />
+                  </div>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div>
-          <div className="card">
-            <div className="card-inner">
-              <div className="card-front">
-                <Image
-                  src={TeamImage1}
-                  className="person-image"
-                  alt="logo-pic"
-                />
-              </div>
-              <div className="card-back">
-                <div className="person-info">
-                  <h1 className="font-bold">John Doe</h1>
-                  <p>Senior Web Developer</p>
-                  <p className="person-info-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div>
+              <div className="card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <Image
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
+                    />
+                  </div>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div>
-          <div className="card">
-            <div className="card-inner">
-              <div className="card-front">
-                <Image
-                  src={TeamImage1}
-                  className="person-image"
-                  alt="logo-pic"
-                />
-              </div>
-              <div className="card-back">
-                <div className="person-info">
-                  <h1 className="font-bold">John Doe</h1>
-                  <p>Senior Web Developer</p>
-                  <p className="person-info-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div>
+              <div className="card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <Image
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
+                    />
+                  </div>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div>
-          <div className="card">
-            <div className="card-inner">
-              <div className="card-front">
-                <Image
-                  src={TeamImage1}
-                  className="person-image"
-                  alt="logo-pic"
-                />
-              </div>
-              <div className="card-back">
-                <div className="person-info">
-                  <h1 className="font-bold">John Doe</h1>
-                  <p>Senior Web Developer</p>
-                  <p className="person-info-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div>
+              <div className="card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <Image
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
+                    />
+                  </div>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div>
-          <div className="card">
-            <div className="card-inner">
-              <div className="card-front">
-                <Image
-                  src={TeamImage1}
-                  className="person-image"
-                  alt="logo-pic"
-                />
-              </div>
-              <div className="card-back">
-                <div className="person-info">
-                  <h1 className="font-bold">John Doe</h1>
-                  <p>Senior Web Developer</p>
-                  <p className="person-info-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div>
+              <div className="card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <Image
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
+                    />
+                  </div>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        
-      </Slider>
+          </Slider>
         </div>
       </section>
     </main>

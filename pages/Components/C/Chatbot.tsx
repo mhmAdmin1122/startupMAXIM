@@ -13,8 +13,8 @@ const Chatbot: React.FC = () => {
   return (
     <div className="chat-container">
       {isChatboxVisible && (
-        <section className="shadow-md chat-section shadow-gray-100 px-[10px]">
-          <div className="chatbox flex">
+        <section className="chat-section">
+          <div className="chatbox">
           <input type="text" placeholder="Enter Your Message" />
           <button className="chat-send-button"><Image src={ChatSend} alt="" width={20} /></button>
         </div>

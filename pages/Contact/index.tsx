@@ -12,7 +12,7 @@ const Contact = () => {
       <Head>
         <title>Contact</title>
       </Head>
-      <BreadCrumbs  dynamicText={'Contact Us'} />
+      {/* <BreadCrumbs  dynamicText={'Contact Us'} /> */}
       <ContactUs />
       <Chatbot />
     </Layout>

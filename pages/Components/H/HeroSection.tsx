@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import logo from "@/public/img/about-team.png";
+import logo from "@/public/img/about-team.svg";
 
 const HeroSection = () => {
   return (

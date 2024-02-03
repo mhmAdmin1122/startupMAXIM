@@ -3,13 +3,13 @@ import Link from "next/link";
 import React from "react";
 import { FaChevronRight } from "react-icons/fa6";
 
-const ServiceCard = ({ imageUrl, title, desc, linkurl }: any) => {
+const ServiceCard = ({ imageUrl, title, desc, linkurl, altText }: any) => {
   return (
     <div
       id="card1"
       className="flex flex-col hover:shadow-md hover:shadow-gray-300 h-auto pt-10 items-center w-[300px]"
     >
-      <Image src={imageUrl} className="pb-6" alt="user-pic" width={80} height={80} />
+      <Image src={imageUrl} className="pb-6" alt={altText} width={80} height={80} />
       <h1 className="text-2xl pb-3 font-bold">{title}</h1>
       <p className="text-center pb-3 text-[#82847e]">{desc}</p>
       <Link
