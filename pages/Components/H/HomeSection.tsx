@@ -2,6 +2,7 @@ import React from "react";
 import card1 from "@/public/img/feature1.png";
 import card2 from "@/public/img/feature2.png";
 import card3 from "@/public/img/feature3.png";
+import card4 from "@/public/img/feature3.png";
 import Image from "next/image";
 import ServiceCard from "../S/ServiceCard";
 import homeImage1 from "@/public/img/about_image (1).png";
