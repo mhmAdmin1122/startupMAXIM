@@ -1,8 +1,12 @@
 import React from "react";
+
+// cards Images
 import card1 from "@/public/img/feature1.png";
 import card2 from "@/public/img/feature2.png";
 import card3 from "@/public/img/feature3.png";
 import card4 from "@/public/img/feature3.png";
+
+// card Images
 import Image from "next/image";
 import ServiceCard from "../S/ServiceCard";
 import homeImage1 from "@/public/img/about_image (1).png";
@@ -65,24 +69,28 @@ const HomeSection = () => {
       <section className="flex w-full justify-center gap-12 mt-14 flex-wrap">
         <ServiceCard
           imageUrl={card1}
+          altText=""
           title="Socail Marketing"
           desc="We do Social Media Marketing to educate your auduince about your startup, it's products, services, and offering powerfully."
           linkurl="/"
         />
         <ServiceCard
           imageUrl={card2}
+          altText=""
           title="Search Engine Optimization (SEO)"
           desc="We offer updated SEO strategies for startups in all three domains of SEO; on-page, off-page, and technical SEO."
           linkurl="/"
         />
         <ServiceCard
           imageUrl={card3}
+          altText=""
           title="Search Engine Marketing"
           desc="Startups need to bid for paid traffic but ROI matters here. We guarantee atleast 3X return on SEM investment with maximum results."
           linkurl="/"
         />
         <ServiceCard
           imageUrl={card4}
+          altText=""
           title="Website & Web App Development"
           desc="StartupMAXIM has a department of developers who expertly manage their develoopment projects in such a way that provides speed, qaulity, 
           and creativity in website and application development"
