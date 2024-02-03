@@ -56,7 +56,7 @@ const Navbar = () => {
       <header className="flex flex-nowrap max-[620px]:flex-col justify-between pt-3 pb-3 pl-16 pr-16 bg-[var(--text-black)] h-auto text-white w-full items-center">
         <div className="header">
           <p>
-            <FaLocationDot /> StartupMAXIM, California, USA
+            <FaLocationDot /> StartupMAXIM, Sanger, California, USA
           </p>
           <p>
             <FaEnvelope /> <a href="mailto:contactus@startupmaxim.com">contactus@startupmaxim.com</a>
