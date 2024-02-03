@@ -69,7 +69,7 @@ const HomeSection = () => {
       <section className="flex w-full justify-center gap-12 mt-14 flex-wrap">
         <ServiceCard
           imageUrl={card1}
-          altText=""
+          altText="first card"
           title="Socail Marketing"
           desc="We do Social Media Marketing to educate your auduince about your startup, it's products, services, and offering powerfully."
           linkurl="/"
