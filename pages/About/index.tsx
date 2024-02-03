@@ -14,7 +14,7 @@ const index = () => {
       <Head>
         <title>About</title>
       </Head>
-      {/* <BreadCrumbs dynamicText={"About Us"} /> */}
+      <BreadCrumbs dynamicText={"About Us"} />
       <AboutUs />
       <TeamSection />
       <BackToTop />
