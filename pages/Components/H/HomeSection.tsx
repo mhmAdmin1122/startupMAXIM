@@ -43,9 +43,10 @@ const HomeSection = () => {
           </h1>
         </div>
         <div className="border-l-[5px] pl-8 max-[500px]:pl-3 max-[500px]:w-[90%] text-[#9f9f9f] border-orange-600 w-[50%]">
-          <p>
-            StatupMAXIM helps you generate results at every stage of your startup either it is
-            awareness, consideration, decision, or maturity focused on creative marketing efforts with affordability.
+          <p><strong>TO STRENGTHEN EVERY STARTUP</strong>
+            <br />StatupMAXIM helps you generate results at every stage of your startup, from ideation to MVP, facilitating seamless scaling towards a successful exit, 
+            to elevating your brand to new heights, StartupMAXIM offers tailored solutions for every stage of your entrepreneurial journey. 
+            <br /><strong>Our goal is to become worlds first dedicated marketing agency for startups.</strong>
           </p>
         </div>
       </section>
