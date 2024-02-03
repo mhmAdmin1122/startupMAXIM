@@ -43,7 +43,7 @@ const HomeSection = () => {
           </h1>
         </div>
         <div className="border-l-[5px] pl-8 max-[500px]:pl-3 max-[500px]:w-[90%] text-[#9f9f9f] border-orange-600 w-[50%]">
-          <p style="font-size: 18px; text-align: center;">
+          <p>
             StatupMAXIM helps you generate results at every stage of your startup either it is
             awareness, consideration, decision, or maturity focused on creative marketing efforts with affordability.
           </p>
