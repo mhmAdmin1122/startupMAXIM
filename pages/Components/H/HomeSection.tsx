@@ -44,9 +44,11 @@ const HomeSection = () => {
         </div>
         <div className="border-l-[5px] pl-8 max-[500px]:pl-3 max-[500px]:w-[90%] text-[#9f9f9f] border-orange-600 w-[50%]">
           <p>
-            Start working with an company that can provide everything you need
-            to generate awareness, drive traffic, connect with customers, and
-            increase sales montes, nascetur ridiculus mus
+            Startups either want to beat competition or try to create a new category
+            but in both of the cases they want to grow. So, they need to market their
+            business in such a way to generate results at every stage either it is
+            awareness, consideration, decision, or maturity. StartupMAXIM helps startups
+            at every stage with a focus on creative marketing efforts with affordability.
           </p>
         </div>
       </section>
