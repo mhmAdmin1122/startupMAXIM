@@ -56,13 +56,13 @@ const Navbar = () => {
       <header className="flex flex-nowrap max-[620px]:flex-col justify-between pt-3 pb-3 pl-16 pr-16 bg-[var(--text-black)] h-auto text-white w-full items-center">
         <div className="header">
           <p>
-            <FaLocationDot /> Bahawalpur,Punjab,Pakistan
+            <FaLocationDot /> StartupMAXIM, California, USA
           </p>
           <p>
-            <FaEnvelope /> info@example.com
+            <FaEnvelope /> <a href="mailto:contactus@startupmaxim.com">contactus@startupmaxim.com</a>
           </p>
           <p>
-            <FaPhone /> 000-123-4567
+            <FaPhone /> <a href="https://wa.me/+923036424939" target="_blank">303-642-4939</a>
           </p>
         </div>
         <div className="flex gap-3 items-center">
