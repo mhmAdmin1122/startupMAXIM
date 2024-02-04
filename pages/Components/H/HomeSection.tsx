@@ -77,14 +77,6 @@ const HomeSection = () => {
           altText="first card"
           title="Social Media Marketing"
           desc="We do Social Media Marketing to educate your auduince about your startup, it's products, services, and offering powerfully."
-        <ul>
-          <li>Audience education about startup, products, and services</li>
-          <li>Crafting impactful social media campaigns</li>
-          <li>Establishing a strong online presence</li>
-          <li>Social media content creation and management</li>
-          <li>Audience engagement and community building</li>
-          <li>Performance analytics and optimization</li>
-        </ul>
           linkurl="/"
         />
         <ServiceCard
