@@ -136,7 +136,7 @@ const HomeSection = () => {
           }
           linkurl="/"
         />
-        {/* <ServiceCard
+        <ServiceCard
           imageUrl={card4}
           altText="StartupMAXIM offers full-stack development."
           title="Website & App Development"
@@ -158,7 +158,7 @@ const HomeSection = () => {
           }
           linkurl="/"
         />
-        <ServiceCard
+        {/* <ServiceCard
           imageUrl={card5}
           altText="A to Z Digital Marketing with Strategy Planning for startups"
           title="Digital Marketing Strategy"
