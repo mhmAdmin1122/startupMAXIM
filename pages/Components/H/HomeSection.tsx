@@ -251,7 +251,7 @@ const HomeSection = () => {
             altText="PR and reputation management services including proactive monitoring, positive review promotion, and adept crisis communication planning."
             title="Reputation Management"
             desc={
-              <div>
+              <React.Fragment>
                 <p>
                   We guarantee to safeguard and enhance your online reputation with StartupMAXIM's creative reputation management services to build and protect your brand's image in the digital realm.
                 </p>
@@ -264,10 +264,11 @@ const HomeSection = () => {
                   <li>06: Social Listening</li>
                   <li>07: Online Brand Protection</li>
                 </ul>
-              </div>
+              </React.Fragment>
             }
             linkurl="/"
           />
+
       </section>
 
       <section
