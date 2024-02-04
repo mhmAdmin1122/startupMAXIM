@@ -83,9 +83,11 @@ const HomeSection = () => {
                 its products, services, and offerings powerfully.
               </p>
               <ul className="text-left">
-                <li>Point 1: Highlight a key feature.</li>
-                <li>Point 2: Another important aspect.</li>
-                <li>Point 3: Additional information about the service.</li>
+                <li>01: Audience education about startup, products, and services</li>
+                <li>02: Impactful social media campaigns</li>
+                <li>03: Post Design, Copywriting, and Management</li>
+                <li>04: Audience Engagement & Community Building</li>
+                <li>05: Performance Analytics & Optimization</li>
               </ul>
             </>
           }
