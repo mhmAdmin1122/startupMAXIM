@@ -76,7 +76,13 @@ const HomeSection = () => {
           imageUrl={card1}
           altText="first card"
           title="Social Media Marketing"
-          desc="We do Social Media Marketing to educate your auduince about your startup, it's products, services, and offering powerfully."
+          desc="We do Social Media Marketing to educate your auduince about your startup, it's products, services, and offering powerfully. 
+          <br />O1. Crafting impactful social media campaigns
+          <br />02. Establishing a strong online presence
+          <br />03. Social media content creation and management
+          <br />04. Audience engagement and community building
+          <br />05. Performance analytics and optimization
+          "
           linkurl="/"
         />
         <ServiceCard
