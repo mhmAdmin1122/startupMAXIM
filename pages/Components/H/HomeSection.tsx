@@ -246,7 +246,7 @@ const HomeSection = () => {
           }
           linkurl="/"
         />
-        {/* <ServiceCard
+        <ServiceCard
           imageUrl={card9}
           altText="PR and reputation management services including proactive monitoring, positive review promotion, and adept crisis communication planning."
           title="Reputation Management"
@@ -267,7 +267,7 @@ const HomeSection = () => {
             </>
           }
           linkurl="/"
-        /> */}
+        />
       </section>
 
       <section
