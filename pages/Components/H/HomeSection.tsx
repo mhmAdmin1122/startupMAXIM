@@ -74,17 +74,16 @@ const HomeSection = () => {
       <section className="flex w-full justify-center gap-12 mt-14 flex-wrap">
         <ServiceCard
           imageUrl={card1}
-          altText="first card"
+          altText="Social Media Management"
           title="Social Media Marketing"
           desc={
             <>
               <p>
-                We do Social Media Marketing to educate your audience about your startup,
-                its products, services, and offerings powerfully.
+                We do Social Media Marketing to educate your audience and convert them.
               </p>
               <ul className="text-left">
-                <li>01: Audience education about startup, products, and services</li>
-                <li>02: Impactful social media campaigns</li>
+                <li>01: Audience and Competitors Research</li>
+                <li>02: Social Media Strategy</li>
                 <li>03: Post Design, Copywriting, and Management</li>
                 <li>04: Audience Engagement & Community Building</li>
                 <li>05: Performance Analytics & Optimization</li>
@@ -95,64 +94,178 @@ const HomeSection = () => {
         />
         <ServiceCard
           imageUrl={card2}
-          altText=""
+          altText="StartupMAXIM provides the best SEO service to startups."
           title="Search Engine Optimization (SEO)"
-          desc="We offer updated SEO strategies for startups in all three domains of SEO; on-page, off-page, and technical SEO."
+          desc={
+            <>
+              <p>
+              We offer updated SEO strategies for startups in all three domains of SEO; on-page, off-page, and technical SEO.
+              </p>
+              <ul className="text-left">
+                <li>01: On-Page Optimization</li>
+                <li>02: Off-Page Optimization</li>
+                <li>03: Technical SEO Strategies</li>
+                <li>04: Keyword Research and Analysis</li>
+                <li>05: Backlink Building</li>
+                <li>06: SEO Audit</li>
+                <li>07: Local SEO</li>
+              </ul>
+            </>
+          }
           linkurl="/"
         />
         <ServiceCard
           imageUrl={card3}
-          altText=""
+          altText="StartupMAXIM offers guaranteed results to startups for SEM efforts."
           title="Search Engine Marketing (SEM)"
-          desc="Startups need to bid for paid traffic but ROI matters here. We guarantee atleast 3X return on SEM investment with maximum results."
+          desc={
+            <>
+              <p>
+              Startups need to bid for paid traffic but ROI matters here. We guarantee atleast 3X return on SEM investment with maximum results.
+              </p>
+              <ul className="text-left">
+                <li>01: Pay-Per-Click (PPC) Advertising</li>
+                <li>02: Display Advertising</li>
+                <li>03: Social Media Advertising</li>
+                <li>04: Ad Campaign Management</li>
+                <li>05: Bid Optimization</li>
+                <li>06: A/B Testing for Ad Creatives</li>
+                <li>07: Conversion Tracking and Analysis</li>
+              </ul>
+            </>
+          }
           linkurl="/"
         />
         <ServiceCard
           imageUrl={card4}
-          altText=""
+          altText="StartupMAXIM offers full-stack development."
           title="Website & App Development"
-          desc="StartupMAXIM has a department of developers who expertly manage their develoopment projects in such a way that provides speed, qaulity, 
-          and creativity in website and application development"
+          desc={
+            <>
+              <p>
+              StartupMAXIM offers speed, qaulity, and creativity in website and web/mobile application development.
+              </p>
+              <ul className="text-left">
+              <li>01: Website Development</li>
+              <li>02: App Development (iOS, Android)</li>
+              <li>03: UI/UX Design</li>
+              <li>04: Responsive Design</li>
+              <li>05: E-commerce Development</li>
+              <li>06: Custom Software Solutions</li>
+              <li>07: Maintenance and Support</li>
+          </ul>
+            </>
+          }
           linkurl="/"
         />
         <ServiceCard
           imageUrl={card5}
-          altText=""
+          altText="A to Z Digital Marketing with Strategy Planning for startups"
           title="Digital Marketing Strategy"
-          desc="StartupMAXIM has a department of developers who expertly manage their develoopment projects in such a way that provides speed, qaulity, 
-          and creativity in website and application development"
+          desc={
+            <>
+              <p>
+              We offer comprehensive digital marketing services, featuring to achieve your business goals and optimize your online performance.
+              </p>
+              <ul className="text-left">
+              <li>01: Market Research and Analysis</li>
+              <li>02: Competitor Analysis</li>
+              <li>03: Target Audience Profiling</li>
+              <li>04: Goal Setting and KPI Tracking</li>
+              <li>05: Multi-Channel Marketing Strategies</li>
+              <li>06: Data-driven Decision-making</li>
+              <li>07: Continuous Optimization</li>
+          </ul>
+            </>
+          }
           linkurl="/"
         />
         <ServiceCard
           imageUrl={card6}
-          altText=""
+          altText="Our branding services include logo design, brand messaging, visually captivating elements, and more."
           title="Branding"
-          desc="StartupMAXIM has a department of developers who expertly manage their develoopment projects in such a way that provides speed, qaulity, 
-          and creativity in website and application development"
+          desc={
+            <>
+              <p>
+              We target to craft a distinctive brand identity that resonates with your audience.
+              </p>
+              <ul className="text-left">
+              <li>01: Brand Identity Creation</li>
+              <li>02: Logo Design</li>
+              <li>03: Brand Messaging</li>
+              <li>04: Visual Brand Elements</li>
+              <li>05: Brand Positioning</li>
+              <li>06: Brand Guidelines</li>
+              <li>07: Brand Storytelling</li>
+          </ul>
+            </>
+          }
           linkurl="/"
         />
         <ServiceCard
           imageUrl={card7}
-          altText=""
+          altText="Content Creation Services for startups."
           title="Content Creation"
-          desc="StartupMAXIM has a department of developers who expertly manage their develoopment projects in such a way that provides speed, qaulity, 
-          and creativity in website and application development"
+          desc={
+            <>
+              <p>
+              StartupMAXIM offers diverse content creation services, spanning blog writing, video production, and social media content creation, strategically planned and distributed for maximum impact.
+              </p>
+              <ul className="text-left">
+              <li>01: Blog Writing</li>
+              <li>02: Video Production</li>
+              <li>03: Infographic Creation</li>
+              <li>04: Social Media Content Creation</li>
+              <li>05: Copywriting</li>
+              <li>06: Content Calendar Planning</li>
+              <li>07: Content Distribution Strategy</li>
+          </ul>
+            </>
+          }
           linkurl="/"
         />
         <ServiceCard
           imageUrl={card8}
-          altText=""
+          altText="Personalized-email marketing services"
           title="Email Marketing"
-          desc="StartupMAXIM has a department of developers who expertly manage their develoopment projects in such a way that provides speed, qaulity, 
-          and creativity in website and application development"
+          desc={
+            <>
+              <p>
+              Our email marketing department offers personalized communication and targeted outreach, ensuring effective subscriber engagement and conversions.
+              </p>
+              <ul className="text-left">
+              <li>01: Email Campaign Strategy</li>
+              <li>02: Design and Copywriting</li>
+              <li>03: A/B Testing</li>
+              <li>04: Segmentation and Targeting</li>
+              <li>05: Automation Workflows</li>
+              <li>06: Subscriber List Management</li>
+              <li>07: Analytics and Reporting</li>
+          </ul>
+            </>
+          }
           linkurl="/"
         />
         <ServiceCard
           imageUrl={card9}
-          altText=""
+          altText="PR and reputation management services including proactive monitoring, positive review promotion, and adept crisis communication planning."
           title="Reputation Management"
-          desc="StartupMAXIM has a department of developers who expertly manage their develoopment projects in such a way that provides speed, qaulity, 
-          and creativity in website and application development"
+          desc={
+            <>
+              <p>
+              We guarantee to safeguard and enhance your online reputation with StartupMAXIM's creative reputation management services to build and protect your brand's image in the digital realm.
+              </p>
+              <ul className="text-left">
+              <li>01: Online Reputation Monitoring</li>
+              <li>02: Positive Review Promotion</li>
+              <li>03: Negative Review Management</li>
+              <li>04: Crisis Communication Planning</li>
+              <li>05: Brand Sentiment Analysis</li>
+              <li>06: Social Listening</li>
+              <li>07: Online Brand Protection</li>
+          </ul>
+            </>
+          }
           linkurl="/"
         />
       </section>
