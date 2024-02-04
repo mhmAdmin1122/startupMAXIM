@@ -180,7 +180,7 @@ const HomeSection = () => {
           }
           linkurl="/"
         />
-        {/* <ServiceCard
+        <ServiceCard
           imageUrl={card6}
           altText="Our branding services include logo design, brand messaging, visually captivating elements, and more."
           title="Branding"
@@ -202,7 +202,7 @@ const HomeSection = () => {
           }
           linkurl="/"
         />
-        <ServiceCard
+        {/* <ServiceCard
           imageUrl={card7}
           altText="Content Creation Services for startups."
           title="Content Creation"
