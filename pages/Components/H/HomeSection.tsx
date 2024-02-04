@@ -74,7 +74,7 @@ const HomeSection = () => {
       <section className="flex w-full justify-center gap-12 mt-14 flex-wrap">
         <ServiceCard
           imageUrl={card1}
-          altText="Social Media Management"
+          altText="Social Media Management service for startups"
           title="Social Media Marketing"
           desc={
             <>
@@ -94,7 +94,7 @@ const HomeSection = () => {
         />
         <ServiceCard
           imageUrl={card2}
-          altText="StartupMAXIM provides the best SEO service to startups."
+          altText="StartupMAXIM provides the best SEO services to startups."
           title="Search Engine Optimization (SEO)"
           desc={
             <>
@@ -124,7 +124,7 @@ const HomeSection = () => {
               Startups need to bid for paid traffic but ROI matters here. We guarantee atleast 3X return on SEM investment with maximum results.
               </p>
               <ul className="text-left">
-                <li>01: Pay-Per-Click (PPC) Advertising</li>
+                <li>01: Pay-Per-Click "("PPC")" Advertising</li>
                 <li>02: Display Advertising</li>
                 <li>03: Social Media Advertising</li>
                 <li>04: Ad Campaign Management</li>
