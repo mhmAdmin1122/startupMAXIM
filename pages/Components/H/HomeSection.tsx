@@ -124,7 +124,7 @@ const HomeSection = () => {
               Startups need to bid for paid traffic but ROI matters here. We guarantee atleast 3X return on SEM investment with maximum results.
               </p>
               <ul className="text-left">
-                <li>01: Pay-Per-Click "("PPC")" Advertising</li>
+                {/* <li>01: Pay-Per-Click (PPC) Advertising</li> */}
                 <li>02: Display Advertising</li>
                 <li>03: Social Media Advertising</li>
                 <li>04: Ad Campaign Management</li>
@@ -147,7 +147,7 @@ const HomeSection = () => {
               </p>
               <ul className="text-left">
               <li>01: Website Development</li>
-              <li>02: App Development (iOS, Android)</li>
+              {/* <li>02: App Development (iOS, Android)</li> */}
               <li>03: UI/UX Design</li>
               <li>04: Responsive Design</li>
               <li>05: E-commerce Development</li>
