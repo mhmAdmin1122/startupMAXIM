@@ -114,7 +114,7 @@ const HomeSection = () => {
           }
           linkurl="/"
         />
-        {/* <ServiceCard
+        <ServiceCard
           imageUrl={card3}
           altText="StartupMAXIM offers guaranteed results to startups for SEM efforts."
           title="Search Engine Marketing (SEM)"
@@ -136,7 +136,7 @@ const HomeSection = () => {
           }
           linkurl="/"
         />
-        <ServiceCard
+        {/* <ServiceCard
           imageUrl={card4}
           altText="StartupMAXIM offers full-stack development."
           title="Website & App Development"
