@@ -158,7 +158,7 @@ const HomeSection = () => {
           }
           linkurl="/"
         />
-        {/* <ServiceCard
+        <ServiceCard
           imageUrl={card5}
           altText="A to Z Digital Marketing with Strategy Planning for startups"
           title="Digital Marketing Strategy"
@@ -180,7 +180,7 @@ const HomeSection = () => {
           }
           linkurl="/"
         />
-        <ServiceCard
+        {/* <ServiceCard
           imageUrl={card6}
           altText="Our branding services include logo design, brand messaging, visually captivating elements, and more."
           title="Branding"
