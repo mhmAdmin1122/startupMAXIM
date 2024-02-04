@@ -71,45 +71,14 @@ const HomeSection = () => {
         </div>
       </section>
 
-<section className="flex w-full justify-center gap-12 mt-14 flex-wrap">
-  {services.map((service, index) => (
-    <ServiceCard
-      key={index}
-      imageUrl={service.imageUrl}
-      altText={service.altText}
-      title={service.title}
-      desc={service.desc}
-      linkurl={service.linkurl}
-    >
-      {service.servicesList && (
-        <ul className="text-left pl-4">
-          {service.servicesList.map((item, i) => (
-            <li key={i}>{item}</li>
-          ))}
-        </ul>
-      )}
-    </ServiceCard>
-  ))}
-</section>
-
-<section className="flex w-full justify-center gap-12 mt-14 flex-wrap">
-  {/* Service 1: Social Media Marketing */}
-  <ServiceCard
-    imageUrl={card1}
-    altText="first card"
-    title="Social Media Marketing"
-    desc="We do Social Media Marketing to educate your audience about your startup, its products, services, and offering powerfully."
-    linkurl="/"
-  >
-    <ul className="text-left pl-4">
-      <li>Audience education about startup, products, and services</li>
-      <li>Crafting impactful social media campaigns</li>
-      <li>Establishing a strong online presence</li>
-      <li>Social media content creation and management</li>
-      <li>Audience engagement and community building</li>
-      <li>Performance analytics and optimization</li>
-    </ul>
-  </ServiceCard>
+      <section className="flex w-full justify-center gap-12 mt-14 flex-wrap">
+        <ServiceCard
+          imageUrl={card1}
+          altText="first card"
+          title="Social Media Marketing"
+          desc="We do Social Media Marketing to educate your auduince about your startup, it's products, services, and offering powerfully."
+          linkurl="/"
+        />
         <ServiceCard
           imageUrl={card2}
           altText=""
