@@ -2,9 +2,14 @@ import React from "react";
 
 // cards Images
 import card1 from "@/public/img/01 Social Media Marketing Service for startups.svg";
-import card2 from "@/public/img/feature2.png";
-import card3 from "@/public/img/feature3.png";
-import card4 from "@/public/img/feature3.png";
+import card2 from "@/public/img/02 Search Engine Optimization Service for startups.svg";
+import card3 from "@/public/img/03 SEM & Advertising for Startups.svg";
+import card4 from "@/public/img/04 Website & App Development service for startups.svg";
+import card5 from "@/public/img/05 Digital Marketing Strategy service for startups.svg";
+import card6 from "@/public/img/06 Branding for startups as a service.svg";
+import card7 from "@/public/img/07 Content Creation service including graphic design, copywriting, articles, etc..svg";
+import card8 from "@/public/img/08 Email Marketing Service for Startups.svg";
+import card9 from "@/public/img/09 Public Relations service for startups.svg";
 
 // card Images
 import Image from "next/image";
@@ -70,8 +75,16 @@ const HomeSection = () => {
         <ServiceCard
           imageUrl={card1}
           altText="first card"
-          title="Socail Marketing"
+          title="Social Media Marketing"
           desc="We do Social Media Marketing to educate your auduince about your startup, it's products, services, and offering powerfully."
+        <ul>
+          <li>Audience education about startup, products, and services</li>
+          <li>Crafting impactful social media campaigns</li>
+          <li>Establishing a strong online presence</li>
+          <li>Social media content creation and management</li>
+          <li>Audience engagement and community building</li>
+          <li>Performance analytics and optimization</li>
+        </ul>
           linkurl="/"
         />
         <ServiceCard
@@ -84,14 +97,54 @@ const HomeSection = () => {
         <ServiceCard
           imageUrl={card3}
           altText=""
-          title="Search Engine Marketing"
+          title="Search Engine Marketing (SEM)"
           desc="Startups need to bid for paid traffic but ROI matters here. We guarantee atleast 3X return on SEM investment with maximum results."
           linkurl="/"
         />
         <ServiceCard
           imageUrl={card4}
           altText=""
-          title="Website & Web App Development"
+          title="Website & App Development"
+          desc="StartupMAXIM has a department of developers who expertly manage their develoopment projects in such a way that provides speed, qaulity, 
+          and creativity in website and application development"
+          linkurl="/"
+        />
+        <ServiceCard
+          imageUrl={card5}
+          altText=""
+          title="Digital Marketing Strategy"
+          desc="StartupMAXIM has a department of developers who expertly manage their develoopment projects in such a way that provides speed, qaulity, 
+          and creativity in website and application development"
+          linkurl="/"
+        />
+        <ServiceCard
+          imageUrl={card6}
+          altText=""
+          title="Branding"
+          desc="StartupMAXIM has a department of developers who expertly manage their develoopment projects in such a way that provides speed, qaulity, 
+          and creativity in website and application development"
+          linkurl="/"
+        />
+        <ServiceCard
+          imageUrl={card7}
+          altText=""
+          title="Content Creation"
+          desc="StartupMAXIM has a department of developers who expertly manage their develoopment projects in such a way that provides speed, qaulity, 
+          and creativity in website and application development"
+          linkurl="/"
+        />
+        <ServiceCard
+          imageUrl={card8}
+          altText=""
+          title="Email Marketing"
+          desc="StartupMAXIM has a department of developers who expertly manage their develoopment projects in such a way that provides speed, qaulity, 
+          and creativity in website and application development"
+          linkurl="/"
+        />
+        <ServiceCard
+          imageUrl={card9}
+          altText=""
+          title="Reputation Management"
           desc="StartupMAXIM has a department of developers who expertly manage their develoopment projects in such a way that provides speed, qaulity, 
           and creativity in website and application development"
           linkurl="/"
