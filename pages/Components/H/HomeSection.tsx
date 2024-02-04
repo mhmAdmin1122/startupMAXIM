@@ -246,7 +246,28 @@ const HomeSection = () => {
           }
           linkurl="/"
         />
-
+          <ServiceCard
+          imageUrl={card9}
+          altText="PR and reputation management services including proactive monitoring, positive review promotion, and adept crisis communication planning."
+          title="Reputation Management"
+          desc={
+            <>
+              <p>
+              We guarantee to safeguard and enhance your online reputation with StartupMAXIM's creative reputation management services to build and protect your brand's image in the digital realm.
+              </p>
+              <ul className="text-left">
+              <li>01: Online Reputation Monitoring</li>
+              <li>02: Positive Review Promotion</li>
+              <li>03: Negative Review Management</li>
+              <li>04: Crisis Communication Planning</li>
+              <li>05: Brand Sentiment Analysis</li>
+              <li>06: Social Listening</li>
+              <li>07: Online Brand Protection</li>
+          </ul>
+            </>
+          }
+          linkurl="/"
+        />  
       </section>
 
       <section
