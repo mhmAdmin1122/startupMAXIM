@@ -70,6 +70,7 @@ const HomeSection = () => {
           </button>
         </div>
       </section>
+
       <section className="flex w-full justify-center gap-12 mt-14 flex-wrap">
         <ServiceCard
           imageUrl={card1}
@@ -269,7 +270,7 @@ const HomeSection = () => {
           linkurl="/"
         />
       </section>
-
+      
       <section
         id="homesection3"
         className="flex justify-center mt-20 mb-24  gap-4 "
