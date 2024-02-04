@@ -1,7 +1,7 @@
 import React from "react";
 
 // cards Images
-import card1 from "@/public/img/feature1.png";
+import card1 from "@/public/img/01 Social Media Marketing Service for startups.svg";
 import card2 from "@/public/img/feature2.png";
 import card3 from "@/public/img/feature3.png";
 import card4 from "@/public/img/feature3.png";
