@@ -559,7 +559,7 @@ const HomeSection = () => {
             </button>
           </div>
         </div>
-        <div
+        {/* <div
           id="section8"
           className="flex  max-[760px]:gap-4 max-[760px]:flex-col max-[760px]:justify-center justify-around mt-20"
         >
@@ -637,7 +637,7 @@ const HomeSection = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       <section>

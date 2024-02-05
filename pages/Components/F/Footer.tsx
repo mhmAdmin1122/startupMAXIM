@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="pr-[50px] max-[500px]:p-0 max-[500px]:w-full  pl-[20px]">
           <div className="px-10 max-[500px]:p-3 relative bottom-20 max-[980px]:w-full bg-[#202020] pb-10 flex flex-col gap-6  pt-8  text-white">
             <h1 className="text-4xl font-bold max-[350px]:text-2xl">
-              StartUp Maxim
+              StartupMAXIM
             </h1>
             <p className="text-[var(--text-gray)] max-[350px]:text-[12px]">
               Lorem ipsum dolor, sit amet consectetur elit. Officiis, quis neque
