@@ -16,7 +16,7 @@ import {
   FaWindows,
 } from "react-icons/fa6";
 import Image from "next/image";
-import logo from "@/public/img/logo.png";
+import logo from "@/public/img/StartupMAXIM-logo.png";
 import Link from "next/link";
 import { useState } from "react";
 import {
