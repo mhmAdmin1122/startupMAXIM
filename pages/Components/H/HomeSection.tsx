@@ -559,12 +559,84 @@ const HomeSection = () => {
             </button>
           </div>
         </div>
-        <div>
-        <section className="flex justify-around px-[9%] max-[883px]:flex max-[883px]:flex-wrap max-[450px]:pl-[25px] max-[940px]:px-[0%] max-[1075px]:px-[3%]">
-        <HomeCard />
-        <HomeCard />
-        <HomeCard />
-      </section>
+        <div
+          id="section8"
+          className="flex  max-[760px]:gap-4 max-[760px]:flex-col max-[760px]:justify-center justify-around mt-20"
+        >
+          <div className="w-[30%] flex flex-col gap-8 items-center hover:shadow-md hover:shadow-gray-300">
+            <div>
+              <Image src={pricing_icon1} alt="img" />
+            </div>
+            <div>
+              <h1 className="text-3xl font-bold">Entrepreneur</h1>
+            </div>
+            <div className=" text-[#9f9f9f] flex flex-col items-center gap-1 text-[18px]">
+              <p>25 Analytics Compaign</p>
+              <p>1,300 Keywords</p>
+              <p>25 social media reviews</p>
+              <p>1 Free Optimization</p>
+            </div>
+            <div className="pricing-price">
+              <sup>$</sup>
+              <strong>9</strong>
+              <small>Month</small>
+            </div>
+            <div className="flex justify-center">
+              <button className="p-4 mb-20 pl-10 pr-10 bg-[#2E2C2D] hover:bg-[#fa6742] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
+                SHOW NOW
+              </button>
+            </div>
+          </div>
+
+          <div className="w-[30%] flex flex-col gap-8 items-center relative bottom-[50px] hover:shadow-md hover:shadow-gray-300">
+            <div>
+              <Image src={pricing_icon2} alt="img" />
+            </div>
+            <div>
+              <h1 className="text-3xl font-bold">Entrepreneur</h1>
+            </div>
+            <div className=" text-[#9f9f9f] flex flex-col items-center gap-1 text-[18px]">
+              <p>25 Analytics Compaign</p>
+              <p>1,300 Keywords</p>
+              <p>25 social media reviews</p>
+              <p>1 Free Optimization</p>
+            </div>
+            <div className="pricing-price">
+              <sup>$</sup>
+              <strong>29</strong>
+              <small>Month</small>
+            </div>
+            <div className="flex justify-center">
+              <button className="p-4 mb-20 pl-10 pr-10 bg-[#2E2C2D] hover:bg-[#fa6742] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
+                SHOW NOW
+              </button>
+            </div>
+          </div>
+
+          <div className="w-[30%] flex flex-col gap-8 items-center relative bottom-[50px]  hover:shadow-md hover:shadow-gray-300">
+            <div>
+              <Image src={pricing_icon3} alt="img" />
+            </div>
+            <div>
+              <h1 className="text-3xl font-bold">Entrepreneur</h1>
+            </div>
+            <div className=" text-[#9f9f9f] flex flex-col items-center gap-1 text-[18px]">
+              <p>25 Analytics Compaign</p>
+              <p>1,300 Keywords</p>
+              <p>25 social media reviews</p>
+              <p>1 Free Optimization</p>
+            </div>
+            <div className="pricing-price">
+              <sup>$</sup>
+              <strong>49</strong>
+              <small>Month</small>
+            </div>
+            <div className="flex justify-center">
+              <button className="p-4 mb-20 pl-10 pr-10 bg-[#2E2C2D] hover:bg-[#fa6742] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
+                SHOW NOW
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
