@@ -293,27 +293,27 @@ button#scrollBtn:hover {
   @apply bg-white transition-all ease-in-out duration-1000;
   transform: rotate(360deg);
 }
-.social ul li:hover .insta {
+.social-bar ul li:hover .insta {
   @apply bg-[#e1306c] !important;
 }
-.social ul li:hover .upwork {
+.social-bar ul li:hover .upwork {
   @apply bg-[#15a401] !important;
 }
-.social ul li:hover .facebook {
+.social-bar ul li:hover .facebook {
   @apply bg-[#316ff6] !important;
 }
-.social ul li:hover .fiverr {
+.social-bar ul li:hover .fiverr {
   @apply bg-[#01ac2d] !important;
 }
-.social ul li:hover .linkedin {
+.social-bar ul li:hover .linkedin {
   @apply bg-[#0077b5] !important;
 }
-.social ul li .social-image {
+.social-bar ul li .social-image {
   @apply rounded-full w-[30px] h-[30px] text-[30px];
   transform: rotate(0deg);
 }
 
-/*  SocialIcons-Sidebar  */
+/* SocialIcons-Sidebar */
 
 
 /*   ChatBot   */
