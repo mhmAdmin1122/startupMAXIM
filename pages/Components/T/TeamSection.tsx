@@ -62,9 +62,9 @@ const TeamSection = () => {
       </section>
       <section className="slider-section">
         <div className="w-[95%]">
-          <Slider {...settings} className="mx-[30px]">
+        <Slider {...settings} className="mx-[30px]">
             <div>
-              <div className="card">
+              <div className="team-card">
                 <div className="card-inner">
                   <div className="card-front">
                     <Image
@@ -86,7 +86,7 @@ const TeamSection = () => {
               </div>
             </div>
             <div>
-              <div className="card">
+              <div className="team-card">
                 <div className="card-inner">
                   <div className="card-front">
                     <Image
@@ -108,7 +108,7 @@ const TeamSection = () => {
               </div>
             </div>
             <div>
-              <div className="card">
+              <div className="team-card">
                 <div className="card-inner">
                   <div className="card-front">
                     <Image
@@ -130,7 +130,7 @@ const TeamSection = () => {
               </div>
             </div>
             <div>
-              <div className="card">
+              <div className="team-card">
                 <div className="card-inner">
                   <div className="card-front">
                     <Image
@@ -152,7 +152,7 @@ const TeamSection = () => {
               </div>
             </div>
             <div>
-              <div className="card">
+              <div className="team-card">
                 <div className="card-inner">
                   <div className="card-front">
                     <Image
@@ -174,7 +174,7 @@ const TeamSection = () => {
               </div>
             </div>
             <div>
-              <div className="card">
+              <div className="team-card">
                 <div className="card-inner">
                   <div className="card-front">
                     <Image
@@ -196,7 +196,7 @@ const TeamSection = () => {
               </div>
             </div>
             <div>
-              <div className="card">
+              <div className="team-card">
                 <div className="card-inner">
                   <div className="card-front">
                     <Image
@@ -218,7 +218,7 @@ const TeamSection = () => {
               </div>
             </div>
             <div>
-              <div className="card">
+              <div className="team-card">
                 <div className="card-inner">
                   <div className="card-front">
                     <Image
@@ -240,7 +240,7 @@ const TeamSection = () => {
               </div>
             </div>
             <div>
-              <div className="card">
+              <div className="team-card">
                 <div className="card-inner">
                   <div className="card-front">
                     <Image
@@ -262,7 +262,7 @@ const TeamSection = () => {
               </div>
             </div>
             <div>
-              <div className="card">
+              <div className="team-card">
                 <div className="card-inner">
                   <div className="card-front">
                     <Image
@@ -284,7 +284,7 @@ const TeamSection = () => {
               </div>
             </div>
             <div>
-              <div className="card">
+              <div className="team-card">
                 <div className="card-inner">
                   <div className="card-front">
                     <Image
@@ -306,7 +306,7 @@ const TeamSection = () => {
               </div>
             </div>
             <div>
-              <div className="card">
+              <div className="team-card">
                 <div className="card-inner">
                   <div className="card-front">
                     <Image

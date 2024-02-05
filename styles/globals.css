@@ -227,15 +227,15 @@ button#scrollBtn:hover {
 
 /*   TeamCard   */
 
-.card {
-  @apply relative w-[200px] h-[250px] mt-[10px];
+.team-card {
+  @apply relative w-[200px] h-[250px] mx-[10px] mt-[10px];
   perspective: 1000px;
 }
 .card-inner {
   @apply w-full h-full transition-transform duration-1000;
   transform-style: preserve-3d;
 }
-.card:hover .card-inner {
+.team-card:hover .card-inner {
   transform: rotateY(180deg);
 }
 .card-front,
@@ -266,32 +266,30 @@ button#scrollBtn:hover {
 
 /* SocialIcons-Sidebar */
 
-.social Link {
+.social-bar Link {
   @apply text-white no-underline text-center;
 }
-.social {
+.social-bar {
   @apply fixed z-[9999] top-[10%] left-[100%] opacity-50 transition-all ease-in-out duration-1000 !important;
 }
-.social:hover {
+.social-bar:hover {
   @apply opacity-[100%];
 }
-.social ul {
+.social-bar ul {
   @apply p-0 translate-x-[-50px];
 }
-.social ul li {
-  @apply w-[50px] flex items-center gap-[10px] py-[4px] pr-[4px] pl-[10px] text-left mx-[5px] my-[2px] transition-all ease-in-out duration-1000
-  rounded-l-[50px];
-  background: rgba(0, 0, 0, 0.36);
-  /* width: 50px;   Size of the each div  */
+.social-bar ul li {
+  @apply w-[100px] flex items-center gap-[10px] py-[4px] pr-[4px] pl-[10px] text-left mx-[5px] my-[2px] transition-all ease-in-out duration-1000
+  rounded-l-[50px] bg-[var(--primary-color)];
+  /* width: 100px;   Size of the each div  */
 }
-.social ul li:hover {
-  @apply translate-x-[-25px];
-  background: rgba(0, 0, 0, 0.5);
+.social-bar ul li:hover {
+  @apply translate-x-[-25px] bg-[var(--background-color)];
 }
-.social ul li:hover Link {
+.social-bar ul li:hover Link {
   @apply text-black font-medium tracking-widest text-[18px];
 }
-.social ul li:hover .social-image {
+.social-bar ul li:hover .social-image {
   @apply bg-white transition-all ease-in-out duration-1000;
   transform: rotate(360deg);
 }
@@ -321,7 +319,7 @@ button#scrollBtn:hover {
 /*   ChatBot   */
 
 .chat-container {
-  @apply fixed z-[99999] bottom-[13%] right-[2%] pt-[200px] bg-white;
+  @apply fixed z-[99999] bottom-[13%] right-[2%] pt-[200px] bg-[var(--primary-color)];
   border: 1px solid rgba(128, 128, 128, 0.3);
 }
 .chat-section {
@@ -331,10 +329,10 @@ button#scrollBtn:hover {
   @apply fixed bottom-[3%] right-[2%] bg-[var(--background-color)] text-white px-[20px] py-[10px] border-none rounded-[5px] cursor-pointer;
 }
 .chat-send-button {
-  @apply bg-[var(--background-color)] text-white p-[10px] border-none rounded-full cursor-pointer;
+  @apply bg-[var(--secondary-color)] text-white p-[10px] border-none rounded-full cursor-pointer;
 }
 .chatbox {
-  @apply w-full box-border flex gap-1;
+  @apply w-full box-border flex gap-1 py-[5px];
 }
 .chatbox textarea {
   @apply box-border mb-[10px] resize-none p-[10px] rounded-[5px]
@@ -342,7 +340,7 @@ button#scrollBtn:hover {
   width: calc(100% - 20px);
 }
 .chatbox input {
-  @apply w-full py-[5px] px-[10px] text-[var(--background-color)] font-semibold cursor-pointer outline-none rounded-full border-[2px] border-solid border-[var(--background-color)] placeholder:pl-[7px];
+  @apply w-full py-[5px] px-[10px] text-[var(--secondary-color)] font-semibold cursor-pointer outline-none rounded-full border-[2px] border-solid border-[var(--secondary-color)] placeholder:pl-[7px];
   transition: background-color 0.3s ease;
 }
 
