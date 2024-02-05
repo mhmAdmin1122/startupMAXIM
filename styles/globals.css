@@ -456,7 +456,7 @@ button#scrollBtn:hover {
 }
 
 .wrapper .icon {
-  @apply relative text-[#ffffff] p-[15px] m-[10px] w-[50px] h-[50px] text-[18px] flex justify-center text-center flex-col cursor-pointer max-[435px]:p-[5px] max-[435px]:w-[40px] max-[325px]:w-[20px] max-[435px]:m-[5px];
+  @apply relative text-[#ffffff] p-[15px] m-[10px] w-[50px] h-[50px] text-[18px] flex justify-center text-center flex-col cursor-pointer max-[435px]:p-[5px] max-[435px]:w-[40px] max-[325px]:w-[25px] max-[435px]:m-[10px] max-[325px]:text-center max-[325px]:py-[2px] max-[325px]:h-[25px];
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
