@@ -659,7 +659,7 @@ const HomeSection = () => {
           <Homecard imageUrl={post3} />
         </div>
         <div className="flex justify-center mt-14">
-          <button className="p-4 mb-20 pl-10 pr-10 bg-[#fa6742] hover:bg-[#2E2C2D] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
+          <button className="p-4 mb-21 pl-10 pr-10 bg-[#fa6742] hover:bg-[#2E2C2D] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
             VIEW ALL
           </button>
         </div>
