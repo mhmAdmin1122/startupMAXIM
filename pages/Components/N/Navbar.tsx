@@ -77,7 +77,7 @@ const Navbar = () => {
         <nav className="flex justify-around px-8 items-center">
           <div className="max-[890px]:relative max-[890px]:left-[35%]">
             <Image
-              className="mt-3 "
+              className="mt-[12px] "
               src={logo}
               width={150}
               height={130}
