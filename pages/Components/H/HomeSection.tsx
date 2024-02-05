@@ -271,10 +271,7 @@ const HomeSection = () => {
         />
       </section>
       
-      <section
-        id="homesection3"
-        className="flex justify-center mt-20 mb-24  gap-4 "
-      >
+      <section id="homesection3" className="flex justify-center max-[300px]:mt-4 mt-20 mb-24 max-[300px]:mb-8  gap-4 ">
         <div className="w-fit">
           <Image
             className=""
@@ -288,9 +285,7 @@ const HomeSection = () => {
           <h1 className="text-4xl font-bold text-black">
             A better website means <br /> better user experience
           </h1>
-          <div className="mt-5">
-            <Marque />
-          </div>
+          <div className="mt-5"><Marque /></div>
           <p className="mt-16 text-[#9f9f9f]">
             Start working with an company that can provide everything <br />
             you need to generate awareness, drive traffic, connect with <br />{" "}
@@ -312,9 +307,8 @@ const HomeSection = () => {
           </div>
         </div>
       </section>
-      
 
-      <section className="pt-12 mb-20 flex gap-3">
+      <section className="pt-12 mb-20 max-[300px]:mb-8 max-[300px]:pt-4 flex gap-3">
         <div>
           <Image
             src={arrowleft}
@@ -324,10 +318,7 @@ const HomeSection = () => {
             alt="img"
           />
         </div>
-        <div
-          id="homesection4"
-          className="flex flex-wrap max-[1370px]:gap-[140px] max-[1310px]:gap-[105px] gap-[140px]"
-        >
+        <div id="homesection4" className="flex flex-wrap max-[300px]:gap-[40px] max-[1370px]:gap-[140px] max-[1310px]:gap-[105px] gap-[140px]">
           <div className="flex flex-col gap-4 items-center">
             <Image src={fact1} width={60} height={60} alt="img" />
             <h1 className="text-[22px] font-bold">Active clients</h1>
@@ -360,17 +351,15 @@ const HomeSection = () => {
         </div>
       </section>
 
-      <section className="pt-12 mb-20">
+      <section className="pt-12 max-[300px]:mb-8 max-[300px]:pt-4 mb-20">
         <div className="flex flex-col items-center">
           <h1 className="text-[#9f9f9f] ">OUR SERVICES</h1>
           <h1 className="text-5xl font-bold" id="homesection4-h1">
             Our Best <span className="text-[#fa6742]">Services</span>
           </h1>
-          <div className="mt-6">
-            <Marque />
-          </div>
+          <div className="mt-6"><Marque /></div>
         </div>
-        <div className="flex w-full justify-center gap-12 mt-14 flex-wrap ">
+        <div className="flex w-full justify-center gap-12 mt-14 max-[300px]:mt-2 max-[300px]:gap-2 flex-wrap ">
           <ServiceCard
             imageUrl={services1}
             title="SEO Optimization"
@@ -417,121 +406,67 @@ const HomeSection = () => {
           <h1 className="text-5xl pt-3 font-bold" id="homesection6-h1">
             Our <span className="text-[#fa6742]">Case Study</span>
           </h1>
-          <div className="mt-6">
-            <Marque />
+          <div className="mt-6"><Marque /></div>
+        </div>
+        <div className="flex max-[650px]:flex-col gap-11 p-8 pt-20 max-[300px]:pt-12 justify-center">
+          <div className="homesection6-card">
+           <div className="flex justify-center"> <Image className="bg-[#fa6742] p-2" src={casestudy1} alt="img" /></div>
+            <div className="homesection6-heading">
+            <h1 className="heading1">Web Traffic Management</h1>
+            <h1 className="flex justify-center pr-12 pt-1 text-[#9f9f9f]">
+              SEO, Marketing
+            </h1>
+            </div>
+          </div>
+          <div className="homesection6-card">
+            <div className="flex justify-center"><Image className="bg-[#2bc2a7] p-2" src={casestudy2} alt="img" /></div>
+            <div className="homesection6-heading"><h1 className="heading1">Cloaking & Doorway Pages</h1>
+            <h1 className="flex justify-center text-[#9f9f9f] pt-1">
+              Social, SEO
+            </h1></div>
+          </div>
+          <div className="homesection6-card">
+            <div className="flex justify-center"><Image className="bg-[#ffb72f] p-2" src={casestudy3} alt="img" /></div>
+            <div className="homesection6-heading"><h1 className="heading1">Hosting company rank</h1>
+            <h1 className="flex justify-center pt-1 text-[#9f9f9f]">
+              Hosting, Marketing
+            </h1></div>
           </div>
         </div>
-        <div className="flex max-[650px]:flex-col gap-11 p-8 pt-20 justify-center">
-          <div className="homesection6-card">
-            <div className="flex justify-center">
-              {" "}
-              <Image className="bg-[#fa6742] p-2" src={casestudy1} alt="img" />
-            </div>
-            <div className="homesection6-heading">
-              <h1 className="heading1">Web Traffic Management</h1>
-              <h1 className="flex justify-center pr-12 pt-1 text-[#9f9f9f]">
-                SEO, Marketing
-              </h1>
-            </div>
-          </div>
-          <div className="homesection6-card">
-            <div className="flex justify-center">
-              <Image className="bg-[#2bc2a7] p-2" src={casestudy2} alt="img" />
-            </div>
-            <div className="homesection6-heading">
-              <h1 className="heading1">Cloaking & Doorway Pages</h1>
-              <h1 className="flex justify-center text-[#9f9f9f] pt-1">
-                Social, SEO
-              </h1>
-            </div>
-          </div>
-          <div className="homesection6-card">
-            <div className="flex justify-center">
-              <Image className="bg-[#ffb72f] p-2" src={casestudy3} alt="img" />
-            </div>
-            <div className="homesection6-heading">
-              <h1 className="heading1">Hosting company rank</h1>
-              <h1 className="flex justify-center pt-1 text-[#9f9f9f]">
-                Hosting, Marketing
-              </h1>
-            </div>
-          </div>
-        </div>
-        <div className="flex pt-12 justify-center">
-          <button className="p-4 mb-20 pl-10 pr-10 bg-[#fa6742] hover:bg-[#2e2c2d] text-white font-bold rounded-full mr-5 mt-5">
+        <div className="flex pt-12 max-[300px]:pt-2 justify-center">
+          <button className="p-4 mb-20 max-[300px]:mb-8 pl-10 pr-10 bg-[#fa6742] hover:bg-[#2e2c2d] text-white font-bold rounded-full mr-5 mt-5">
             VIEW ALL
           </button>
         </div>
       </section>
 
       <section>
-        <div className="flex flex-col mt-14 pb-20 mb-20 items-center">
+        <div className="flex flex-col mt-14 max-[300px]:mt-0 pb-20 mb-20 items-center">
           <h1 className="text-[#9f9f9f]">EASE STEPS</h1>
-          <h1 className="text-5xl pt-3 font-bold" id="homesection7-h1">
+          <h1 className="text-5xl pt-3 font-bold"  id="homesection7-h1">
             Our Working<span className="text-[#fa6742]">Process</span>
           </h1>
-          <div className="mt-8">
-            <Marque />
-          </div>
+          <div className="mt-8"><Marque /></div>
         </div>
-        <div className="mt-20">
-          <Image
-            src={work_process}
-            className="max-[1000px]:hidden "
-            width={1900}
-            height={800}
-            alt="img"
-          />
+        <div className="mt-20 max-[300px]:mt-8">
+          <Image src={work_process} className="max-[1000px]:hidden " width={1900} height={800} alt="img" />
         </div>
-        <div
-          id="homesection7"
-          className="flex relative bottom-[120px] max-[1000px]:pt-20 justify-around items-center"
-        >
-          <div
-            id="process1"
-            className="max-[550px]:bottom-0 max-[860px]:p-[40px]  bg-[#32cc73] relative bottom-[65px] p-[60px] w-fit  rounded-full"
-          >
-            <Image
-              src={process1}
-              className=" max-[860px]:w-[50px] "
-              width={80}
-              height={80}
-              alt=""
-            />
+        <div id="homesection7" className="flex max-[300px]:pt-4 relative bottom-[120px] max-[1000px]:pt-20 justify-around items-center">
+          <div id="process1" className="max-[550px]:bottom-0 max-[860px]:p-[40px]  bg-[#32cc73] relative bottom-[65px] p-[60px] w-fit  rounded-full">
+            <Image src={process1}  className=" max-[860px]:w-[50px] " width={80} height={80} alt="" />
           </div>
-          <div
-            id="process2"
-            className=" max-[860px]:p-[30px]  bg-[#fa6742] px-[80px] p-[60px] w-fit  rounded-full"
-          >
-            <Image
-              src={process2}
-              className=" max-[860px]:w-[70px]  max-[860px]:p-[5px]  max-[860px]:px-[16px] "
-              width={60}
-              height={60}
-              alt=""
-            />
+          <div id="process2" className=" max-[860px]:p-[30px]  bg-[#fa6742] px-[80px] p-[60px] w-fit  rounded-full">
+            <Image src={process2} className=" max-[860px]:w-[70px]  max-[860px]:p-[5px]  max-[860px]:px-[16px] " width={60} height={60} alt="" />
           </div>
-          <div
-            id="process3"
-            className="max-[550px]:bottom-0 max-[860px]:p-[40px]  bg-[#478fff] relative bottom-[65px] p-[60px] w-fit  rounded-full"
-          >
-            <Image
-              src={process3}
-              className="max-[860px]:p-[0px]  max-[860px]:w-[55px] "
-              width={80}
-              height={60}
-              alt=""
-            />
+          <div id="process3" className="max-[550px]:bottom-0 max-[860px]:p-[40px]  bg-[#478fff] relative bottom-[65px] p-[60px] w-fit  rounded-full">
+            <Image src={process3} className="max-[860px]:p-[0px]  max-[860px]:w-[55px] " width={80} height={60} alt="" />
           </div>
-          <div
-            id="process4"
-            className=" max-[860px]:p-[40px]  max-[860px]:w-[132px]  bg-[#f5b02d] p-[60px] w-fit  rounded-full"
-          >
+          <div id="process4" className=" max-[860px]:p-[40px]  max-[860px]:w-[132px]  bg-[#f5b02d] p-[60px] w-fit  rounded-full">
             <Image src={process4} width={80} height={80} alt="" />
           </div>
         </div>
         <div className="flex justify-center">
-          <button className="p-4 mb-20 pl-10 pr-10 bg-[#fa6742] hover:bg-[#2e2c2d] text-white font-bold rounded-full mr-5 mt-5">
+          <button className="p-4 max-[300px]:mb-8  mb-20 pl-10 pr-10 bg-[#fa6742] hover:bg-[#2e2c2d] text-white font-bold rounded-full mr-5 ">
             GET STARTED
           </button>
         </div>
@@ -540,12 +475,10 @@ const HomeSection = () => {
       <section>
         <div className="flex flex-col mb-10 items-center">
           <h1 className="text-[#9f9f9f] ">PRICING TABLE</h1>
-          <h1 className="text-5xl pt-3 font-bold" id="homesection8-h1">
+          <h1 className="text-5xl pt-3 font-bold"  id="homesection8-h1">
             Our<span className="text-[#fa6742]">Pricing</span>
           </h1>
-          <div className="mt-8">
-            <Marque />
-          </div>
+          <div className="mt-8"><Marque /></div>
         </div>
         <div className="flex items-center pb-20 max-[420px]:flex-col justify-center">
           <div className="">
@@ -559,111 +492,33 @@ const HomeSection = () => {
             </button>
           </div>
         </div>
-        <div
-          id="section8"
-          className="flex  max-[760px]:gap-4 max-[760px]:flex-col max-[760px]:justify-center justify-around mt-20"
-        >
-          <div className="w-[30%] flex flex-col gap-8 items-center hover:shadow-md hover:shadow-gray-300">
-            <div>
-              <Image src={pricing_icon1} alt="img" />
-            </div>
-            <div>
-              <h1 className="text-3xl font-bold">Entrepreneur</h1>
-            </div>
-            <div className=" text-[#9f9f9f] flex flex-col items-center gap-1 text-[18px]">
-              <p>25 Analytics Compaign</p>
-              <p>1,300 Keywords</p>
-              <p>25 social media reviews</p>
-              <p>1 Free Optimization</p>
-            </div>
-            <div className="pricing-price">
-              <sup>$</sup>
-              <strong>9</strong>
-              <small>Month</small>
-            </div>
-            <div className="flex justify-center">
-              <button className="p-4 mb-20 pl-10 pr-10 bg-[#2E2C2D] hover:bg-[#fa6742] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
-                SHOW NOW
-              </button>
-            </div>
-          </div>
-
-          <div className="w-[30%] flex flex-col gap-8 items-center relative bottom-[50px] hover:shadow-md hover:shadow-gray-300">
-            <div>
-              <Image src={pricing_icon2} alt="img" />
-            </div>
-            <div>
-              <h1 className="text-3xl font-bold">Entrepreneur</h1>
-            </div>
-            <div className=" text-[#9f9f9f] flex flex-col items-center gap-1 text-[18px]">
-              <p>25 Analytics Compaign</p>
-              <p>1,300 Keywords</p>
-              <p>25 social media reviews</p>
-              <p>1 Free Optimization</p>
-            </div>
-            <div className="pricing-price">
-              <sup>$</sup>
-              <strong>29</strong>
-              <small>Month</small>
-            </div>
-            <div className="flex justify-center">
-              <button className="p-4 mb-20 pl-10 pr-10 bg-[#2E2C2D] hover:bg-[#fa6742] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
-                SHOW NOW
-              </button>
-            </div>
-          </div>
-
-          <div className="w-[30%] flex flex-col gap-8 items-center relative bottom-[50px]  hover:shadow-md hover:shadow-gray-300">
-            <div>
-              <Image src={pricing_icon3} alt="img" />
-            </div>
-            <div>
-              <h1 className="text-3xl font-bold">Entrepreneur</h1>
-            </div>
-            <div className=" text-[#9f9f9f] flex flex-col items-center gap-1 text-[18px]">
-              <p>25 Analytics Compaign</p>
-              <p>1,300 Keywords</p>
-              <p>25 social media reviews</p>
-              <p>1 Free Optimization</p>
-            </div>
-            <div className="pricing-price">
-              <sup>$</sup>
-              <strong>49</strong>
-              <small>Month</small>
-            </div>
-            <div className="flex justify-center">
-              <button className="p-4 mb-20 pl-10 pr-10 bg-[#2E2C2D] hover:bg-[#fa6742] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
-                SHOW NOW
-              </button>
-            </div>
-          </div>
-        </div>
+       
+      <section className="flex justify-around px-[9%] max-[883px]:flex max-[883px]:flex-wrap max-[450px]:pl-[25px] max-[940px]:px-[0%] max-[1075px]:px-[3%]">
+        <HomeCard />
+        <HomeCard />
+        <HomeCard />
+      </section>
       </section>
 
-      <section>
-        <div className="flex flex-col mb-20 items-center">
+    <section>
+    <div className="flex flex-col mt-5 mb-20 items-center">
           <h1 className="text-[#9f9f9f] ">OUR BLOG</h1>
           <h1 className="text-5xl pt-3 font-bold" id="section9-h1">
-            Latest<span className="text-[#fa6742]">Blog</span>
+          Latest<span className="text-[#fa6742]">Blog</span>
           </h1>
-          <div className="mt-6">
-            <Marque />
+          <div className="mt-6"><Marque /></div>
+        </div>
+     <div id="section9-card" className="flex flex-wrap justify-center gap-12">
+      <Homecard imageUrl={post1}/>
+     <Homecard imageUrl={post2}/>
+     <Homecard imageUrl={post3}/>
+     </div>
+     <div className="flex justify-center max-[300px]:mt-0 mt-14">
+            <button className="p-4 mb-20 max-[300px]:mb-2 pl-10 pr-10 bg-[#fa6742] hover:bg-[#2E2C2D] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
+              VIEW ALL
+            </button>
           </div>
-        </div>
-        <div
-          id="section9-card"
-          className="flex flex-wrap justify-center gap-12"
-        >
-          <Homecard imageUrl={post1} />
-          <Homecard imageUrl={post2} />
-          <Homecard imageUrl={post3} />
-        </div>
-        <div className="flex justify-center mt-14">
-          <button className="p-4 mb-20 pl-10 pr-10 bg-[#fa6742] hover:bg-[#2E2C2D] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
-            VIEW ALL
-          </button>
-        </div>
-      </section>
+    </section>
     </div>
   );
 };

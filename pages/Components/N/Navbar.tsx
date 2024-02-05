@@ -6,10 +6,8 @@ import {
   FaCircleUser,
   FaEnvelope,
   FaFacebook,
-  FaGoogle,
   FaInstagram,
   FaLinkedin,
-  FaList,
   FaLocationDot,
   FaPhone,
   FaShareFromSquare,
@@ -18,22 +16,14 @@ import {
   FaWindows,
 } from "react-icons/fa6";
 import Image from "next/image";
-import logo from "@/public/img/StartupMAXIM-logo.png";
+import logo from "@/public/img/logo.png";
 import Link from "next/link";
 import { useState } from "react";
 import {
-  FaHandsHelping,
-  FaHome,
-  FaPhotoVideo,
   FaSearch,
-  FaShoppingBag,
 } from "react-icons/fa";
 import dropdownlogo from "@/public/img/football-removebg-preview.png";
 import bannar from "@/public/Startup Growth Academy - Coming Soon Poster.webp";
-import { MdCastForEducation, MdMenuBook } from "react-icons/md";
-import { SiBookstack } from "react-icons/si";
-import { PiCertificateFill } from "react-icons/pi";
-
 const Navbar = () => {
   const [showSearchInput, setShowSearchInput] = useState(false);
 
@@ -47,7 +37,7 @@ const Navbar = () => {
 
   const [isActive, setIsActive] = useState(false);
 
-  const handleClick = (event: any) => {
+  const handleClick = (event: any) =>{
     setIsActive((current) => !current);
   };
 
@@ -56,34 +46,34 @@ const Navbar = () => {
       <header className="flex flex-nowrap max-[620px]:flex-col justify-between pt-3 pb-3 pl-16 pr-16 bg-[var(--text-black)] h-auto text-white w-full items-center">
         <div className="header">
           <p>
-            <FaLocationDot />Sanger, California, USA
+            <FaLocationDot /> Bahawalpur,Punjab,Pakistan
           </p>
           <p>
-            <FaEnvelope /> <a href="mailto:contactus@startupmaxim.com">contactus@startupmaxim.com</a>
+            <FaEnvelope /> info@example.com
           </p>
           <p>
-            <FaPhone /> <a href="https://wa.me/+923036424939" target="_blank">303-642-4939</a>
+            <FaPhone /> 000-123-4567
           </p>
         </div>
         <div className="flex gap-3 items-center">
           <h1 className="Header-icon">Follow:</h1>
-          <div className="facebook">
+          <div className="facebook-icon">
             <FaFacebook />
           </div>
-          <div className="linkedin">
+          <div className="linkedin-icon">
             {" "}
             <FaLinkedin />
           </div>
-          <div className="instagram">
+          <div className="instagram-icon">
             <FaInstagram />
           </div>
-          <div className="twitter">
+          <div className="twitter-icon">
             <FaTwitter />
           </div>
         </div>
       </header>
 
-      <div className="dropdown">
+      <div>
         <nav className="flex justify-around px-8 items-center">
           <div className="max-[890px]:relative max-[890px]:left-[35%]">
             <Image
@@ -103,7 +93,7 @@ const Navbar = () => {
             <Link href="/">Home</Link>
 
             <div className="d">
-              <Link className="d-btn" href={"/Services"}>
+              <Link className="d-btn" id="services" href={"/Services"}>
                 Services <FaChevronDown />
               </Link>
               <div className="d-content">
@@ -293,11 +283,13 @@ const Navbar = () => {
                 placeholder="Enter your search"
               />
             )}
-            <button>
               <div className="search-btnn" onClick={toggleSearchInputs}>
-                <FaBars />
+                <div id="rotateButton">
+                <div className="h-[2px] w-[23px] bg-white"></div>
+                <div className="h-[2px] w-[33px]  bg-white"></div>
+                <div className="h-[2px] w-[23px] bg-white"></div>
+                </div>
               </div>
-            </button>
           </div>
 
           {/* toggle button */}
@@ -307,36 +299,38 @@ const Navbar = () => {
             </button>
 
             {isActive && (
-              <ul className="absolute  bg-black text-white px-[100px] pt-3">
-                <Link href={"/"}>
-                  <li className="flex gap-[50px] justify-around items-center">
-                    <b className="px-2 text-[25px] ">Home</b>
-                  </li>
-                </Link>
-                <Link href={"/Services"}>
-                  <li className="flex justify-between items-center">
-                    <b className="px-2 text-[25px]">Services</b>
-                  </li>
-                </Link>
+             <div className=" text-white"> 
+              <ul className="absolute mt-4 bg-black w-[440px] max-[800px]:w-[400px] max-[730px]:w-[360px] max-[630px]:w-[320px] max-[540px]:w-[280px] max-[440px]:w-[240px] max-[380px]:w-[190px] h-[230px]">
+             <Link href={"/"}>
+               <li className="text-center">
+                 <b className="px-2 text-[30px]">Home</b>
+               </li>
+             </Link>
+             <Link href={"/Services"}>
+               <li className="text-center">
+                 <b className="px-2 text-[30px]">Services</b>
+               </li>
+             </Link>
 
-                <Link href={"/certificate"}>
-                  <li className="flex justify-between items-center">
-                    <b className="px-2 text-[25px]">Tools</b>
-                  </li>
-                </Link>
+             <Link href={"/certificate"}>
+               <li className="text-center">
+                 <b className="px-2 text-[30px]">Tools</b>
+               </li>
+             </Link>
 
-                <Link href={"/About"}>
-                  <li className="flex justify-between items-center">
-                    <b className="px-2 text-[25px]">About</b>
-                  </li>
-                </Link>
+             <Link href={"/About"}>
+               <li className="text-center">
+                 <b className="px-2 text-[30px]">About</b>
+               </li>
+             </Link>
 
-                <Link href={"/Contact"}>
-                  <li className="flex justify-between items-center">
-                    <b className="px-2 text-[25px]">Contact</b>
-                  </li>
-                </Link>
-              </ul>
+             <Link href={"/Contact"}>
+               <li className="text-center">
+                 <b className="px-2 text-[30px]">Contact</b>
+               </li>
+             </Link>
+           </ul>
+           </div>
             )}
           </div>
           {/* toggle button */}
