@@ -554,7 +554,7 @@ const HomeSection = () => {
             </button>
           </div>
           <div className="">
-            <button className="p-4  pl-10 pr-10 bg-[#fff] text-[#9f9f9f] border font-bold rounded-full ">
+            <button className="p-[12px]  pl-10 pr-10 bg-[#fff] text-[#9f9f9f] border font-bold rounded-full ">
               GET STARTED
             </button>
           </div>
