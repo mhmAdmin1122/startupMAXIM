@@ -9,7 +9,7 @@ import Linkedin from "@/public/img/icons8-linkedin.svg";
 
 const SocialSidebar = () => {
   return  (
-    <aside className="social">
+    <aside className="social-bar">
         <ul>
             <li><Link href={'#'}><Image src={Instagram} alt="" className="social-image insta" /></Link></li>
             <li><Link href={'#'}><Image src={Upwork} alt="" className="social-image upwork" /></Link></li>
