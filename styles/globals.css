@@ -560,6 +560,22 @@ button#scrollBtn:hover {
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
 }
+@media (min-width: 1600px) and (max-width: 2270px) {
+  .footer-section1 {
+    @apply relative bottom-32;
+  }
+  .footer-sertion1-h1 {
+    @apply text-[60px] mb-5;
+  }
+  .footer-sertion1-para{
+    @apply text-[30px] font-semibold leading-8;
+  }
+  .footer-sertion1-h2{
+    @apply text-[40px];
+  }
+}
+
+
 
 @keyframes rotateAnimation {
   0% {
