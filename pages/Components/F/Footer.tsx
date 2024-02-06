@@ -82,7 +82,7 @@ const Footer = () => {
               <div className="locationmap">
                 <FaMapLocation />
               </div>
-              Punjab,Pakistan, <br />
+              sindh,Pakistan, <br />
               Bahawalpur
             </div>
             <div>
