@@ -559,11 +559,7 @@ const HomeSection = () => {
             </button>
           </div>
         </div>
-        <section className="flex justify-around px-[9%] max-[883px]:flex max-[883px]:flex-wrap max-[450px]:pl-[25px] max-[940px]:px-[0%] max-[1075px]:px-[3%]">
-        <HomeCard />
-        <HomeCard />
-        <HomeCard />
-      </section>
+       
       </section>
 
       <section>
