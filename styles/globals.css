@@ -568,7 +568,7 @@ button#scrollBtn:hover {
     @apply text-[60px] mb-5;
   }
   .footer-sertion1-para{
-    @apply text-[30px] font-semibold leading-8;
+    @apply text-[30px] leading-8;
   }
   .footer-sertion1-h2{
     @apply text-[40px];
