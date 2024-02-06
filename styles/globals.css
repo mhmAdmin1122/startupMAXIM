@@ -270,7 +270,7 @@ button#scrollBtn:hover {
   @apply text-white no-underline text-center;
 }
 .social-bar {
-  @apply fixed z-[9999] top-[10%] left-[100%] opacity-50 transition-all ease-in-out duration-1000 !important;
+  @apply fixed z-[9999] bg-[var(--secondary-color)] top-[10%] left-[100%] opacity-50 transition-all ease-in-out duration-1000 !important;
 }
 .social-bar:hover {
   @apply opacity-[100%];
@@ -280,11 +280,11 @@ button#scrollBtn:hover {
 }
 .social-bar ul li {
   @apply w-[100px] flex items-center gap-[10px] py-[4px] pr-[4px] pl-[10px] text-left mx-[5px] my-[2px] transition-all ease-in-out duration-1000
-  rounded-l-[50px] bg-[var(--primary-color)];
+  rounded-l-[50px] bg-[var(--background-color)];
   /* width: 100px;   Size of the each div  */
 }
 .social-bar ul li:hover {
-  @apply translate-x-[-25px] bg-[var(--background-color)];
+  @apply translate-x-[-25px]  bg-[var(--secondary-color)];
 }
 .social-bar ul li:hover Link {
   @apply text-black font-medium tracking-widest text-[18px];
