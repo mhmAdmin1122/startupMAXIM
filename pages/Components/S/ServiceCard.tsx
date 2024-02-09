@@ -27,7 +27,7 @@ const Card = ({imageUrl, title, altText, para, startinglist, startinglist2, star
         <p className="text-[14px] text-left">{startinglist3}</p>
        </div>
         {!expanded && (
-          <div className="flex gap-1 items-center">
+          <div className="flex gap-1 justify-center items-center">
             <><button className="readmorebtn" onClick={toggleExpanded}>
             Read more 
           </button>
@@ -43,7 +43,7 @@ const Card = ({imageUrl, title, altText, para, startinglist, startinglist2, star
           <p className="text-[14px] text-left">{endinglist4}</p>
           <p className="text-[14px] text-left">{endinglist5}</p>
           </div>
-          <div className="flex gap-1">
+          <div className="flex gap-1 justify-center items-center">
             <><button className="readmorebtn" onClick={toggleExpanded}>
             Read more 
           </button>
