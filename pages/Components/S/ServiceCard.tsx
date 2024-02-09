@@ -27,7 +27,7 @@ const Card = ({imageUrl, title, altText, para, startinglist, startinglist2, star
        </div>
         {!expanded && (
           <><button className="" onClick={toggleExpanded}>
-            click more
+            Read more
           </button></>
         )}
         {expanded && (
@@ -39,7 +39,7 @@ const Card = ({imageUrl, title, altText, para, startinglist, startinglist2, star
           <p className="text-[14px]">{endinglist4}</p>
           </div>
           <button className="" onClick={toggleExpanded}>
-            click less
+            Read less
           </button></>
         )}
       </div>
