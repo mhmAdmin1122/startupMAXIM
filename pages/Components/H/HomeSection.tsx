@@ -71,6 +71,114 @@ const HomeSection = () => {
         </div>
       </section>
 
+        
+      <section className="w-full flex justify-between gap-12 mt-14 flex-wrap">
+        <ServiceCard
+          imageUrl={card1}
+          altText="Social Media Management service for startups"
+          title="Social Media Marketing"
+          para="We do Social Media Marketing to educate your audience and convert them."
+          startinglist="01: Audience and Competitors Research."
+          startinglist2="02: Social Media Strategy."
+          startinglist3="03: Performance Analytics & Optimization"
+          endinglist="04: Audience Engagement & Community Building.  "
+          endinglist2="05: Post Design, Copywriting, and Management"
+          
+        />
+        <ServiceCard
+          imageUrl={card2}
+          altText="StartupMAXIM offers guaranteed results to startups for SEM efforts"
+          title="Search Engine Marketing (SEM)"
+          para="We offer updated SEO strategies for startups in all three domains of SEO; on-page, off-page, and technical SEO."
+          startinglist="01: Pay-Per-Click (PPC) Advertising"
+          startinglist2="02: Display Advertising"
+          endinginglist3="03: Social Media Advertising"
+          endinglist="04: Ad Campaign Management."
+          endinglist2="05: Bid Optimization"
+          endinglist3="06: A/B Testing for Ad Creatives"
+          endinglist4="07: Conversion Tracking and Analysis"
+        />
+        <ServiceCard
+          imageUrl={card3}
+          altText="StartupMAXIM offers guaranteed results to startups for SEM efforts."
+          title="Search Engine Marketing (SEM)"
+          para="Startups need to bid for paid traffic but ROI matters here. We guarantee atleast 3X return on SEM investment with maximum results."
+          startinglist="01: Pay-Per-Click (PPC) Advertising"
+          startinglist2="02: Display Advertising"
+          endinglist="03: Social Media Advertising"
+          endinglig2="04: Ad Campaign Management"
+          endinglist3="05: Bid Optimization"
+          endinglist4="06: A/B Testing for Ad Creatives"
+          endinglist5="07: Conversion Tracking and Analysis"
+        />
+        <ServiceCard
+          imageUrl={card4}
+          altText="StartupMAXIM offers full-stack development."
+          title="Website & App Development"
+          para="StartupMAXIM offers speed, qaulity, and creativity in website and web/mobile application development."
+          startinglist="01: Website Development"
+          startinglist2="02: App Development (iOS, Android)"
+          startinglist3="03: UI/UX Design"
+          endinglist="04: Responsive Design"
+          endinglist2="05: E-commerce Development"
+          endinglist3="06: Custom Software Solutions"
+          endinglist4="07: Maintenance and Support"
+        />
+        <ServiceCard
+          imageUrl={card5}
+          altText="A to Z Digital Marketing with Strategy Planning for startups"
+          title="Digital Marketing Strategy"
+          para="We offer comprehensive digital marketing services, featuring to achieve your business goals and optimize your online performance."
+          startinglist="01: Market Research and Analysis"
+          startinglist2="02: Competitor Analysis"
+          startinglist3="03: Target Audience Profiling"
+          endinglist="04: Goal Setting and KPI Tracking"
+          endinglist2="05: Multi-Channel Marketing Strategies"
+          endinglist3="06: Data-driven Decision-making"
+          endinglist4="07: Continuous Optimization"
+        />
+        <ServiceCard
+          imageUrl={card6}
+          altText="Our branding services include logo design, brand messaging, visually captivating elements, and more."
+          title="Branding"
+          para="We target to craft a distinctive brand identity that resonates with your audience."
+          startinglist="01: Brand Identity Creation"
+          startinglist2="02: Logo Design"
+          startinglist3="03: Brand Messaging"
+          endinglist="04: Visual Brand Elements"
+          endinglist2="05: Brand Positioning"
+          endinglist3="06: Brand Guidelines"
+          endinglist4="07: Brand Storytelling"
+        />
+        <ServiceCard
+          imageUrl={card7}
+          altText="Content Creation Services for startups."
+          title="Content Creation"
+          para=" StartupMAXIM offers diverse content creation services, spanning blog writing, video production, and social media content creation, strategically planned and distributed for maximum impact."
+          startinglist="01: Blog Writing"
+          startinglist2="02: Video Production"
+          startinglist3="03: Infographic Creation"
+          endinglist="04: Social Media Content Creation"
+          endinglist2="05: Copywriting"
+          endinglist3="06: Content Calendar Planning"
+          endinglist4="07: Content Distribution Strategy"
+        />
+        <ServiceCard
+          imageUrl={card8}
+          altText="Personalized-email marketing services"
+          title="Email Marketing"
+          para="Our email marketing department offers personalized communication and targeted outreach, ensuring effective subscriber engagement and conversions."
+          startinglist="01: Email Campaign Strategy"
+          startinglist2="02: Design and Copywriting"
+          startinglist3="03: A/B Testing"
+          endinglist="04: Segmentation and Targeting"
+          endinglist2="05: Automation Workflows"
+          endinglist3="06: Subscriber List Management"
+          endinglist4="07: Analytics and Reporting"
+        />
+
+      </section>
+      
      
       
       <section
