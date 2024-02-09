@@ -731,6 +731,12 @@ dropdown-Tool h1 {
   max-width: 100%;
   height: auto;
 }
+.readmorebtn{
+  @apply text-[18px] mt-2 font-semibold text-[#2db563];
+}
+.readmorebtn svg{
+  @apply text-[#2db563] mt-1;
+}
 
 @media (max-width: 470px) {
   #section1-h1 {

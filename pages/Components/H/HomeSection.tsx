@@ -57,13 +57,12 @@ const HomeSection = () => {
           </h1>
         </div>
         <div className="border-l-[5px] pl-8 max-[500px]:pl-3 max-[500px]:w-[90%] text-[#9f9f9f] border-orange-600 w-[50%]">
-          <br />
+        
           StatupMAXIM helps you generate results at every stage of your startup,
           from ideation to MVP, facilitating seamless scaling towards a
           successful exit, to elevating your brand to new heights, StartupMAXIM
           offers tailored solutions for every stage of your entrepreneurial
           journey.
-          <br />
           <strong>Worlds first dedicated marketing agency for startups.</strong>
           <button className="p-4 pl-6 max-[385px]:mb-4 pr-6  bg-[#fa6742] hover:bg-[#2e2c2d] text-white font-bold rounded-full mr-5 mt-5">
             LEARN MORE
@@ -72,7 +71,7 @@ const HomeSection = () => {
       </section>
 
         
-      <section className="w-full flex justify-between gap-12 mt-14 flex-wrap">
+      <section className="flex justify-around mt-14 flex-wrap">
         <ServiceCard
           imageUrl={card1}
           altText="Social Media Management service for startups"
@@ -118,11 +117,11 @@ const HomeSection = () => {
           para="StartupMAXIM offers speed, qaulity, and creativity in website and web/mobile application development."
           startinglist="01: Website Development"
           startinglist2="02: App Development (iOS, Android)"
-          startinglist3="03: UI/UX Design"
-          endinglist="04: Responsive Design"
-          endinglist2="05: E-commerce Development"
-          endinglist3="06: Custom Software Solutions"
-          endinglist4="07: Maintenance and Support"
+          endinglist="03: UI/UX Design"
+          endinglist2="04: Responsive Design"
+          endinglist3="05: E-commerce Development"
+          endinglist4="06: Custom Software Solutions"
+          endinglist5="07: Maintenance and Support"
         />
         <ServiceCard
           imageUrl={card5}
@@ -131,11 +130,11 @@ const HomeSection = () => {
           para="We offer comprehensive digital marketing services, featuring to achieve your business goals and optimize your online performance."
           startinglist="01: Market Research and Analysis"
           startinglist2="02: Competitor Analysis"
-          startinglist3="03: Target Audience Profiling"
-          endinglist="04: Goal Setting and KPI Tracking"
-          endinglist2="05: Multi-Channel Marketing Strategies"
-          endinglist3="06: Data-driven Decision-making"
-          endinglist4="07: Continuous Optimization"
+          endinglist="03: Target Audience Profiling"
+          endinglist2="04: Goal Setting and KPI Tracking"
+          endinglist3="05: Multi-Channel Marketing Strategies"
+          endinglist4="06: Data-driven Decision-making"
+          endinglist5="07: Continuous Optimization"
         />
         <ServiceCard
           imageUrl={card6}
@@ -157,11 +156,11 @@ const HomeSection = () => {
           para=" StartupMAXIM offers diverse content creation services, spanning blog writing, video production, and social media content creation, strategically planned and distributed for maximum impact."
           startinglist="01: Blog Writing"
           startinglist2="02: Video Production"
-          startinglist3="03: Infographic Creation"
-          endinglist="04: Social Media Content Creation"
-          endinglist2="05: Copywriting"
-          endinglist3="06: Content Calendar Planning"
-          endinglist4="07: Content Distribution Strategy"
+          endinglist="03: Infographic Creation"
+          endinglist2="04: Social Media Content Creation"
+          endinglist3="05: Copywriting"
+          endinglist4="06: Content Calendar Planning"
+          endinglist5="07: Content Distribution Strategy"
         />
         <ServiceCard
           imageUrl={card8}
@@ -178,7 +177,6 @@ const HomeSection = () => {
         />
 
       </section>
-      
      
       
       <section
