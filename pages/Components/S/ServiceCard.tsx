@@ -16,9 +16,9 @@ const Card = ({imageUrl, title, altText, para, startinglist, startinglist2, star
     <div className="h-fit" style={{ height: cardHeight }}>
     <div
       id="card1"
-      className="flex p-4 items-center border-[#f4f4f4] border-[2px] rounded flex-col hover:shadow-md hover:shadow-gray-300 h-fit  w-[300px]"
+      className="flex p-4 border-[#f4f4f4] border-[2px] rounded flex-col hover:shadow-md hover:shadow-gray-300 h-fit  w-[300px]"
     >
-      <Image src={imageUrl} className="pb-6" alt={altText} width={80} height={80} />
+        <div className="flex justify-center"> <Image src={imageUrl} className="pb-6 items-center" alt={altText} width={80} height={80} /></div>
       <h1 className="text-[17px] pb-3 font-bold">{title}</h1>  
       <p className="text-[12px] font-semibold pb-2 ">{para}</p>
        <div className="text-left">
