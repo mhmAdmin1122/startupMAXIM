@@ -29,7 +29,7 @@ const TeamSection = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 700,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -50,7 +50,7 @@ const TeamSection = () => {
     <main>
       <section className="team-section">
         <div className="team-heading-top">
-          <p className="text-[var(--text-gray)]">OUR TEAM</p>
+          <p className="text-[var(--text-gray)] min-[1440px]:text-[20px]">OUR TEAM</p>
           <div className="team-heading">
             <h1>Our Best </h1>
             <h1 className="text-[var(--background-color)]">Experts</h1>
@@ -61,8 +61,8 @@ const TeamSection = () => {
         </div>
       </section>
       <section className="slider-section">
-        <div className="w-[95%]">
-        <Slider {...settings} className="mx-[30px]">
+        <div className="w-[95%] ">
+          <Slider {...settings} className="team-slider mx-[30px] min-[1440px]:mx-[60px]">
             <div>
               <div className="team-card">
                 <div className="card-inner">

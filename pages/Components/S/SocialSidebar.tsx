@@ -11,11 +11,11 @@ const SocialSidebar = () => {
   return  (
     <aside className="social-bar">
         <ul>
-            <li><Link href={'#'}><Image src={Instagram} alt="" className="social-image insta" /></Link></li>
-            <li><Link href={'#'}><Image src={Upwork} alt="" className="social-image upwork" /></Link></li>
-            <li><Link href={'#'}><Image src={Fiverr} alt="" className="social-image fiverr" /></Link></li>
-            <li><Link href={'#'}><Image src={Facebook} alt="" className="social-image facebook" /></Link></li>
-            <li><Link href={'#'}><Image src={Linkedin} alt="" className="social-image linkedin" /></Link></li>
+            <li className="first"><Link href={'#'}>Instagram</Link><Image src={Instagram} alt="" className="social-image insta" /></li>
+            <li className="second"><Link href={'#'}>Upwork</Link><Image src={Upwork} alt="" className="social-image upwork" /></li>
+            <li className="third"><Link href={'#'}>Fiverr</Link><Image src={Fiverr} alt="" className="social-image fiverr" /></li>
+            <li className="forth"><Link href={'#'}>Facebook</Link><Image src={Facebook} alt="" className="social-image facebook" /></li>
+            <li className="fifth"><Link href={'#'}>LinkedIn</Link><Image src={Linkedin} alt="" className="social-image linkedin" /></li>
         </ul>
     </aside>
   );
