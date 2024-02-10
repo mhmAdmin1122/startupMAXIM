@@ -82,7 +82,6 @@ const HomeSection = () => {
           startinglist3="03: Performance Analytics & Optimization"
           endinglist="04: Audience Engagement & Community Building.  "
           endinglist2="05: Post Design, Copywriting, and Management"
-          
         />
         <ServiceCard
           imageUrl={card2}
@@ -130,11 +129,11 @@ const HomeSection = () => {
           para="We offer comprehensive digital marketing services, featuring to achieve your business goals and optimize your online performance."
           startinglist="01: Market Research and Analysis"
           startinglist2="02: Competitor Analysis"
-          endinglist="03: Target Audience Profiling"
-          endinglist2="04: Goal Setting and KPI Tracking"
-          endinglist3="05: Multi-Channel Marketing Strategies"
-          endinglist4="06: Data-driven Decision-making"
-          endinglist5="07: Continuous Optimization"
+          endinglist2="03: Target Audience Profiling"
+          endinglist3="04: Goal Setting and KPI Tracking"
+          endinglist4="05: Multi-Channel Marketing Strategies"
+          endinglist5="06: Data-driven Decision-making"
+          endinglist6="07: Continuous Optimization"
         />
         <ServiceCard
           imageUrl={card6}
@@ -144,10 +143,10 @@ const HomeSection = () => {
           startinglist="01: Brand Identity Creation"
           startinglist2="02: Logo Design"
           startinglist3="03: Brand Messaging"
-          endinglist="04: Visual Brand Elements"
-          endinglist2="05: Brand Positioning"
-          endinglist3="06: Brand Guidelines"
-          endinglist4="07: Brand Storytelling"
+          endinglist2="04: Visual Brand Elements"
+          endinglist3="05: Brand Positioning"
+          endinglist4="06: Brand Guidelines"
+          endinglist5="07: Brand Storytelling"
         />
         <ServiceCard
           imageUrl={card7}
@@ -155,12 +154,12 @@ const HomeSection = () => {
           title="Content Creation"
           para=" StartupMAXIM offers diverse content creation services, spanning blog writing, video production, and social media content creation, strategically planned and distributed for maximum impact."
           startinglist="01: Blog Writing"
-          startinglist2="02: Video Production"
-          endinglist="03: Infographic Creation"
-          endinglist2="04: Social Media Content Creation"
-          endinglist3="05: Copywriting"
-          endinglist4="06: Content Calendar Planning"
-          endinglist5="07: Content Distribution Strategy"
+          endinglist="02: Video Production"
+          endinglist2="03: Infographic Creation"
+          endinglist3="04: Social Media Content Creation"
+          endinglist4="05: Copywriting"
+          endinglist5="06: Content Calendar Planning"
+          endinglist6="07: Content Distribution Strategy"
         />
         <ServiceCard
           imageUrl={card8}
@@ -169,13 +168,12 @@ const HomeSection = () => {
           para="Our email marketing department offers personalized communication and targeted outreach, ensuring effective subscriber engagement and conversions."
           startinglist="01: Email Campaign Strategy"
           startinglist2="02: Design and Copywriting"
-          startinglist3="03: A/B Testing"
-          endinglist="04: Segmentation and Targeting"
-          endinglist2="05: Automation Workflows"
-          endinglist3="06: Subscriber List Management"
-          endinglist4="07: Analytics and Reporting"
+          endinglist="03: A/B Testing"
+          endinglis2="04: Segmentation and Targeting"
+          endinglist3="05: Automation Workflows"
+          endinglist4="06: Subscriber List Management"
+          endinglist5="07: Analytics and Reporting"
         />
-
       </section>
      
       
