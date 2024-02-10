@@ -465,6 +465,59 @@ const HomeSection = () => {
             </button>
           </div>
         </div>
+        <section>
+          <div className="cards">
+            <div className="cards__inner">
+              <div className="card">
+                <h2 className="card__heading">Basic</h2>
+                <p className="card__price">$9.99</p>
+                <ul role="list" className="card__bullets flow">
+                <li>Access to advanced workouts and nutrition plans</li>
+                  <li>Priority Email support</li>
+                  <li>Exclusive access to live Q&A sessions</li>
+                </ul>
+                <button  className="card__cta cta relative top-8">
+                  Get Started
+                </button>
+                <button  className="card__cta cta ">
+                  Get Started
+                </button>
+              </div>
+
+              <div className="card">
+                <h2 className="card__heading">Pro</h2>
+                <p className="card__price">$19.99</p>
+                <ul role="list" className="card__bullets flow">
+                  <li>Access to advanced workouts and nutrition plans</li>
+                  <li>Priority Email support</li>
+                  <li>Exclusive access to live Q&A sessions</li>
+                </ul>
+                <button  className="card__cta cta relative top-8">
+                  Get Started
+                </button>
+                <button  className="card__cta cta ">
+                  Get Started
+                </button>
+              </div>
+
+              <div className="card">
+                <h2 className="card__heading">Ultimate</h2>
+                <p className="card__price">$29.99</p>
+                <ul role="list" className="card__bullets flow">
+                <li>Access to advanced workouts and nutrition plans</li>
+                  <li>Priority Email support</li>
+                  <li>Exclusive access to live Q&A sessions</li>
+                </ul>
+                <button  className="card__cta cta relative top-8">
+                  Get Started
+                </button>
+                <button  className="card__cta cta ">
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
        
       </section>
 
