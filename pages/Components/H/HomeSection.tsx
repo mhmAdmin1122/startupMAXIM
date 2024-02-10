@@ -237,22 +237,34 @@ const HomeSection = () => {
           <div className="flex flex-col gap-4 items-center">
             <Image src={fact1} width={60} height={60} alt="img" />
             <h1 className="text-[22px] font-bold">Active clients</h1>
-            <h1 className="text-5xl font-bold text-[#fa6742]">200+</h1>
+            <div className="text-5xl font-bold text-[#fa6742] flex">
+              <CountingAnimation targetNumber={200} />
+              <span>+</span>
+            </div>
           </div>
           <div className="flex flex-col gap-4 items-center">
             <Image src={fact2} width={53} height={53} alt="img" />
             <h1 className="text-[22px] font-bold">Projects Done</h1>
-            <h1 className="text-5xl font-bold text-[#fa6742]">570+</h1>
+            <div className="text-5xl font-bold text-[#fa6742] flex">
+              <CountingAnimation targetNumber={570} />
+              <span>+</span>
+            </div>
           </div>
           <div className="flex flex-col gap-4 items-center">
             <Image src={fact3} width={64} height={64} alt="img" />
             <h1 className="text-[22px] font-bold">Success Rate</h1>
-            <h1 className="text-5xl font-bold text-[#fa6742]">98%</h1>
+            <div className="text-5xl font-bold text-[#fa6742] flex">
+              <CountingAnimation targetNumber={98} />
+              <span>%</span>
+            </div>
           </div>
           <div className="flex flex-col gap-4 items-center">
             <Image src={fact4} width={48} height={48} alt="img" />
             <h1 className="text-[22px] font-bold">Awards</h1>
-            <h1 className="text-5xl font-bold text-[#fa6742]">50+</h1>
+            <div className="text-5xl font-bold text-[#fa6742] flex">
+              <CountingAnimation targetNumber={50} />
+              <span>+</span>
+            </div>
           </div>
         </div>
         <div>
@@ -266,6 +278,7 @@ const HomeSection = () => {
         </div>
       </section>
 
+      
       <section className="pt-12 mb-20">
         <div className="flex flex-col items-center">
           <h1 className="text-[#9f9f9f] ">OUR SERVICES</h1>
