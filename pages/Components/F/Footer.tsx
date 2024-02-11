@@ -111,7 +111,7 @@ const Footer = () => {
               <div className="">
                 <h1 className="text-[20px] font-semibold text-white">
                   {" "}
-                  +923-246-920-609
+                  +92-303-642-4939
                 </h1>
                 <p className="text-[20px] text-white"> Give us a call</p>
               </div>
