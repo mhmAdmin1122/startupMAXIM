@@ -26,9 +26,10 @@ const Footer = () => {
               StartupMAXIM
             </h1>
             <p className="footer-sertion1-para text-[var(--text-gray)] max-[350px]:text-[12px]">
-              Lorem ipsum dolor, sit amet consectetur elit. Officiis, quis neque
-              officia possimus, sapiente ab, nihil non iste magnam obcae Iusto
-              voluptates dignissimos perferendis!
+            We're passionate believers in the power of startups to change the world, 
+            and we're dedicated to fueling their success. Over the years, we've helped 
+            countless startups launch, scale, and achieve their dreams, from increasing 
+            website traffic by 300% for a tech startup to securing funding for a groundbreaking social enterprise.
             </p>
 
             <h1 className="footer-sertion1-h2 text-2xl pb-4">Follow Us</h1>
@@ -72,7 +73,7 @@ const Footer = () => {
 
           <div>
             <h1 className=" text-[25px] relative bottom-12 text-white">
-              Best seo company 2024
+              The Best Digital Marketing Agency For Startups
             </h1>
           </div>
         </div>
@@ -82,8 +83,8 @@ const Footer = () => {
               <div className="locationmap">
                 <FaMapLocation />
               </div>
-              Punjab,Pakistan, <br />
-              Bahawalpur
+              2470 Camellia Ln NE <br />
+              Atlanta, GA 30324, USA
             </div>
             <div>
               <h1 className="text-2xl text-white">Useful Links</h1>
@@ -97,9 +98,9 @@ const Footer = () => {
               <Link href="/Services">Services</Link>
               <Link href="">Blog</Link>
               <Link href="">Project</Link>
-              <Link href="">Testimonticals</Link>
+              <Link href="">Testimonials</Link>
               <Link href="">Our Team</Link>
-              <Link href="">Faq</Link>
+              <Link href="">FAQs</Link>
             </div>
           </div>
           <div className="flex gap-10  flex-col">
@@ -122,7 +123,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-[20px] max-[320px]:text-start text-[#75877c]">
-              Lorem ipsum, dolor sit amet consectetur <br /> adipisicing elit.
+            Ready to launch your startup journey? <br /> Schedule a free consultation!
             </p>
             <div id="footer-email=buttton" className="flex w-[100%]">
               <input
@@ -139,7 +140,7 @@ const Footer = () => {
       </section>
       <section className="flex flex-wrap relative mt-5 pt-4 pb-4 justify-around items-center w-full bg-[#202020]">
         <div className="text-[#696969] max-[340px]:text-center">
-          Copyright © 2018, All Right Reserved Seobin
+          Copyright © 2024, All Rights Reserved StartupMAXIM
         </div>
         <div className="flex max-[320px]:flex-wrap max-[370px]:flex max-[320px]:h-fit max-[320px]:justify-center gap-8 h-12 items-center">
           <Link href={"/"} className="text-[#696969]">
