@@ -192,28 +192,26 @@ const HomeSection = () => {
         </div>
         <div className="w-fit ">
           <h1 className="text-4xl font-bold text-black">
-            A better website means <br /> better user experience
+          Get Marketing Audit For Free (Limited Spots Available!)
           </h1>
           <div className="mt-5">
             <Marque />
           </div>
           <p className="mt-16 text-[#9f9f9f]">
-            Start working with an company that can provide everything <br />
-            you need to generate awareness, drive traffic, connect with <br />{" "}
-            customers, and increase sales nascetur ridiculus mus. Donec <br />{" "}
-            quam felis, ultricies nec, pellentesque eu.
+            Launch with confidence <br />
+            Get a FREE comprehensive digital marketing audit from StartupMAXIM. <br />{" "}
+            Our expert team will analyze your current marketing efforts, <br />{" "}
+            identify key opportunities, and provide actionable recommendations <br />
+            to boost your brand awareness, attract leads, and achieve your goals. <br />
+            <strong>Don't miss out!</strong>
           </p>
           <p className="mt-6 text-[#9f9f9f]">
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis,{" "}
-            <br />
-            sem. Nulla consequat massa quis enim
+          Only the first 10 sign-ups per month will receive this exclusive offer.{" "}
+          <br /> Don't Miss Out!
           </p>
           <div className="">
             <button className="p-4 pl-6 max-[385px]:mb-4 pr-6  bg-[#fa6742] hover:bg-[#2e2c2d] text-white font-bold rounded-full mr-5 mt-5">
-              LEARN MORE
-            </button>
-            <button className="p-4 pl-6 pr-6 bg-[#ffb72f] hover:bg-[#2e2c2d] text-white font-bold rounded-full">
-              CONTACT US
+            Claim Free Audit
             </button>
           </div>
         </div>
