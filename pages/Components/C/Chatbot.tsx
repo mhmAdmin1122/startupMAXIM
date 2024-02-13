@@ -11,7 +11,7 @@ const Chatbot: React.FC = () => {
   };
 
   return (
-    <div className="chat-container">
+      <div className="chat-container">
       {isChatboxVisible && (
         <section className="chat-section">
           <div className="chatbox">

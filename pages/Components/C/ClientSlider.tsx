@@ -45,10 +45,10 @@ const ClientSlider = () => {
     <div>
         <section>
         <div className="text-center my-[50px]">
-          <p className="text-[#b4b4b4]">OUR CLIENTS</p>
-          <div className="flex justify-center flex-wrap items-center gap-[8px] font-black text-[30px]">
-            <h1 className=" text-[50px]">Valuable</h1>
-            <h1 className="text-[var(--background-color)] text-[50px]">
+          <p className="text-[var(--text-gray)]  min-[1440px]:text-[20px]">OUR CLIENTS</p>
+          <div className="flex justify-center flex-wrap items-center gap-[8px] font-black text-[50px] min-[1440px]:text-[60px]">
+            <h1>Valuable</h1>
+            <h1 className="text-[var(--background-color)]">
               Clients
             </h1>
           </div>

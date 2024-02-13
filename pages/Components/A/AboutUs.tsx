@@ -9,10 +9,10 @@ const AboutUs = () => {
   return (
     <main>
       <section className="about-section">
-        <Image src={aboutimage} alt="Team" height={400} width={400} className="" />
+        <Image src={aboutimage} alt="Team" height={400} width={400} className="mt-[40px] min-[1440px]:mt-[-20px] min-[1440px]:h-[550px] min-[1440px]:w-[550px]" />
         <div className="first-section">
           <h1 className="heading">
-            About Startup-Maxim
+            About StartupMAXIM
             <Marque />
           </h1>
           <p className="para-1">

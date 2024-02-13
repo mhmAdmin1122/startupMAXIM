@@ -1,10 +1,15 @@
 import React from "react";
 
 // cards Images
-import card1 from "@/public/img/feature1.png";
-import card2 from "@/public/img/feature2.png";
-import card3 from "@/public/img/feature3.png";
-import card4 from "@/public/img/feature3.png";
+import card1 from "@/public/img/01 Social Media Marketing Service for startups.svg";
+import card2 from "@/public/img/02 Search Engine Optimization Service for startups.svg";
+import card3 from "@/public/img/03 SEM & Advertising for Startups.svg";
+import card4 from "@/public/img/04 Website & App Development service for startups.svg";
+import card5 from "@/public/img/05 Digital Marketing Strategy service for startups.svg";
+import card6 from "@/public/img/06 Branding for startups as a service.svg";
+import card7 from "@/public/img/07 Content Creation service including graphic design, copywriting, articles, etc..svg";
+import card8 from "@/public/img/08 Email Marketing Service for Startups.svg";
+import card9 from "@/public/img/09 Public Relations service for startups.svg";
 
 // card Images
 import Image from "next/image";
@@ -37,7 +42,9 @@ import post1 from "@/public/img/post1.jpg";
 import post2 from "@/public/img/post2.jpg";
 import post3 from "@/public/img/post3.jpg";
 import Marque from "../M/Marque";
-import Homecard from "../S/homecard";
+import Homecard from "../S/HomeCard";
+import CountingAnimation from "../C/CountingAnimation";
+
 const HomeSection = () => {
   return (
     <div>
@@ -52,13 +59,12 @@ const HomeSection = () => {
           </h1>
         </div>
         <div className="border-l-[5px] pl-8 max-[500px]:pl-3 max-[500px]:w-[90%] text-[#9f9f9f] border-orange-600 w-[50%]">
-          <br />
+        
           StatupMAXIM helps you generate results at every stage of your startup,
           from ideation to MVP, facilitating seamless scaling towards a
           successful exit, to elevating your brand to new heights, StartupMAXIM
           offers tailored solutions for every stage of your entrepreneurial
           journey.
-          <br />
           <strong>Worlds first dedicated marketing agency for startups.</strong>
           <button className="p-4 pl-6 max-[385px]:mb-4 pr-6  bg-[#fa6742] hover:bg-[#2e2c2d] text-white font-bold rounded-full mr-5 mt-5">
             LEARN MORE
@@ -66,41 +72,116 @@ const HomeSection = () => {
         </div>
       </section>
 
-      <section className="flex w-full justify-center gap-12 mt-14 flex-wrap">
+        
+      <section className="flex justify-around mt-14 flex-wrap">
         <ServiceCard
           imageUrl={card1}
-          altText="first card"
-          title="Socail Marketing"
-          desc="We do Social Media Marketing to educate your auduince about your startup, it's products, services, and offering powerfully."
-          linkurl="/"
+          altText="Social Media Management service for startups"
+          title="Social Media Marketing"
+          para="We do Social Media Marketing to educate your audience and convert them."
+          startinglist="01: Audience and Competitors Research."
+          startinglist2="02: Social Media Strategy."
+          startinglist3="03: Performance Analytics & Optimization"
+          endinglist="04: Audience Engagement & Community Building.  "
+          endinglist2="05: Post Design, Copywriting, and Management"
         />
         <ServiceCard
           imageUrl={card2}
-          altText=""
-          title="Search Engine Optimization (SEO)"
-          desc="We offer updated SEO strategies for startups in all three domains of SEO; on-page, off-page, and technical SEO."
-          linkurl="/"
+          altText="StartupMAXIM offers guaranteed results to startups for SEM efforts"
+          title="Search Engine Marketing (SEM)"
+          para="We offer updated SEO strategies for startups in all three domains of SEO; on-page, off-page, and technical SEO."
+          startinglist="01: Pay-Per-Click (PPC) Advertising"
+          startinglist2="02: Display Advertising"
+          endinginglist3="03: Social Media Advertising"
+          endinglist="04: Ad Campaign Management."
+          endinglist2="05: Bid Optimization"
+          endinglist3="06: A/B Testing for Ad Creatives"
+          endinglist4="07: Conversion Tracking and Analysis"
         />
         <ServiceCard
           imageUrl={card3}
-          altText=""
-          title="Search Engine Marketing"
-          desc="Startups need to bid for paid traffic but ROI matters here. We guarantee atleast 3X return on SEM investment with maximum results."
-          linkurl="/"
+          altText="StartupMAXIM offers guaranteed results to startups for SEM efforts."
+          title="Search Engine Marketing (SEM)"
+          para="Startups need to bid for paid traffic but ROI matters here. We guarantee atleast 3X return on SEM investment with maximum results."
+          startinglist="01: Pay-Per-Click (PPC) Advertising"
+          startinglist2="02: Display Advertising"
+          endinglist="03: Social Media Advertising"
+          endinglig2="04: Ad Campaign Management"
+          endinglist3="05: Bid Optimization"
+          endinglist4="06: A/B Testing for Ad Creatives"
+          endinglist5="07: Conversion Tracking and Analysis"
         />
         <ServiceCard
           imageUrl={card4}
-          altText=""
-          title="Website & Web App Development"
-          desc="StartupMAXIM has a department of developers who expertly manage their develoopment projects in such a way that provides speed, qaulity, 
-          and creativity in website and application development"
-          linkurl="/"
+          altText="StartupMAXIM offers full-stack development."
+          title="Website & App Development"
+          para="StartupMAXIM offers speed, qaulity, and creativity in website and web/mobile application development."
+          startinglist="01: Website Development"
+          startinglist2="02: App Development (iOS, Android)"
+          endinglist="03: UI/UX Design"
+          endinglist2="04: Responsive Design"
+          endinglist3="05: E-commerce Development"
+          endinglist4="06: Custom Software Solutions"
+          endinglist5="07: Maintenance and Support"
+        />
+        <ServiceCard
+          imageUrl={card5}
+          altText="A to Z Digital Marketing with Strategy Planning for startups"
+          title="Digital Marketing Strategy"
+          para="We offer comprehensive digital marketing services, featuring to achieve your business goals and optimize your online performance."
+          startinglist="01: Market Research and Analysis"
+          startinglist2="02: Competitor Analysis"
+          endinglist2="03: Target Audience Profiling"
+          endinglist3="04: Goal Setting and KPI Tracking"
+          endinglist4="05: Multi-Channel Marketing Strategies"
+          endinglist5="06: Data-driven Decision-making"
+          endinglist6="07: Continuous Optimization"
+        />
+        <ServiceCard
+          imageUrl={card6}
+          altText="Our branding services include logo design, brand messaging, visually captivating elements, and more."
+          title="Branding"
+          para="We target to craft a distinctive brand identity that resonates with your audience."
+          startinglist="01: Brand Identity Creation"
+          startinglist2="02: Logo Design"
+          startinglist3="03: Brand Messaging"
+          endinglist2="04: Visual Brand Elements"
+          endinglist3="05: Brand Positioning"
+          endinglist4="06: Brand Guidelines"
+          endinglist5="07: Brand Storytelling"
+        />
+        <ServiceCard
+          imageUrl={card7}
+          altText="Content Creation Services for startups."
+          title="Content Creation"
+          para=" StartupMAXIM offers diverse content creation services, spanning blog writing, video production, and social media content creation, strategically planned and distributed for maximum impact."
+          startinglist="01: Blog Writing"
+          endinglist="02: Video Production"
+          endinglist2="03: Infographic Creation"
+          endinglist3="04: Social Media Content Creation"
+          endinglist4="05: Copywriting"
+          endinglist5="06: Content Calendar Planning"
+          endinglist6="07: Content Distribution Strategy"
+        />
+        <ServiceCard
+          imageUrl={card8}
+          altText="Personalized-email marketing services"
+          title="Email Marketing"
+          para="Our email marketing department offers personalized communication and targeted outreach, ensuring effective subscriber engagement and conversions."
+          startinglist="01: Email Campaign Strategy"
+          startinglist2="02: Design and Copywriting"
+          endinglist="03: A/B Testing"
+          endinglis2="04: Segmentation and Targeting"
+          endinglist3="05: Automation Workflows"
+          endinglist4="06: Subscriber List Management"
+          endinglist5="07: Analytics and Reporting"
         />
       </section>
-
+     
+      
       <section
-        id="homesection3"
         className="flex justify-center mt-20 mb-24  gap-4 "
+        id="homesection3"
       >
         <div className="w-fit">
           <Image
@@ -113,33 +194,30 @@ const HomeSection = () => {
         </div>
         <div className="w-fit ">
           <h1 className="text-4xl font-bold text-black">
-            A better website means <br /> better user experience
+          Get Marketing Audit For Free (Limited Spots Available!)
           </h1>
           <div className="mt-5">
             <Marque />
           </div>
           <p className="mt-16 text-[#9f9f9f]">
-            Start working with an company that can provide everything <br />
-            you need to generate awareness, drive traffic, connect with <br />{" "}
-            customers, and increase sales nascetur ridiculus mus. Donec <br />{" "}
-            quam felis, ultricies nec, pellentesque eu.
+            Launch with confidence <br />
+            Get a FREE comprehensive digital marketing audit from StartupMAXIM. <br />{" "}
+            Our expert team will analyze your current marketing efforts, <br />{" "}
+            identify key opportunities, and provide actionable recommendations <br />
+            to boost your brand awareness, attract leads, and achieve your goals. <br />
+            <strong>Don{"'"}t miss out!</strong>
           </p>
           <p className="mt-6 text-[#9f9f9f]">
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis,{" "}
-            <br />
-            sem. Nulla consequat massa quis enim
+          Only the first 10 sign-ups per month will receive this exclusive offer.{" "}
+          <br /> Don{"'"}t Miss Out!
           </p>
           <div className="">
             <button className="p-4 pl-6 max-[385px]:mb-4 pr-6  bg-[#fa6742] hover:bg-[#2e2c2d] text-white font-bold rounded-full mr-5 mt-5">
-              LEARN MORE
-            </button>
-            <button className="p-4 pl-6 pr-6 bg-[#ffb72f] hover:bg-[#2e2c2d] text-white font-bold rounded-full">
-              CONTACT US
+            Claim Free Audit
             </button>
           </div>
         </div>
       </section>
-      
 
       <section className="pt-12 mb-20 flex gap-3">
         <div>
@@ -158,22 +236,34 @@ const HomeSection = () => {
           <div className="flex flex-col gap-4 items-center">
             <Image src={fact1} width={60} height={60} alt="img" />
             <h1 className="text-[22px] font-bold">Active clients</h1>
-            <h1 className="text-5xl font-bold text-[#fa6742]">200+</h1>
+            <div className="text-5xl font-bold text-[#fa6742] flex">
+              <CountingAnimation targetNumber={200} />
+              <span>+</span>
+            </div>
           </div>
           <div className="flex flex-col gap-4 items-center">
             <Image src={fact2} width={53} height={53} alt="img" />
             <h1 className="text-[22px] font-bold">Projects Done</h1>
-            <h1 className="text-5xl font-bold text-[#fa6742]">570+</h1>
+            <div className="text-5xl font-bold text-[#fa6742] flex">
+              <CountingAnimation targetNumber={570} />
+              <span>+</span>
+            </div>
           </div>
           <div className="flex flex-col gap-4 items-center">
             <Image src={fact3} width={64} height={64} alt="img" />
             <h1 className="text-[22px] font-bold">Success Rate</h1>
-            <h1 className="text-5xl font-bold text-[#fa6742]">98%</h1>
+            <div className="text-5xl font-bold text-[#fa6742] flex">
+              <CountingAnimation targetNumber={98} />
+              <span>%</span>
+            </div>
           </div>
           <div className="flex flex-col gap-4 items-center">
             <Image src={fact4} width={48} height={48} alt="img" />
             <h1 className="text-[22px] font-bold">Awards</h1>
-            <h1 className="text-5xl font-bold text-[#fa6742]">50+</h1>
+            <div className="text-5xl font-bold text-[#fa6742] flex">
+              <CountingAnimation targetNumber={50} />
+              <span>+</span>
+            </div>
           </div>
         </div>
         <div>
@@ -386,85 +476,60 @@ const HomeSection = () => {
             </button>
           </div>
         </div>
-        <div
-          id="section8"
-          className="flex  max-[760px]:gap-4 max-[760px]:flex-col max-[760px]:justify-center justify-around mt-20"
-        >
-          <div className="w-[30%] flex flex-col gap-8 items-center hover:shadow-md hover:shadow-gray-300">
-            <div>
-              <Image src={pricing_icon1} alt="img" />
-            </div>
-            <div>
-              <h1 className="text-3xl font-bold">Entrepreneur</h1>
-            </div>
-            <div className=" text-[#9f9f9f] flex flex-col items-center gap-1 text-[18px]">
-              <p>25 Analytics Compaign</p>
-              <p>1,300 Keywords</p>
-              <p>25 social media reviews</p>
-              <p>1 Free Optimization</p>
-            </div>
-            <div className="pricing-price">
-              <sup>$</sup>
-              <strong>9</strong>
-              <small>Month</small>
-            </div>
-            <div className="flex justify-center">
-              <button className="p-4 mb-20 pl-10 pr-10 bg-[#2E2C2D] hover:bg-[#fa6742] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
-                SHOW NOW
-              </button>
-            </div>
-          </div>
+        <section>
+          <div className="cards">
+            <div className="cards__inner">
+              <div className="card">
+                <h2 className="card__heading">Basic</h2>
+                <p className="card__price">$9.99</p>
+                <ul role="list" className="card__bullets flow">
+                <li>Access to advanced workouts and nutrition plans</li>
+                  <li>Priority Email support</li>
+                  <li>Exclusive access to live Q&A sessions</li>
+                </ul>
+                <button  className="card__cta cta relative top-8">
+                  Get Started
+                </button>
+                <button  className="card__cta cta ">
+                  Get Started
+                </button>
+              </div>
 
-          <div className="w-[30%] flex flex-col gap-8 items-center relative bottom-[50px] hover:shadow-md hover:shadow-gray-300">
-            <div>
-              <Image src={pricing_icon2} alt="img" />
-            </div>
-            <div>
-              <h1 className="text-3xl font-bold">Entrepreneur</h1>
-            </div>
-            <div className=" text-[#9f9f9f] flex flex-col items-center gap-1 text-[18px]">
-              <p>25 Analytics Compaign</p>
-              <p>1,300 Keywords</p>
-              <p>25 social media reviews</p>
-              <p>1 Free Optimization</p>
-            </div>
-            <div className="pricing-price">
-              <sup>$</sup>
-              <strong>29</strong>
-              <small>Month</small>
-            </div>
-            <div className="flex justify-center">
-              <button className="p-4 mb-20 pl-10 pr-10 bg-[#2E2C2D] hover:bg-[#fa6742] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
-                SHOW NOW
-              </button>
-            </div>
-          </div>
+              <div className="card">
+                <h2 className="card__heading">Pro</h2>
+                <p className="card__price">$19.99</p>
+                <ul role="list" className="card__bullets flow">
+                  <li>Access to advanced workouts and nutrition plans</li>
+                  <li>Priority Email support</li>
+                  <li>Exclusive access to live Q&A sessions</li>
+                </ul>
+                <button  className="card__cta cta relative top-8">
+                  Get Started
+                </button>
+                <button  className="card__cta cta ">
+                  Get Started
+                </button>
+              </div>
 
-          <div className="w-[30%] flex flex-col gap-8 items-center relative bottom-[50px]  hover:shadow-md hover:shadow-gray-300">
-            <div>
-              <Image src={pricing_icon3} alt="img" />
-            </div>
-            <div>
-              <h1 className="text-3xl font-bold">Entrepreneur</h1>
-            </div>
-            <div className=" text-[#9f9f9f] flex flex-col items-center gap-1 text-[18px]">
-              <p>25 Analytics Compaign</p>
-              <p>1,300 Keywords</p>
-              <p>25 social media reviews</p>
-              <p>1 Free Optimization</p>
-            </div>
-            <div className="pricing-price">
-              <sup>$</sup>
-              <strong>49</strong>
-              <small>Month</small>
-            </div>
-            <div className="flex justify-center">
-              <button className="p-4 mb-20 pl-10 pr-10 bg-[#2E2C2D] hover:bg-[#fa6742] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
-                SHOW NOW
-              </button>
+              <div className="card">
+                <h2 className="card__heading">Ultimate</h2>
+                <p className="card__price">$29.99</p>
+                <ul role="list" className="card__bullets flow">
+                <li>Access to advanced workouts and nutrition plans</li>
+                  <li>Priority Email support</li>
+                  <li>Exclusive access to live Q&A sessions</li>
+                </ul>
+                <button  className="card__cta cta relative top-8">
+                  Get Started
+                </button>
+                <button  className="card__cta cta ">
+                  Get Started
+                </button>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+       
       </section>
 
       <section>
@@ -486,7 +551,7 @@ const HomeSection = () => {
           <Homecard imageUrl={post3} />
         </div>
         <div className="flex justify-center mt-14">
-          <button className="p-4 mb-20 pl-10 pr-10 bg-[#fa6742] hover:bg-[#2E2C2D] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
+          <button className="p-4 mb-21 pl-10 pr-10 bg-[#fa6742] hover:bg-[#2E2C2D] hover:text-white text-white font-bold rounded-full mr-5 mt-5">
             VIEW ALL
           </button>
         </div>

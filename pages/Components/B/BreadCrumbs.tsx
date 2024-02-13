@@ -10,4 +10,4 @@ const BreadCrumbs = ({dynamicText}:any) => {
   )
 }
 
-export default BreadCrumbs
+export default BreadCrumbs;

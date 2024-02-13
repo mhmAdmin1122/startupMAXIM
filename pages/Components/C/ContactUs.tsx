@@ -11,9 +11,9 @@ const ContactUs = () => {
     <main>
       <section className="Contact-Section">
         <div>
-          <p className="text-[var(--text-gray)]">CONTACT US</p>
+          <p className="text-[var(--text-gray)] min-[1440px]:text-[20px]">CONTACT US</p>
           <div className="Contact-Section-heading">
-            <h1 className="">Our Contact</h1>
+            <h1>Our Contact</h1>
             <h1 className="text-[var(--background-color)]">Details</h1>
           </div>
           <div className="loader">
@@ -65,9 +65,8 @@ const ContactUs = () => {
           <input type="text" placeholder="Phone" />
           <input type="email" placeholder="Email" />
           <input type="text" placeholder="Subject" />
-          <textarea name="" id="" cols={22} rows={7} className="" placeholder="Message"></textarea>
-          {/* <button className="contact-button">CONTACT US</button> */}
-          <Button dynamicText={"Contact"} />
+          <textarea name="" id="" cols={22} rows={7} placeholder="Message"></textarea>
+          <Button dynamicText={"Contact Us"} />
         </form>
       </section>
       <section className="Contact-Last-Section">

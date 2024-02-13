@@ -61,7 +61,7 @@ const Testimonials = () => {
   return (
     <main className="testimonial">
       <section className="heading-section">
-        <p className="text-[var(--text-gray)]">Testimonials</p>
+        <p className="text-[var(--text-gray)] min-[1440px]:text-[20px]">Testimonials</p>
         <div className="heading">
           <h1>Love From </h1>
           <h1 className="text-[var(--background-color)]">Clients</h1>
@@ -76,7 +76,7 @@ const Testimonials = () => {
             <div className="px-[20px] ml-[50%] max-[930px]:m-0">
               <div className="flex justify-center">
                 <div className="flex max-[930px]:flex-col max-[930px]:rounded-[10px] justify-center gap-[20px] w-full rounded-full my-[18px] p-[18px] bg-[var(--background-color)]">
-                  <div className="my-[18px] ml-[25px] max-[930px]:m-0 max-[930px]w-fit">
+                  <div className="flex items-center my-[18px] ml-[25px] max-[930px]:m-0 ">
                     <Image
                       src={Review1}
                       alt="Review"
@@ -86,13 +86,13 @@ const Testimonials = () => {
                     />
                   </div>
                   <div className="grid align-middle">
-                    <h1 className="font-black text-[18px] min-[1100px]:text-[30px] min-[1700px]:text-[45px]">
+                    <h1 className="font-black text-[18px] max-[400px]:text-[14px] min-[1100px]:text-[30px] min-[1700px]:text-[45px]">
                       Tayyab Arshad
                     </h1>
-                    <p className="font-semibold text-[14px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
+                    <p className="font-semibold text-[14px] max-[400px]:text-[10px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
                       Project Manager, The Heritage Company
                     </p>
-                    <p className="mt-[10px] text-[14px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
+                    <p className="mt-[10px] text-[14px] max-[400px]:text-[10px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
                       {'"'}I can{"'"}t even begin to express how happy I am with
                       these services. I have gotten at least 50 times the value
                       from your company. Thanks guys, keep up the good work{'"'}
@@ -103,8 +103,8 @@ const Testimonials = () => {
             </div>
             <div className="px-[20px] max-[930px]:m-0">
               <div className="flex justify-center">
-                <div className="flex max-[930px]:flex-col max-[930px]:rounded-[10px] justify-center gap-[20px] w-full rounded-full my-[18px] p-[18px] bg-[var(--secondary-color)]">
-                  <div className="my-[18px] ml-[25px] max-[930px]:m-0 max-[930px]w-fit">
+                <div className="flex max-[930px]:flex-col max-[930px]:rounded-[10px] justify-center gap-[20px] w-full rounded-full my-[18px] p-[18px] bg-[var(--primary-color)]">
+                <div className="flex items-center my-[18px] ml-[25px] max-[930px]:m-0 ">
                     <Image
                       src={Review1}
                       alt="Review"
@@ -132,7 +132,7 @@ const Testimonials = () => {
             <div className="px-[20px] ml-[50%] max-[930px]:m-0">
               <div className="flex justify-center">
                 <div className="flex max-[930px]:flex-col max-[930px]:rounded-[10px] justify-center gap-[20px] w-full rounded-full my-[18px] p-[18px] bg-[var(--background-color)]">
-                  <div className="my-[18px] ml-[25px] max-[930px]:m-0 max-[930px]w-fit">
+                  <div className="flex items-center my-[18px] ml-[25px] max-[930px]:m-0 ">
                     <Image
                       src={Review1}
                       alt="Review"
@@ -142,13 +142,13 @@ const Testimonials = () => {
                     />
                   </div>
                   <div className="grid align-middle">
-                    <h1 className="font-black text-[18px] min-[1100px]:text-[30px] min-[1700px]:text-[45px]">
+                    <h1 className="font-black text-[18px] max-[400px]:text-[14px] min-[1100px]:text-[30px] min-[1700px]:text-[45px]">
                       Tayyab Arshad
                     </h1>
-                    <p className="font-semibold text-[14px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
+                    <p className="font-semibold text-[14px] max-[400px]:text-[10px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
                       Project Manager, The Heritage Company
                     </p>
-                    <p className="mt-[10px] text-[14px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
+                    <p className="mt-[10px] text-[14px] max-[400px]:text-[10px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
                       {'"'}I can{"'"}t even begin to express how happy I am with
                       these services. I have gotten at least 50 times the value
                       from your company. Thanks guys, keep up the good work{'"'}
@@ -159,8 +159,8 @@ const Testimonials = () => {
             </div>
             <div className="px-[20px] max-[930px]:m-0">
               <div className="flex justify-center">
-                <div className="flex max-[930px]:flex-col max-[930px]:rounded-[10px] justify-center gap-[20px] w-full rounded-full my-[18px] p-[18px] bg-[var(--secondary-color)]">
-                  <div className="my-[18px] ml-[25px] max-[930px]:m-0">
+                <div className="flex max-[930px]:flex-col max-[930px]:rounded-[10px] justify-center gap-[20px] w-full rounded-full my-[18px] p-[18px] bg-[var(--primary-color)]">
+                <div className="flex items-center my-[18px] ml-[25px] max-[930px]:m-0 ">
                     <Image
                       src={Review1}
                       alt="Review"
@@ -188,7 +188,7 @@ const Testimonials = () => {
             <div className="px-[20px] ml-[50%] max-[930px]:m-0">
               <div className="flex justify-center">
                 <div className="flex max-[930px]:flex-col max-[930px]:rounded-[10px] justify-center gap-[20px] w-full rounded-full my-[18px] p-[18px] bg-[var(--background-color)]">
-                  <div className="my-[18px] ml-[25px] max-[930px]:m-0 max-[930px]w-fit">
+                  <div className="flex items-center my-[18px] ml-[25px] max-[930px]:m-0 ">
                     <Image
                       src={Review1}
                       alt="Review"
@@ -198,13 +198,13 @@ const Testimonials = () => {
                     />
                   </div>
                   <div className="grid align-middle">
-                    <h1 className="font-black text-[18px] min-[1100px]:text-[30px] min-[1700px]:text-[45px]">
+                    <h1 className="font-black text-[18px] max-[400px]:text-[14px] min-[1100px]:text-[30px] min-[1700px]:text-[45px]">
                       Tayyab Arshad
                     </h1>
-                    <p className="font-semibold text-[14px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
+                    <p className="font-semibold text-[14px] max-[400px]:text-[10px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
                       Project Manager, The Heritage Company
                     </p>
-                    <p className="mt-[10px] text-[14px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
+                    <p className="mt-[10px] text-[14px] max-[400px]:text-[10px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
                       {'"'}I can{"'"}t even begin to express how happy I am with
                       these services. I have gotten at least 50 times the value
                       from your company. Thanks guys, keep up the good work{'"'}
@@ -215,8 +215,8 @@ const Testimonials = () => {
             </div>
             <div className="px-[20px] max-[930px]:m-0">
               <div className="flex justify-center">
-                <div className="flex max-[930px]:flex-col max-[930px]:rounded-[10px] justify-center gap-[20px] w-full rounded-full my-[18px] p-[18px] bg-[var(--secondary-color)]">
-                  <div className="my-[18px] ml-[25px] max-[930px]:m-0 max-[930px]w-fit">
+                <div className="flex max-[930px]:flex-col max-[930px]:rounded-[10px] justify-center gap-[20px] w-full rounded-full my-[18px] p-[18px] bg-[var(--primary-color)]">
+                <div className="flex items-center my-[18px] ml-[25px] max-[930px]:m-0 ">
                     <Image
                       src={Review1}
                       alt="Review"
