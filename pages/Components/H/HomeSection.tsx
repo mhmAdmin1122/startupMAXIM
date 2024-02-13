@@ -43,7 +43,8 @@ import post2 from "@/public/img/post2.jpg";
 import post3 from "@/public/img/post3.jpg";
 import Marque from "../M/Marque";
 import Homecard from "../S/HomeCard";
-import Homecard from "../H/CountingAnimation";
+import CountingAnimation from "../C/CountingAnimation";
+
 const HomeSection = () => {
   return (
     <div>
