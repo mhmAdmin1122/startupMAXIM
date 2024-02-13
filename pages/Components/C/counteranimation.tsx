@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-const CountingAnimation = ({ targetNumber }) => {
+const CountingAnimation = ({targetNumber}:any) => {
   const [count, setCount] = useState(0);
   const countingRef = useRef(null);
   const [inViewRef, inView] = useInView();
