@@ -216,7 +216,6 @@ const HomeSection = () => {
           </div>
         </div>
       </section>
-      
 
       <section className="pt-12 mb-20 flex gap-3">
         <div>
@@ -276,7 +275,6 @@ const HomeSection = () => {
         </div>
       </section>
 
-      
       <section className="pt-12 mb-20">
         <div className="flex flex-col items-center">
           <h1 className="text-[#9f9f9f] ">OUR SERVICES</h1>
