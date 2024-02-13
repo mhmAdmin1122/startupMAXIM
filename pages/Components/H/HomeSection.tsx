@@ -217,7 +217,63 @@ const HomeSection = () => {
         </div>
       </section>
 
-
+      <section className="pt-12 mb-20 flex gap-3">
+        <div>
+          <Image
+            src={arrowleft}
+            className="pt-12  max-[1270px]:hidden"
+            width={180}
+            height={100}
+            alt="img"
+          />
+        </div>
+        <div
+          id="homesection4"
+          className="flex flex-wrap max-[1370px]:gap-[140px] max-[1310px]:gap-[105px] gap-[140px]"
+        >
+          <div className="flex flex-col gap-4 items-center">
+            <Image src={fact1} width={60} height={60} alt="img" />
+            <h1 className="text-[22px] font-bold">Active clients</h1>
+            <div className="text-5xl font-bold text-[#fa6742] flex">
+              <CountingAnimation targetNumber={200} />
+              <span>+</span>
+            </div>
+          </div>
+          <div className="flex flex-col gap-4 items-center">
+            <Image src={fact2} width={53} height={53} alt="img" />
+            <h1 className="text-[22px] font-bold">Projects Done</h1>
+            <div className="text-5xl font-bold text-[#fa6742] flex">
+              <CountingAnimation targetNumber={570} />
+              <span>+</span>
+            </div>
+          </div>
+          <div className="flex flex-col gap-4 items-center">
+            <Image src={fact3} width={64} height={64} alt="img" />
+            <h1 className="text-[22px] font-bold">Success Rate</h1>
+            <div className="text-5xl font-bold text-[#fa6742] flex">
+              <CountingAnimation targetNumber={98} />
+              <span>%</span>
+            </div>
+          </div>
+          <div className="flex flex-col gap-4 items-center">
+            <Image src={fact4} width={48} height={48} alt="img" />
+            <h1 className="text-[22px] font-bold">Awards</h1>
+            <div className="text-5xl font-bold text-[#fa6742] flex">
+              <CountingAnimation targetNumber={50} />
+              <span>+</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <Image
+            src={arrowright}
+            className="pt-12 max-[1270px]:hidden"
+            width={220}
+            height={100}
+            alt="img"
+          />
+        </div>
+      </section>
 
       <section className="pt-12 mb-20">
         <div className="flex flex-col items-center">
