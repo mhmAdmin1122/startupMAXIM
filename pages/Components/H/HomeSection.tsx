@@ -1,15 +1,15 @@
 import React from "react";
 
 // cards Images
-import card1 from "@/public/img/01 Social Media Marketing Service for startups.svg";
-import card2 from "@/public/img/02 Search Engine Optimization Service for startups.svg";
-import card3 from "@/public/img/03 SEM & Advertising for Startups.svg";
-import card4 from "@/public/img/04 Website & App Development service for startups.svg";
-import card5 from "@/public/img/05 Digital Marketing Strategy service for startups.svg";
-import card6 from "@/public/img/06 Branding for startups as a service.svg";
-import card7 from "@/public/img/07 Content Creation service including graphic design, copywriting, articles, etc..svg";
-import card8 from "@/public/img/08 Email Marketing Service for Startups.svg";
-import card9 from "@/public/img/09 Public Relations service for startups.svg";
+import card1 from "@/public/img/arrow_right.png";
+import card2 from "@/public/img/arrow_right.png";
+import card3 from "@/public/img/arrow_right.png";
+import card4 from "@/public/img/arrow_right.png";
+import card5 from "@/public/img/arrow_right.png";
+import card6 from "@/public/img/arrow_right.png";
+import card7 from "@/public/img/arrow_right.png";
+import card8 from "@/public/img/arrow_right.png";
+import card9 from "@/public/img/arrow_right.png";
 
 // card Images
 import Image from "next/image";
