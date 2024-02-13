@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { FaChevronDown, FaChevronRight, FaChevronUp } from "react-icons/fa6";
 
-const Card = ({imageUrl, title, altText, para, startinglist, startinglist2, startinglist3, endinglist, endinglist2, endinglist3, endinglist4, endinglist5, endinglist6}: any) => {
+const ServiceCard = ({imageUrl, title, altText, para, startinglist, startinglist2, startinglist3, endinglist, endinglist2, endinglist3, endinglist4, endinglist5, endinglist6}: any) => {
   const [expanded, setExpanded] = useState(false);
   const [cardHeight, setCardHeight] = useState("350px");
 
@@ -59,5 +59,5 @@ const Card = ({imageUrl, title, altText, para, startinglist, startinglist2, star
 
   );
 };
-export default Card;
+export default ServiceCard;
 
