@@ -1,15 +1,15 @@
 import React from "react";
 
 // cards Images
-import card1 from "@/public/img/arrow_right.png";
-import card2 from "@/public/img/arrow_right.png";
-import card3 from "@/public/img/arrow_right.png";
-import card4 from "@/public/img/arrow_right.png";
-import card5 from "@/public/img/arrow_right.png";
-import card6 from "@/public/img/arrow_right.png";
-import card7 from "@/public/img/arrow_right.png";
-import card8 from "@/public/img/arrow_right.png";
-import card9 from "@/public/img/arrow_right.png";
+import card1 from "@/public/img/card1.svg";
+import card2 from "@/public/img/card2.svg";
+import card3 from "@/public/img/card3.svg";
+import card4 from "@/public/img/card4.svg";
+import card5 from "@/public/img/card5.svg";
+import card6 from "@/public/img/card6.svg";
+import card7 from "@/public/img/card7.svg";
+import card8 from "@/public/img/card8.svg";
+import card9 from "@/public/img/card9.svg";
 
 // card Images
 import Image from "next/image";
