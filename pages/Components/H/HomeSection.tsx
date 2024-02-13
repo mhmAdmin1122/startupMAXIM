@@ -42,7 +42,7 @@ import post1 from "@/public/img/post1.jpg";
 import post2 from "@/public/img/post2.jpg";
 import post3 from "@/public/img/post3.jpg";
 import Marque from "../M/Marque";
-import Homecard from "../S/HomeCard";
+import Homecard from "../H/HomeCard";
 import CountingAnimation from "../C/CountingAnimation";
 
 const HomeSection = () => {
