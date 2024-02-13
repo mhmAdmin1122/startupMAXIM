@@ -26,8 +26,8 @@ const Footer = () => {
               StartupMAXIM
             </h1>
             <p className="footer-sertion1-para text-[var(--text-gray)] max-[350px]:text-[12px]">
-            We're passionate believers in the power of startups to change the world, 
-            and we're dedicated to fueling their success. Over the years, we've helped 
+            We{"'"}re passionate believers in the power of startups to change the world, 
+            and we{"'"}re dedicated to fueling their success. Over the years, we{"'"}ve helped 
             countless startups launch, scale, and achieve their dreams, from increasing 
             website traffic by 300% for a tech startup to securing funding for a groundbreaking social enterprise.
             </p>

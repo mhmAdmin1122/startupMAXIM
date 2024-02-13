@@ -42,7 +42,8 @@ import post1 from "@/public/img/post1.jpg";
 import post2 from "@/public/img/post2.jpg";
 import post3 from "@/public/img/post3.jpg";
 import Marque from "../M/Marque";
-import Homecard from "../S/homecard";
+import Homecard from "../S/HomeCard";
+import Homecard from "../H/CountingAnimation";
 const HomeSection = () => {
   return (
     <div>
@@ -203,11 +204,11 @@ const HomeSection = () => {
             Our expert team will analyze your current marketing efforts, <br />{" "}
             identify key opportunities, and provide actionable recommendations <br />
             to boost your brand awareness, attract leads, and achieve your goals. <br />
-            <strong>Don't miss out!</strong>
+            <strong>Don{"'"}t miss out!</strong>
           </p>
           <p className="mt-6 text-[#9f9f9f]">
           Only the first 10 sign-ups per month will receive this exclusive offer.{" "}
-          <br /> Don't Miss Out!
+          <br /> Don{"'"}t Miss Out!
           </p>
           <div className="">
             <button className="p-4 pl-6 max-[385px]:mb-4 pr-6  bg-[#fa6742] hover:bg-[#2e2c2d] text-white font-bold rounded-full mr-5 mt-5">
