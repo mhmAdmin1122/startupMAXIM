@@ -200,9 +200,11 @@ const HomeSection = () => {
           <h1 className="text-4xl font-bold text-black">
           Get Marketing Audit For Free <br />(Limited Spots Available!)
           </h1>
+          
           <div className="mt-5">
             <Marque />
           </div>
+
           <p className="mt-16 text-[#9f9f9f]">
             Launch with confidence <br />
             Get a FREE comprehensive digital marketing audit from StartupMAXIM. <br />{" "}
