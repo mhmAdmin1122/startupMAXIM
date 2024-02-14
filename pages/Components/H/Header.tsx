@@ -1,41 +1,31 @@
 import React from "react";
-import {
-  FaBars,
-  FaChevronDown,
-  FaChevronRight,
-  FaCircleUser,
-  FaShareFromSquare,
-  FaVideo,
-  FaWindows,
-} from "react-icons/fa6";
 import Image from "next/image";
 import logo from "@/public/img/logo.png";
 import Link from "next/link";
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
-import dropdownlogo from "@/public/img/football-removebg-preview.png";
-import bannar from "@/public/Startup Growth Academy - Coming Soon Poster.webp";
+import { CgMenuHotdog } from "react-icons/cg";
 
 const Header = () => {
   const [showSearchInput, setShowSearchInput] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
   const toggleSearchInput = () => {
     setShowSearchInput(!showSearchInput);
   };
+
   const toggleSearchInputs = () => {
     setShowSearchInput(!showSearchInput);
   };
-
-  const [isActive, setIsActive] = useState(false);
 
   const handleClick = (event: any) => {
     setIsActive((current) => !current);
   };
 
   return (
-    <header className="w-full flex text-xl items-center font-medium justify-around border-2 py-2">
+    <header className="w-full flex text-xl items-center font-medium justify-around py-2">
       <Link href="/" className="logoBoX">
-        <Image src={logo} alt="logo-pic" className="w-[120px]" />
+        <Image src={logo} alt="logo-pic" className="w-[85px]" />
       </Link>
 
       <div className="tabsBox">
@@ -45,16 +35,11 @@ const Header = () => {
         <Link href="/About">About</Link>
         <Link href="/Contact">Contact</Link>
       </div>
-
-      <form className="searches flex items-center bg-[#000] text-2xl text-[#fff] py-6 px-10 gap-4 rounded-[60px]">
-        <button className="iconsBox ">
-          <FaSearch />
-        </button>
-        {/* <input type="text" className="bg-transparent text-lg" placeholder="Enter your search" /> */}
-        <button></button>
-      </form>
-      
-     
+      <div className="flex items-center gap-6 bg-[#000] px-[20px] py-[10px] rounded-[60px] text-[20px] text-[#fff]">
+        <FaSearch className="cursor-pointer" />
+        <div className="bg-gray-600 w-[1.3px] h-[30px]"></div>
+        <CgMenuHotdog className="text-[#fff] modal-menu-ico cursor-pointer text-[30px]" />
+      </div>
     </header>
   );
 };

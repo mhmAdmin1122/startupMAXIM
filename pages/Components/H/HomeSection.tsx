@@ -44,31 +44,35 @@ import post3 from "@/public/img/post3.jpg";
 import Marque from "../M/Marque";
 import Homecard from "../H/HomeCard";
 import CountingAnimation from "../C/CountingAnimation";
+import { Fredoka } from 'next/font/google'
+ 
+const fredoka = Fredoka({
+  weight: '500',
+  subsets: ['latin'],
+})
+
 
 const HomeSection = () => {
   return (
     <div>
-      <section className="flex gap-8 flex-wrap mt-16 justify-center">
+      <section className="flex gap-8 flex-wrap items-center mt-16 justify-center text-[#000]">
         <div>
           <h1
             id="section1-h1"
-            className="text-3xl text-md-right text-sm-center column-title"
+            className={`text-3xl text-md-right text-sm-center column-title ${fredoka.className}`}
           >
             Affordable Digital <br /> Marketing Services <br />
             <b>For Startups</b>.
           </h1>
         </div>
-        <div className="border-l-[5px] pl-8 max-[500px]:pl-3 max-[500px]:w-[90%] text-[#9f9f9f] border-orange-600 w-[50%]">
+        <div className="border-l-[5px] pl-8 max-[500px]:pl-3 max-[500px]:w-[90%] text-justify text-[#000] border-orange-600 w-[50%]">
         
           StatupMAXIM helps you generate results at every stage of your startup,
           from ideation to MVP, facilitating seamless scaling towards a
           successful exit, to elevating your brand to new heights, StartupMAXIM
           offers tailored solutions for every stage of your entrepreneurial
           journey.
-          <strong>Worlds first dedicated marketing agency for startups.</strong>
-          <button className="p-4 pl-6 max-[385px]:mb-4 pr-6  bg-[#fa6742] hover:bg-[#2e2c2d] text-white font-bold rounded-full mr-5 mt-5">
-            LEARN MORE
-          </button>
+          <strong> World{"'"}s first dedicated marketing agency for startups.</strong>
         </div>
       </section>
 
@@ -194,7 +198,7 @@ const HomeSection = () => {
         </div>
         <div className="w-fit ">
           <h1 className="text-4xl font-bold text-black">
-          Get Marketing Audit For Free (Limited Spots Available!)
+          Get Marketing Audit For Free <br />(Limited Spots Available!)
           </h1>
           <div className="mt-5">
             <Marque />

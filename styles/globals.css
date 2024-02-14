@@ -18,6 +18,43 @@
 .tabsBox {
   @apply flex items-center gap-10;
 }
+.modal-menu-ico {
+  transform: rotate(-45deg);
+}
+.tw-menu-bar {
+  width: 30px;
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -9px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  text-align: center;
+}
+.tw-menu-bar span {
+  display: block;
+  background: #fff;
+  height: 3px;
+  width: 20px;
+  margin: 0 auto;
+}
+.tw-menu-bar span:nth-child(2) {
+  margin: 5px 0;
+  width: 30px;
+}
+.tw-off-search {
+  background: #2e2c2d;
+  width: 128px;
+  color: #fff;
+  border-radius: 34px;
+  position: relative;
+  z-index: 3;
+  right: 0;
+  top: 0;
+  padding: 20px 20px;
+}
 /* header design */
 
 :root {
