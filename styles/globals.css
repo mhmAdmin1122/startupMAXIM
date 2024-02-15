@@ -21,41 +21,87 @@
 .modal-menu-ico {
   transform: rotate(-45deg);
 }
-.tw-menu-bar {
-  width: 30px;
-  display: inline-block;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  margin-top: -9px;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  text-align: center;
-}
-.tw-menu-bar span {
-  display: block;
-  background: #fff;
-  height: 3px;
-  width: 20px;
-  margin: 0 auto;
-}
-.tw-menu-bar span:nth-child(2) {
-  margin: 5px 0;
-  width: 30px;
-}
-.tw-off-search {
-  background: #2e2c2d;
-  width: 128px;
-  color: #fff;
-  border-radius: 34px;
-  position: relative;
-  z-index: 3;
-  right: 0;
-  top: 0;
-  padding: 20px 20px;
-}
 /* header design */
+
+/* Service Slider */
+.ServiceSlider {
+  @apply w-full px-10 my-[20px] p-[20px];
+}
+.ServiceSlider .slick-list{
+  @apply py-12 cursor-grab pl-4;
+}
+.services-Slider-Card {
+  @apply w-[340px] shadow-xl shadow-gray-400 border-[1px] border-gray-200 rounded-lg h-[360px] p-14 grid justify-center justify-items-center transition duration-1000 delay-1000 ease-in-out rounded-tl-[50px] rounded-br-[50px];
+}
+.card-Pic-Box image {
+  @apply !w-[120px];
+}
+.card-title-desc-box {
+  @apply grid justify-items-center gap-2 mt-3;
+}
+.services-slider-card-title {
+  @apply text-xl font-bold cursor-context-menu;
+}
+.services-slider-card-desc {
+  @apply text-center;
+}
+.read-More-Btn {
+  @apply text-[#ff6e4e] text-[18px] font-medium flex items-center;
+}
+.ServiceSlider .slider-container .slick-prev,
+.ServiceSlider .slider-container .slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.ServiceSlider .slider-container .slick-prev::before,
+.ServiceSlider .slider-container .slick-next::before {
+  position: absolute;
+  display: grid;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  background-color: var(--secondary-color);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 800 !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(243 244 246 / var(--tw-text-opacity)) !important;
+  opacity: 1;
+}
+.slick-prev::before {
+  top: 0px;
+  --tw-content: '<' !important;
+  content: var(--tw-content) !important;
+}
+.ServiceSlider .slider-container .slick-prev::before {
+  border-radius: 50%;
+}
+.ServiceSlider .slider-container .slick-next::before {
+  border-radius: 50%;
+}
+
+/* Service Slider */
+/* .usedbrtn{
+  @apply border-2 border-[#ff6e4e] hover:border-t-[12px] hover:border-l-[12px] hover:bg-transparent;
+} */
 
 :root {
   --text-black: black;
@@ -501,7 +547,7 @@ button#scrollBtn:hover {
 
 /*   ChatBot   */
 
-.chat-container {
+.chat-section {
   @apply fixed z-[99999] bottom-[13%] right-[2%] pt-[200px] bg-[var(--background-color)];
   border: 1px solid rgba(128, 128, 128, 0.3);
 }

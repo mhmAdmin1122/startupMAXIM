@@ -14,7 +14,7 @@ import card9 from "@/public/img/card9.svg";
 // card Images
 import Image from "next/image";
 import ServiceCard from "../S/ServiceCard";
-import homeImage1 from "@/public/img/about_image (1).png";
+import homeImage1 from "@/public/img/Marketing-Audit-For-Free-StartupMAXIM .svg";
 import arrowleft from "@/public/img/about_image.png";
 import fact1 from "@/public/img/fact1.png";
 import fact2 from "@/public/img/fact2.png";
@@ -44,18 +44,21 @@ import post3 from "@/public/img/post3.jpg";
 import Marque from "../M/Marque";
 import Homecard from "../H/HomeCard";
 import CountingAnimation from "../C/CountingAnimation";
-import { Fredoka } from 'next/font/google'
- 
-const fredoka = Fredoka({
-  weight: '500',
-  subsets: ['latin'],
-})
+import { Fredoka } from "next/font/google";
+import ServicesSlider from "../S/ServicesSlider";
+import ServicesSliderCard from "../S/ServicesSliderCard";
+import Link from "next/link";
 
+const fredoka = Fredoka({
+  weight: "500",
+  subsets: ["latin"],
+});
 
 const HomeSection = () => {
   return (
     <div>
-      <section className="flex gap-8 flex-wrap items-center mt-16 justify-center text-[#000]">
+      {/* about bussiness model */}
+      <section className="flex gap-8 flex-wrap items-center py-16 justify-center text-[#000]">
         <div>
           <h1
             id="section1-h1"
@@ -66,18 +69,20 @@ const HomeSection = () => {
           </h1>
         </div>
         <div className="border-l-[5px] pl-8 max-[500px]:pl-3 max-[500px]:w-[90%] text-justify text-[#000] border-orange-600 w-[50%]">
-        
           StatupMAXIM helps you generate results at every stage of your startup,
           from ideation to MVP, facilitating seamless scaling towards a
           successful exit, to elevating your brand to new heights, StartupMAXIM
           offers tailored solutions for every stage of your entrepreneurial
           journey.
-          <strong> World{"'"}s first dedicated marketing agency for startups.</strong>
+          <strong>
+            {" "}
+            World{"'"}s first dedicated marketing agency for startups.
+          </strong>
         </div>
       </section>
 
-        
-      <section className="flex justify-around mt-14 flex-wrap">
+      {/* service used */}
+      {/* <section className="flex justify-around mt-14 flex-wrap">
         <ServiceCard
           imageUrl={card1}
           altText="Social Media Management service for startups"
@@ -180,14 +185,13 @@ const HomeSection = () => {
           endinglist4="06: Subscriber List Management"
           endinglist5="07: Analytics and Reporting"
         />
-      </section>
-     
-      
+      </section> */}
+
       <section
-        className="flex justify-center mt-20 mb-24  gap-4 "
+        className="w-full flex justify-center gap-10 py-[30px] bg-gradient-to-t from-[#00bf63] to-[#c4ff69]"
         id="homesection3"
       >
-        <div className="w-fit">
+        <div className="">
           <Image
             className=""
             src={homeImage1}
@@ -196,36 +200,58 @@ const HomeSection = () => {
             alt="img"
           />
         </div>
-        <div className="w-fit ">
-          <h1 className="text-4xl font-bold text-black">
-          Get Marketing Audit For Free <br />(Limited Spots Available!)
-          </h1>
-          
+        <div className="grid justify-items-start w-[50%]">
+          <h2 className="text-4xl font-bold text-black">
+            Get Marketing Audit For Free (Limited Spots Available!)
+          </h2>
+
           <div className="mt-5">
             <Marque />
           </div>
 
-          <p className="mt-16 text-[#9f9f9f]">
-            Launch with confidence <br />
-            Get a FREE comprehensive digital marketing audit from StartupMAXIM. <br />{" "}
-            Our expert team will analyze your current marketing efforts, <br />{" "}
-            identify key opportunities, and provide actionable recommendations <br />
-            to boost your brand awareness, attract leads, and achieve your goals. <br />
-            <strong>Don{"'"}t miss out!</strong>
-          </p>
-          <p className="mt-6 text-[#9f9f9f]">
-          Only the first 10 sign-ups per month will receive this exclusive offer.{" "}
-          <br /> Don{"'"}t Miss Out!
-          </p>
-          <div className="">
-            <button className="p-4 pl-6 max-[385px]:mb-4 pr-6  bg-[#fa6742] hover:bg-[#2e2c2d] text-white font-bold rounded-full mr-5 mt-5">
-            Claim Free Audit
-            </button>
+          <div className="text-gray-700">
+            <div className="pt-6 text-justify">
+              <h2 className="text-[22px] font-bold">Launch with confidence</h2>
+              <p>
+                Get a FREE comprehensive digital marketing audit from
+                StartupMAXIM. Our expert team will analyze your current
+                marketing efforts, identify key opportunities, and provide
+                actionable recommendations to boost your brand awareness,
+                attract leads, and achieve your goals.
+              </p>
+              <strong>Don{"'"}t miss out!</strong>
+            </div>
+
+            <p className="py-6">
+              Only the first 10 sign-ups per month will receive this exclusive
+              offer. <br /> Don{"'"}t Miss Out!
+            </p>
           </div>
+
+          <Link
+            href="/"
+            className="text-center px-4 py-2 flex items-center justify-center bg-[#ff6e4e] hover:bg-[#2c2c2c] border-b-[6px]  border-[#2c2c2c] rounded-[4px] hover:border-[#ff6e4e] transition-all duration-300 delay-100 ease-in-out text-[#2c2c2c] hover:text-[#ff6e4e] font-bold rounded-tl-[34px] rounded-br-[24px]"
+          >
+            Claim Free Audit
+          </Link>
         </div>
       </section>
 
-      <section className="pt-12 mb-20 flex gap-3">
+      {/* service slider */}
+      <section className="px-[60px] py-[60px] w-full">
+        <div className="flex flex-col items-center">
+          <h1 className="text-[#9f9f9f] ">OUR SERVICES</h1>
+          <h1 className="text-5xl font-bold" id="homesection4-h1">
+            Our Best <span className="text-[#fa6742]">Services</span>
+          </h1>
+          <div className="mt-6">
+            <Marque />
+          </div>
+        </div>
+        <ServicesSlider />
+      </section>
+
+      <section className="pt-12 mb-20 flex gap-3 bg-gradient-to-t from-[#00bf63] to-[#c4ff69]">
         <div>
           <Image
             src={arrowleft}
@@ -279,57 +305,6 @@ const HomeSection = () => {
             width={220}
             height={100}
             alt="img"
-          />
-        </div>
-      </section>
-
-      <section className="pt-12 mb-20">
-        <div className="flex flex-col items-center">
-          <h1 className="text-[#9f9f9f] ">OUR SERVICES</h1>
-          <h1 className="text-5xl font-bold" id="homesection4-h1">
-            Our Best <span className="text-[#fa6742]">Services</span>
-          </h1>
-          <div className="mt-6">
-            <Marque />
-          </div>
-        </div>
-        <div className="flex w-full justify-center gap-12 mt-14 flex-wrap ">
-          <ServiceCard
-            imageUrl={services1}
-            title="SEO Optimization"
-            desc="One of the top 100 advertising and marketing agencies knows what it means to marketing agencies be"
-            linkurl="/"
-          />
-          <ServiceCard
-            imageUrl={services2}
-            title="Content Marketing"
-            desc="One of the top 100 advertising and marketing agencies knows what it means to marketing agencies be"
-            linkurl="/"
-          />
-          <ServiceCard
-            imageUrl={services3}
-            title="Data Analysis"
-            desc="One of the top 100 advertising and marketing agencies knows what it means to marketing agencies be"
-            linkurl="/"
-          />{" "}
-          <br />
-          <ServiceCard
-            imageUrl={services4}
-            title="Digital Marketing"
-            desc="One of the top 100 advertising and marketing agencies knows what it means to marketing agencies be"
-            linkurl="/"
-          />
-          <ServiceCard
-            imageUrl={services5}
-            title="Web Analytics"
-            desc="One of the top 100 advertising and marketing agencies knows what it means to marketing agencies be"
-            linkurl="/"
-          />
-          <ServiceCard
-            imageUrl={services6}
-            title="Social Marketing"
-            desc="One of the top 100 advertising and marketing agencies knows what it means to marketing agencies be"
-            linkurl="/"
           />
         </div>
       </section>
@@ -489,16 +464,14 @@ const HomeSection = () => {
                 <h2 className="card__heading">Basic</h2>
                 <p className="card__price">$9.99</p>
                 <ul role="list" className="card__bullets flow">
-                <li>Access to advanced workouts and nutrition plans</li>
+                  <li>Access to advanced workouts and nutrition plans</li>
                   <li>Priority Email support</li>
                   <li>Exclusive access to live Q&A sessions</li>
                 </ul>
-                <button  className="card__cta cta relative top-8">
+                <button className="card__cta cta relative top-8">
                   Get Started
                 </button>
-                <button  className="card__cta cta ">
-                  Get Started
-                </button>
+                <button className="card__cta cta ">Get Started</button>
               </div>
 
               <div className="card">
@@ -509,33 +482,28 @@ const HomeSection = () => {
                   <li>Priority Email support</li>
                   <li>Exclusive access to live Q&A sessions</li>
                 </ul>
-                <button  className="card__cta cta relative top-8">
+                <button className="card__cta cta relative top-8">
                   Get Started
                 </button>
-                <button  className="card__cta cta ">
-                  Get Started
-                </button>
+                <button className="card__cta cta ">Get Started</button>
               </div>
 
               <div className="card">
                 <h2 className="card__heading">Ultimate</h2>
                 <p className="card__price">$29.99</p>
                 <ul role="list" className="card__bullets flow">
-                <li>Access to advanced workouts and nutrition plans</li>
+                  <li>Access to advanced workouts and nutrition plans</li>
                   <li>Priority Email support</li>
                   <li>Exclusive access to live Q&A sessions</li>
                 </ul>
-                <button  className="card__cta cta relative top-8">
+                <button className="card__cta cta relative top-8">
                   Get Started
                 </button>
-                <button  className="card__cta cta ">
-                  Get Started
-                </button>
+                <button className="card__cta cta ">Get Started</button>
               </div>
             </div>
           </div>
         </section>
-       
       </section>
 
       <section>
