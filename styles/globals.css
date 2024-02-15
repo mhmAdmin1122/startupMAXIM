@@ -27,11 +27,11 @@
 .ServiceSlider {
   @apply w-full px-10 my-[20px] p-[20px];
 }
-.ServiceSlider .slick-list{
+.ServiceSlider .slick-list {
   @apply py-12 cursor-grab pl-4;
 }
 .services-Slider-Card {
-  @apply w-[340px] shadow-xl shadow-gray-400 border-[1px] border-gray-200 rounded-lg h-[360px] p-14 grid justify-center justify-items-center transition duration-1000 delay-1000 ease-in-out rounded-tl-[50px] rounded-br-[50px];
+  @apply w-[340px] shadow-xl shadow-gray-200 border-[1px] border-gray-200 rounded-lg h-[360px] p-14 grid justify-center justify-items-center transition duration-1000 delay-1000 ease-in-out rounded-tl-[50px] rounded-br-[50px] cursor-context-menu;
 }
 .card-Pic-Box image {
   @apply !w-[120px];
@@ -88,7 +88,7 @@
 }
 .slick-prev::before {
   top: 0px;
-  --tw-content: '<' !important;
+  --tw-content: "<" !important;
   content: var(--tw-content) !important;
 }
 .ServiceSlider .slider-container .slick-prev::before {
