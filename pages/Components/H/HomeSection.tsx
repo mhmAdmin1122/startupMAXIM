@@ -33,7 +33,7 @@ const HomeSection = () => {
   return (
     <div>
       {/* HeroBanner */}
-      <section className="w-full overflow-hidden">
+      <section className="HeroBanner_Home w-full overflow-hidden">
         <HeroHome />
       </section>
 
@@ -62,10 +62,10 @@ const HomeSection = () => {
       </section>
 
       <section
-        className="w-full flex justify-center gap-10 py-[30px] bg-gradient-to-t from-[#00bf63] to-[#c4ff69]"
+        className="Audit-Section-box w-full flex justify-center gap-10 py-[30px] bg-gradient-to-t from-[#00bf63] to-[#c4ff69]"
         id="homesection3"
       >
-        <div className="">
+        <div className="audit-Image">
           <Image
             className=""
             src={homeImage1}
@@ -74,7 +74,7 @@ const HomeSection = () => {
             alt="img"
           />
         </div>
-        <div className="grid justify-items-start w-[50%]">
+        <div className="audit-detail grid justify-items-start w-[50%]">
           <h2 className="text-black text-4xl">
             <b className="text-4xl">Get Marketing Audit For Free</b> (Limited
             Spots Available!)
@@ -104,9 +104,9 @@ const HomeSection = () => {
             Claim Free Audit
           </Link>
 
-          <div className="py-6 flex gap-2 items-center">
+          <div className="py-6 flex gap-2 items-center warning-box">
             <RiAlarmWarningFill className="text-4xl text-[#000]" />
-            <p className="text-[13px]">
+            <p className="text-[13px] warning-text text-left">
               Only the first 10 sign-ups per month will receive this exclusive
               offer. <br /> <strong>Don{"'"}t miss out!</strong>
             </p>
@@ -198,7 +198,7 @@ const HomeSection = () => {
           </div>
         </div>
 
-        <div className="flex justify-center flex-wrap gap-4 py-6">
+        <div className="flex justify-center flex-wrap gap-16 py-6">
           <div className="w-[320px] shadow-lg shadow-gray-300 rounded-tl-[44px] rounded-br-[44px] rounded-[12px] overflow-hidden">
             <div className="flex justify-center">
               {" "}
@@ -262,10 +262,12 @@ const HomeSection = () => {
 
         <div
           id="section9-card"
-          className="flex flex-wrap justify-center gap-12"
+          className="flex flex-wrap justify-center !gap-16"
         >
           <Homecard imageUrl={post1} />
+
           <Homecard imageUrl={post2} />
+
           <Homecard imageUrl={post3} />
         </div>
         <div className="flex justify-center mt-14">
@@ -289,7 +291,7 @@ const HomeSection = () => {
 
         <section>
           <div className="cards">
-            <div className="flex flex-wrap justify-center gap-8">
+            <div className="flex flex-wrap justify-center gap-16">
               <div className="bg-gradient-to-l from-[#00bf63] to-[#c4ff69] px-[20px] py-[20px] h-fit flex flex-col gap-4 rounded-[14px] w-[300px] shadow-md shadow-gray-300">
                 <h2 className="card__heading text-[#ff6e4e]">Basic</h2>
                 <p className="card__price text-[#ff6e4e]">$9.99</p>
@@ -367,34 +369,6 @@ const HomeSection = () => {
                 </button>
                 <button className="card__cta cta ">Buy Plan</button> */}
               </div>
-
-              {/* <div className="card">
-                <h2 className="card__heading">Pro</h2>
-                <p className="card__price">$19.99</p>
-                <ul role="list" className="card__bullets flow">
-                  <li>Access to advanced workouts and nutrition plans</li>
-                  <li>Priority Email support</li>
-                  <li>Exclusive access to live Q&A sessions</li>
-                </ul>
-                <button className="card__cta cta relative top-8">
-                  Customize Your Plan
-                </button>
-                <button className="card__cta cta ">Buy Plan</button>
-              </div>
-
-              <div className="card">
-                <h2 className="card__heading">Ultimate</h2>
-                <p className="card__price">$29.99</p>
-                <ul role="list" className="card__bullets flow">
-                  <li>Access to advanced workouts and nutrition plans</li>
-                  <li>Priority Email support</li>
-                  <li>Exclusive access to live Q&A sessions</li>
-                </ul>
-                <button className="card__cta cta relative top-8">
-                  Customize Your Plan
-                </button>
-                <button className="card__cta cta ">Buy Plan</button>
-              </div> */}
             </div>
           </div>
         </section>
