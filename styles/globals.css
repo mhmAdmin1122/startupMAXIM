@@ -1333,14 +1333,20 @@ ul {
   #homesection4 {
     @apply pb-[20px];
   }
-  .chat-button{
+  .chat-button {
     @apply text-5xl;
   }
   /* Audit-Section-box */
 
   /* footer */
-  .footer-section1{
+  .footer-section1 {
     @apply rounded-[12px];
+  }
+  .wrapper .icon {
+    @apply flex justify-center items-center p-[5px] w-[40px] h-[40px] gap-3;
+  }
+  .wrapper .icon:hover .tooltip {
+    @apply top-[-45px] left-[-4px] opacity-[1] visible pointer-events-auto;
   }
   /* footer */
 }
