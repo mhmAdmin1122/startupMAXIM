@@ -1,242 +1,344 @@
 import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
-import Review1 from "@/public/img/BrianJames-1.jpeg";
+import TeamImage1 from "@/public/img/thomas-shelby-1200x1437.jpg";
 import Marque from "../M/Marque";
 
 const Testimonials = () => {
-  const settings = {
-    className: "center",
-    centerMode: true,
-    dot: true,
-    centerPadding: "25%",
-    slidesToShow: 1,
-    slidesToScroll: 1,
+  var settings = {
+    dots: true,
+    infinite: true,
     speed: 500,
-    rows: 2,
-    slidesPerRow: 1,
-    autoplaySpeed: 5000,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    Selection: false,
+    initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    cssEase: "linear",
     responsive: [
       {
-        breakpoint: 930,
+        breakpoint: 1024,
         settings: {
-          centerMode: true,
-          dot: true,
-          centerPadding: "150px",
-          slidesToShow: 1,
-          speed: 500,
-          rows: 1,
-          slidesPerRow: 1,
-          autoplaySpeed: 5000,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
         },
       },
       {
-        breakpoint: 522,
+        breakpoint: 700,
         settings: {
-          centerMode: true,
-          dot: true,
-          centerPadding: "50px",
-          slidesToShow: 1,
-          speed: 500,
-          rows: 1,
-          slidesPerRow: 1,
-          autoplaySpeed: 5000,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
         },
       },
       {
-        breakpoint: 355,
+        breakpoint: 480,
         settings: {
-          centerMode: true,
-          dot: true,
-          centerPadding: "30px",
           slidesToShow: 1,
-          speed: 500,
-          rows: 1,
-          slidesPerRow: 1,
-          autoplaySpeed: 5000,
+          slidesToScroll: 1,
+          dots: false,
         },
       },
     ],
   };
+
   return (
-    <main className="testimonial">
-      <section className="heading-section">
-        <p className="text-[var(--text-gray)] min-[1440px]:text-[20px]">Testimonials</p>
+    <section className="testimonial py-[40px]">
+      <div className="heading-section">
+        <p className="text-[var(--text-gray)] min-[1440px]:text-[20px]">
+          Testimonials
+        </p>
         <div className="heading">
           <h1>Love From </h1>
-          <h1 className="text-[var(--background-color)]">Clients</h1>
+          <h1 className="text-[#ff6e4e]">Clients</h1>
         </div>
         <div className="loader">
           <Marque />
         </div>
-      </section>
-      <div className="w-full">
-        <div>
-          <Slider {...settings} className="testimonial-slider">
-            <div className="px-[20px] ml-[50%] max-[930px]:m-0">
-              <div className="flex justify-center">
-                <div className="flex max-[930px]:flex-col max-[930px]:rounded-[10px] justify-center gap-[20px] w-full rounded-full my-[18px] p-[18px] bg-[var(--background-color)]">
-                  <div className="flex items-center my-[18px] ml-[25px] max-[930px]:m-0 ">
+      </div>
+      <div className="slider-section px-[90px] ">
+        <div className="w-[95%] ">
+          <Slider
+            {...settings}
+            className="team-slider mx-[30px] min-[1440px]:mx-[60px]"
+          >
+            <div>
+              <div className="team-card testmonials-Card">
+                <div className="card-inner">
+                  <div className="card-front !grid">
                     <Image
-                      src={Review1}
-                      alt="Review"
-                      className="rounded-full "
-                      height={700}
-                      width={700}
+                      src={TeamImage1}
+                      className="person-image !w-[80px] !h-[80px] !rounded-full"
+                      alt="logo-pic"
                     />
+                    <div className="px-[20px] py-[20px]">
+                      <p className="text-[#fff]">hdkjfsdkjhfkjdshfkjdf</p>
+                    </div>
                   </div>
-                  <div className="grid align-middle">
-                    <h1 className="font-black text-[18px] max-[400px]:text-[14px] min-[1100px]:text-[30px] min-[1700px]:text-[45px]">
-                      Tayyab Arshad
-                    </h1>
-                    <p className="font-semibold text-[14px] max-[400px]:text-[10px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
-                      Project Manager, The Heritage Company
-                    </p>
-                    <p className="mt-[10px] text-[14px] max-[400px]:text-[10px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
-                      {'"'}I can{"'"}t even begin to express how happy I am with
-                      these services. I have gotten at least 50 times the value
-                      from your company. Thanks guys, keep up the good work{'"'}
-                    </p>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="px-[20px] max-[930px]:m-0">
-              <div className="flex justify-center">
-                <div className="flex max-[930px]:flex-col max-[930px]:rounded-[10px] justify-center gap-[20px] w-full rounded-full my-[18px] p-[18px] bg-[var(--primary-color)]">
-                <div className="flex items-center my-[18px] ml-[25px] max-[930px]:m-0 ">
+
+            <div>
+              <div className="team-card">
+                <div className="card-inner">
+                  <div className="card-front">
                     <Image
-                      src={Review1}
-                      alt="Review"
-                      className="rounded-full "
-                      height={700}
-                      width={700}
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
                     />
                   </div>
-                  <div className="grid align-middle">
-                    <h1 className="font-black text-[18px] min-[1100px]:text-[30px] min-[1700px]:text-[45px]">
-                      Tayyab Arshad
-                    </h1>
-                    <p className="font-semibold text-[14px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
-                      Project Manager, The Heritage Company
-                    </p>
-                    <p className="mt-[10px] text-[14px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
-                      {'"'}I can{"'"}t even begin to express how happy I am with
-                      these services. I have gotten at least 50 times the value
-                      from your company. Thanks guys, keep up the good work{'"'}
-                    </p>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="px-[20px] ml-[50%] max-[930px]:m-0">
-              <div className="flex justify-center">
-                <div className="flex max-[930px]:flex-col max-[930px]:rounded-[10px] justify-center gap-[20px] w-full rounded-full my-[18px] p-[18px] bg-[var(--background-color)]">
-                  <div className="flex items-center my-[18px] ml-[25px] max-[930px]:m-0 ">
+
+            <div>
+              <div className="team-card">
+                <div className="card-inner">
+                  <div className="card-front">
                     <Image
-                      src={Review1}
-                      alt="Review"
-                      className="rounded-full "
-                      height={700}
-                      width={700}
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
                     />
                   </div>
-                  <div className="grid align-middle">
-                    <h1 className="font-black text-[18px] max-[400px]:text-[14px] min-[1100px]:text-[30px] min-[1700px]:text-[45px]">
-                      Tayyab Arshad
-                    </h1>
-                    <p className="font-semibold text-[14px] max-[400px]:text-[10px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
-                      Project Manager, The Heritage Company
-                    </p>
-                    <p className="mt-[10px] text-[14px] max-[400px]:text-[10px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
-                      {'"'}I can{"'"}t even begin to express how happy I am with
-                      these services. I have gotten at least 50 times the value
-                      from your company. Thanks guys, keep up the good work{'"'}
-                    </p>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="px-[20px] max-[930px]:m-0">
-              <div className="flex justify-center">
-                <div className="flex max-[930px]:flex-col max-[930px]:rounded-[10px] justify-center gap-[20px] w-full rounded-full my-[18px] p-[18px] bg-[var(--primary-color)]">
-                <div className="flex items-center my-[18px] ml-[25px] max-[930px]:m-0 ">
+
+            <div>
+              <div className="team-card">
+                <div className="card-inner">
+                  <div className="card-front">
                     <Image
-                      src={Review1}
-                      alt="Review"
-                      className="rounded-full "
-                      height={700}
-                      width={700}
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
                     />
                   </div>
-                  <div className="grid align-middle">
-                    <h1 className="font-black text-[18px] min-[1100px]:text-[30px] min-[1700px]:text-[45px]">
-                      Tayyab Arshad
-                    </h1>
-                    <p className="font-semibold text-[14px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
-                      Project Manager, The Heritage Company
-                    </p>
-                    <p className="mt-[10px] text-[14px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
-                      {'"'}I can{"'"}t even begin to express how happy I am with
-                      these services. I have gotten at least 50 times the value
-                      from your company. Thanks guys, keep up the good work{'"'}
-                    </p>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="px-[20px] ml-[50%] max-[930px]:m-0">
-              <div className="flex justify-center">
-                <div className="flex max-[930px]:flex-col max-[930px]:rounded-[10px] justify-center gap-[20px] w-full rounded-full my-[18px] p-[18px] bg-[var(--background-color)]">
-                  <div className="flex items-center my-[18px] ml-[25px] max-[930px]:m-0 ">
+
+            <div>
+              <div className="team-card">
+                <div className="card-inner">
+                  <div className="card-front">
                     <Image
-                      src={Review1}
-                      alt="Review"
-                      className="rounded-full "
-                      height={700}
-                      width={700}
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
                     />
                   </div>
-                  <div className="grid align-middle">
-                    <h1 className="font-black text-[18px] max-[400px]:text-[14px] min-[1100px]:text-[30px] min-[1700px]:text-[45px]">
-                      Tayyab Arshad
-                    </h1>
-                    <p className="font-semibold text-[14px] max-[400px]:text-[10px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
-                      Project Manager, The Heritage Company
-                    </p>
-                    <p className="mt-[10px] text-[14px] max-[400px]:text-[10px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
-                      {'"'}I can{"'"}t even begin to express how happy I am with
-                      these services. I have gotten at least 50 times the value
-                      from your company. Thanks guys, keep up the good work{'"'}
-                    </p>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="px-[20px] max-[930px]:m-0">
-              <div className="flex justify-center">
-                <div className="flex max-[930px]:flex-col max-[930px]:rounded-[10px] justify-center gap-[20px] w-full rounded-full my-[18px] p-[18px] bg-[var(--primary-color)]">
-                <div className="flex items-center my-[18px] ml-[25px] max-[930px]:m-0 ">
+
+            <div>
+              <div className="team-card">
+                <div className="card-inner">
+                  <div className="card-front">
                     <Image
-                      src={Review1}
-                      alt="Review"
-                      className="rounded-full "
-                      height={700}
-                      width={700}
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
                     />
                   </div>
-                  <div className="grid align-middle">
-                    <h1 className="font-black text-[18px] min-[1100px]:text-[30px] min-[1700px]:text-[45px]">
-                      Tayyab Arshad
-                    </h1>
-                    <p className="font-semibold text-[14px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
-                      Project Manager, The Heritage Company
-                    </p>
-                    <p className="mt-[10px] text-[14px] min-[1100px]:text-[25px] min-[1700px]:text-[30px]">
-                      {'"'}I can{"'"}t even begin to express how happy I am with
-                      these services. I have gotten at least 50 times the value
-                      from your company. Thanks guys, keep up the good work{'"'}
-                    </p>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div className="team-card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <Image
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
+                    />
+                  </div>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div className="team-card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <Image
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
+                    />
+                  </div>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div className="team-card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <Image
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
+                    />
+                  </div>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div className="team-card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <Image
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
+                    />
+                  </div>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div className="team-card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <Image
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
+                    />
+                  </div>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div className="team-card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <Image
+                      src={TeamImage1}
+                      className="person-image"
+                      alt="logo-pic"
+                    />
+                  </div>
+                  <div className="card-back">
+                    <div className="person-info">
+                      <h1 className="font-bold">John Doe</h1>
+                      <p>Senior Web Developer</p>
+                      <p className="person-info-about">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -244,7 +346,7 @@ const Testimonials = () => {
           </Slider>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 

@@ -84,6 +84,38 @@
 
 /*  Hero-HOME  */
 
+
+/*  Hero-ABOUT  */
+
+.Hero-About{
+  @apply m-0 relative w-full overflow-hidden h-full bg-[#c3ff6985];
+}
+.Hero-About .bg {
+  @apply w-full h-full opacity-50 absolute top-0 z-[-1];
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #c4ff69 50%, #00bf63 50%);
+}
+
+.Hero-About .bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.Hero-About .bg3 {
+  animation-duration:5s;
+}
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+} 
+
+/*  Hero-ABOUT  */
 /* header design */
 .main-header {
   @apply flex w-full justify-center;
@@ -532,12 +564,12 @@ button#scrollBtn:hover {
 }
 .card-front,
 .card-back {
-  @apply w-full h-full absolute flex justify-center items-center;
+  @apply w-full h-full absolute grid justify-center items-center;
   backface-visibility: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.486);
 }
 .card-front {
-  @apply bg-[#e0e0e0] rounded-[10px];
+  @apply bg-[#0e0e0e] rounded-[10px];
 }
 .card-back {
   @apply bg-[#fff] rounded-[10px];

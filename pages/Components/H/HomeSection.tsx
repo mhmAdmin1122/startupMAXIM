@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import homeImage1 from "@/public/img/Marketing-Audit-For-Free-StartupMAXIM .svg";
 import arrowleft from "@/public/img/about_image.png";
+import BussinessModel from "@/public/img/123.png";
 import fact1 from "@/public/img/fact1.png";
 import fact2 from "@/public/img/fact2.png";
 import fact3 from "@/public/img/fact3.png";
@@ -21,6 +22,7 @@ import { Fredoka } from "next/font/google";
 import ServicesSlider from "../S/ServicesSlider";
 import Link from "next/link";
 import HeroHome from "./HeroHome";
+import { RiAlarmWarningFill } from "react-icons/ri";
 
 const fredoka = Fredoka({
   weight: "500",
@@ -30,33 +32,32 @@ const fredoka = Fredoka({
 const HomeSection = () => {
   return (
     <div>
-
       {/* HeroBanner */}
-      <section>
+      <section className="w-full overflow-hidden">
         <HeroHome />
       </section>
-      {/* HeroBanner */}
+
       {/* about bussiness model */}
-      <section className="flex gap-8 flex-wrap items-center py-16 justify-center text-[#000]">
-        <div>
-          <h1
-            id="section1-h1"
-            className={`text-3xl text-md-right text-sm-center column-title ${fredoka.className}`}
-          >
-            Affordable Digital <br /> Marketing Services <br />
-            <b>For Startups</b>.
-          </h1>
-        </div>
-        <div className="border-l-[5px] pl-8 max-[500px]:pl-3 max-[500px]:w-[90%] text-justify text-[#000] border-orange-600 w-[50%]">
-          StatupMAXIM helps you generate results at every stage of your startup,
-          from ideation to MVP, facilitating seamless scaling towards a
-          successful exit, to elevating your brand to new heights, StartupMAXIM
-          offers tailored solutions for every stage of your entrepreneurial
-          journey.
-          <strong>
-            {" "}
+      <section className="flex flex-wrap justify-center gap-10 py-[40px]">
+        <div className="w-[360px] flex flex-col gap-3">
+          <h4 className={`text-3xl ${fredoka.className}`}>
+            Affordable Digital Marketing Services{" "}
+            <b className="text-[#ff6e4e]">For Startups</b>.
+          </h4>
+          <p className="text-justify">
+            StatupMAXIM helps you generate results at every stage of your
+            startup, from ideation to MVP, facilitating seamless scaling towards
+            a successful exit, to elevating your brand to new heights,
+            StartupMAXIM offers tailored solutions for every stage of your
+            entrepreneurial journey.
+          </p>
+          <strong className="text-[#ff6e4e]">
             World{"'"}s first dedicated marketing agency for startups.
           </strong>
+        </div>
+
+        <div className="w-[320px]">
+          <Image src={BussinessModel} alt="about-bussiness-model" />
         </div>
       </section>
 
@@ -74,39 +75,42 @@ const HomeSection = () => {
           />
         </div>
         <div className="grid justify-items-start w-[50%]">
-          <h2 className="text-4xl font-bold text-black">
-            Get Marketing Audit For Free (Limited Spots Available!)
+          <h2 className="text-black text-4xl">
+            <b className="text-4xl">Get Marketing Audit For Free</b> (Limited
+            Spots Available!)
           </h2>
 
           <div className="mt-5">
             <Marque />
           </div>
 
-          <div className="text-gray-700">
+          <div className="text-[#000] pb-5">
             <div className="pt-6 text-justify">
               <h2 className="text-[22px] font-bold">Launch with confidence</h2>
-              <p>
+              <p className="text-[#000]">
                 Get a FREE comprehensive digital marketing audit from
                 StartupMAXIM. Our expert team will analyze your current
                 marketing efforts, identify key opportunities, and provide
                 actionable recommendations to boost your brand awareness,
                 attract leads, and achieve your goals.
               </p>
-              <strong>Don{"'"}t miss out!</strong>
             </div>
-
-            <p className="py-6">
-              Only the first 10 sign-ups per month will receive this exclusive
-              offer. <br /> Don{"'"}t Miss Out!
-            </p>
           </div>
 
           <Link
             href="/"
-            className="text-center px-4 py-2 flex items-center justify-center bg-[#ff6e4e] hover:bg-[#2c2c2c] border-b-[6px]  border-[#2c2c2c] rounded-[4px] hover:border-[#ff6e4e] transition-all duration-300 delay-100 ease-in-out text-[#2c2c2c] hover:text-[#ff6e4e] font-bold rounded-tl-[34px] rounded-br-[24px]"
+            className="text-center px-4 py-2 flex items-center justify-center bg-[#ff6e4e] hover:bg-[#2c2c2c] border-b-[6px] border-[#2c2c2c] rounded-[4px] hover:border-[#ff6e4e] transition-all duration-300 delay-100 ease-in-out text-[#2c2c2c] hover:text-[#ff6e4e] font-bold rounded-tl-[34px] rounded-br-[24px]"
           >
             Claim Free Audit
           </Link>
+
+          <div className="py-6 flex gap-2 items-center">
+            <RiAlarmWarningFill className="text-4xl text-[#000]" />
+            <p className="text-[13px]">
+              Only the first 10 sign-ups per month will receive this exclusive
+              offer. <br /> <strong>Don{"'"}t miss out!</strong>
+            </p>
+          </div>
         </div>
       </section>
 
@@ -201,10 +205,10 @@ const HomeSection = () => {
               <Image className="bg-[#fa6742] p-2" src={casestudy1} alt="img" />
             </div>
             <div className="homesection6-heading">
-              <Link href="/" className="heading1">Web Traffic Management</Link>
-              <p className="text-center py-2 text-[#9f9f9f]">
-                SEO, Marketing
-              </p>
+              <Link href="/" className="heading1">
+                Web Traffic Management
+              </Link>
+              <p className="text-center py-2 text-[#9f9f9f]">SEO, Marketing</p>
             </div>
           </div>
 
@@ -213,7 +217,9 @@ const HomeSection = () => {
               <Image className="bg-[#2bc2a7] p-2" src={casestudy2} alt="img" />
             </div>
             <div className="homesection6-heading">
-              <Link href="/"  className="heading1">Cloaking & Doorway Pages</Link>
+              <Link href="/" className="heading1">
+                Cloaking & Doorway Pages
+              </Link>
               <p className="text-center py-2 text-[#9f9f9f] pt-1">
                 Social, SEO
               </p>
@@ -225,7 +231,9 @@ const HomeSection = () => {
               <Image className="bg-[#ffb72f] p-2" src={casestudy3} alt="img" />
             </div>
             <div className="homesection6-heading">
-              <Link href="/"  className="heading1">Hosting company rank</Link>
+              <Link href="/" className="heading1">
+                Hosting company rank
+              </Link>
               <p className="text-center py-2 text-[#9f9f9f]">
                 Hosting, Marketing
               </p>

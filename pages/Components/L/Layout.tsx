@@ -4,6 +4,7 @@ import Chatbot from "../C/Chatbot";
 import SocialSidebar from "../S/SocialSidebar";
 import Navbar from "../N/Navbar";
 import Header from "../H/Header";
+import BackToTop from "../B/BackToTop";
 
 const Layout = ({ children }: any) => {
   return (
@@ -14,6 +15,7 @@ const Layout = ({ children }: any) => {
       <Header />
       {children}
       <Footer />
+      <BackToTop />
     </div>
   );
 };

@@ -46,21 +46,22 @@ const TeamSection = () => {
       },
     ],
   };
+
   return (
-    <main>
-      <section className="team-section">
+    <section className="bg-gradient-to-t from-[#00bf63] to-[#c4ff69] py-[30px]">
+      <div className="team-section">
         <div className="team-heading-top">
-          <p className="text-[var(--text-gray)] min-[1440px]:text-[20px]">OUR TEAM</p>
+          <p className="text-[#ff4e6e] min-[1440px]:text-[20px]">OUR TEAM</p>
           <div className="team-heading">
             <h1>Our Best </h1>
-            <h1 className="text-[var(--background-color)]">Experts</h1>
+            <h1 className="text-[#ff6e4e]">Experts</h1>
           </div>
           <div className="loader">
             <Marque />
           </div>
         </div>
-      </section>
-      <section className="slider-section">
+      </div>
+      <div className="slider-section pb-[50px] px-[60px]">
         <div className="w-[95%] ">
           <Slider {...settings} className="team-slider mx-[30px] min-[1440px]:mx-[60px]">
             <div>
@@ -329,8 +330,8 @@ const TeamSection = () => {
             </div>
           </Slider>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   );
 };
 

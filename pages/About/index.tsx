@@ -5,8 +5,7 @@ import Testimonials from "../Components/T/Testimonials";
 import ClientSlider from "../Components/C/ClientSlider";
 import Layout from "../Components/L/Layout";
 import Head from "next/head";
-import BreadCrumbs from "../Components/B/BreadCrumbs";
-import BackToTop from "../Components/B/BackToTop";
+import HeroAbout from "../Components/A/HeroAbout";
 
 const index = () => {
   return (
@@ -14,10 +13,9 @@ const index = () => {
       <Head>
         <title>About</title>
       </Head>
-      <BreadCrumbs dynamicText={"About Us"} />
+      <HeroAbout />
       <AboutUs />
       <TeamSection />
-      <BackToTop />
       <Testimonials />
       <ClientSlider />
     </Layout>
