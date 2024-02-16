@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full flex text-xl items-center font-medium justify-around py-2">
+    <header className="w-full flex text-xl items-center font-medium justify-around py-4 shadow-lg shadow-gray-200">
       <Link href="/" className="logoBoX">
         <Image src={logo} alt="logo-pic" className="w-[85px]" />
       </Link>

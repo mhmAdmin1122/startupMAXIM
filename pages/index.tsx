@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>StartupMAXIM</title>
+        <title>StartupMAXIM - Home</title>
       </Head>
       <HomeSection />
     </Layout>

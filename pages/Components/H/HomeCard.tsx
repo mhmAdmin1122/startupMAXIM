@@ -1,27 +1,27 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
-
-const Homecard = ({imageUrl}:any) => {
+const Homecard = ({ imageUrl }: any) => {
   return (
-    <div className='w-[25%] hover:shadow-md hover:shadow-gray-400 max-[868px]:w-fit max-[868px]:mx-[40px]'>
-     <div className="bg-[#ffb72f] ">
-        <Image src={imageUrl} alt='img'/>
+    <div className="w-[320px] shadow-xl rounded-tl-[44px] rounded-br-[44px] rounded-[12px] overflow-hidden shadow-gray-600">
+      <div className="bg-[#ffb72f] ">
+        <Image src={imageUrl} alt="img" />
       </div>
-      <div className="flex mt-5 max-[868px]:flex-col max-[868px]:items-center h-fit pb-3">
-        <div>
-        <div  className="text-2xl h-[70px] w-[70px] flex flex-col items-center leading-6 justify-center bg-[#fa6742] text-white rounded-full">
-          <h1 className="font-bold">29 </h1> <span className="text-[18px]">May</span>
-        </div>
-        </div>
-        <div className="flex flex-col gap-3 mt-5 ml-2 ]">
-          <h1 className="text-1xl text-[#7a7a7a]">Posted by <span className="text-[#2f2c2c]">Admin</span></h1>
-          <h1 className="text-2xl text-[black] font-semibold hover:text-[#fa6742]">SEO trend to look for the best in 2018</h1>
-          <p className="text-[#7a7a7a]">One of the top 100 advertising of a marketing agencies know that how to grow your busines</p>
-        </div>
+      <div className="flex flex-col gap-[4px] text-justify bg-[#151414]">
+        <p className="text-1xl text-[#fff] bg-[#202020] p-[12px]">
+          Posted by <span className="text-[#ff6e4e] font-medium">Admin</span>
+        </p>
+        <Link href="/" className="text-2xl text-[#ff6e4e] font-semibold hover:text-[#f18066d3] px-[12px]">
+          SEO trend to look for the best in 2018
+        </Link>
+        <p className="text-[#fff] p-[12px]">
+          One of the top 100 advertising of a marketing agencies know that how
+          to grow your busines
+        </p>
       </div>
-     </div>
-  )
-}
+    </div>
+  );
+};
 
-export default Homecard
+export default Homecard;
