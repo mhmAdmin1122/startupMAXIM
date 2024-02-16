@@ -21,7 +21,7 @@ const HeroAbout = () => {
           </h2>
           <h3 className="text-gray-700 text-[30px] font-bold">MARKETING.</h3>
           <p className="text-[var(--secondary-color)] font-semibold">
-            We're not the best, but have the potential to be the best.
+            We{"'"}re not the best, but have the potential to be the best.
           </p>
         </div>
       </div>
