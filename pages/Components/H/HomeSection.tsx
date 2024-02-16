@@ -61,6 +61,7 @@ const HomeSection = () => {
         </div>
       </section>
 
+      {/* Audit-Section */}
       <section
         className="Audit-Section-box w-full flex justify-center gap-10 py-[30px] bg-gradient-to-t from-[#00bf63] to-[#c4ff69]"
         id="homesection3"

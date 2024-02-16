@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { useState , useRef, useEffect } from "react";
 import ChatbotIcon from "@/public/img/icons8-message-bot-30.png";
 import ChatSend from "@/public/img/paper-plane-solid.svg"
+import { FaRobot } from "react-icons/fa6";
 
 const Chatbot: React.FC = () => {
   const [isChatboxVisible, setChatboxVisibility] = useState(false);
@@ -11,7 +12,7 @@ const Chatbot: React.FC = () => {
   };
 
   return (
-      <div className="chat-container">
+      <div className="chat-container relative">
       {isChatboxVisible && (
         <section className="chat-section">
           <div className="chatbox">
@@ -21,7 +22,7 @@ const Chatbot: React.FC = () => {
         </section>
       )}
       <button className="chat-button" onClick={toggleChatbox}>
-        <Image src={ChatbotIcon} alt="" />
+        <FaRobot />
       </button>
     </div>
 

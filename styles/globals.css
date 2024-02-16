@@ -657,14 +657,14 @@ button#scrollBtn:hover {
 /*   ChatBot   */
 
 .chat-section {
-  @apply fixed z-[99999] bottom-[13%] right-[2%] pt-[200px] bg-[var(--background-color)];
+  @apply fixed z-[99999999] bottom-[13%] right-[2%] pt-[200px] bg-[var(--background-color)];
   border: 1px solid rgba(128, 128, 128, 0.3);
 }
 .chat-section {
   @apply shadow-md shadow-gray-100 px-[10px];
 }
 .chat-button {
-  @apply fixed bottom-[3%] right-[2%] bg-[var(--background-color)] text-white px-[20px] py-[10px] border-none rounded-[5px] cursor-pointer;
+  @apply fixed bottom-[3%] right-[2%] hover:bg-[#ff6e4eab] text-4xl bg-[#ff6e4e] text-[#fff] px-[20px] py-[10px] border-none rounded-[5px] cursor-pointer;
 }
 .chat-send-button {
   @apply bg-[var(--secondary-color)] text-white p-[10px] border-none rounded-full cursor-pointer;
@@ -854,7 +854,7 @@ button#scrollBtn:hover {
 
 /* Footer Icon */
 .footer {
-  @apply relative top-10 gap-2 flex mt-16 max-[980px]:flex-col justify-around  bg-[#151414] p-8;
+  @apply gap-2 flex mt-16 max-[980px]:flex-col justify-around  bg-[#151414] p-8;
 }
 .locationmap svg {
   font-size: 40px;
@@ -1165,9 +1165,6 @@ ul {
   color: #eceff1;
 }
 
-.cards {
-  position: relative;
-}
 .cards__inner {
   @apply flex flex-wrap justify-center gap-[30px] px-[5%];
 }
@@ -1333,9 +1330,18 @@ ul {
   .warning-box svg {
     @apply text-8xl;
   }
-  #homesection4{
+  #homesection4 {
     @apply pb-[20px];
   }
+  .chat-button{
+    @apply text-5xl;
+  }
   /* Audit-Section-box */
+
+  /* footer */
+  .footer-section1{
+    @apply rounded-[12px];
+  }
+  /* footer */
 }
 /* media-query-area */

@@ -1,16 +1,12 @@
 import React from "react";
 import {
   FaFacebook,
-  FaGoogle,
   FaInstagram,
   FaLinkedin,
   FaLocationArrow,
-  FaLocationDot,
   FaMapLocation,
   FaPhone,
-  FaTwitter,
   FaXTwitter,
-  FaYoutube,
 } from "react-icons/fa6";
 import Link from "next/link";
 import Marque from "../M/Marque";
@@ -22,17 +18,19 @@ const Footer = () => {
       <section className="footer">
         <div className="pr-[50px] max-[500px]:p-0 max-[500px]:w-full  pl-[20px]">
           <div className="footer-section1 px-10 max-[500px]:p-3 relative bottom-20 max-[980px]:w-full bg-[#202020] pb-10 flex flex-col gap-6  pt-8  text-white">
-            <h1 className="footer-sertion1-h1 text-4xl font-bold max-[350px]:text-2xl">
+            <h4 className="footer-sertion1-h1 text-4xl font-bold max-[350px]:text-2xl">
               StartupMAXIM
-            </h1>
+            </h4>
             <p className="footer-sertion1-para text-[var(--text-gray)] max-[350px]:text-[12px]">
-            We{"'"}re passionate believers in the power of startups to change the world, 
-            and we{"'"}re dedicated to fueling their success. Over the years, we{"'"}ve helped 
-            countless startups launch, scale, and achieve their dreams, from increasing 
-            website traffic by 300% for a tech startup to securing funding for a groundbreaking social enterprise.
+              We{"'"}re passionate believers in the power of startups to change
+              the world, and we{"'"}re dedicated to fueling their success. Over
+              the years, we{"'"}ve helped countless startups launch, scale, and
+              achieve their dreams, from increasing website traffic by 300% for
+              a tech startup to securing funding for a groundbreaking social
+              enterprise.
             </p>
 
-            <h1 className="footer-sertion1-h2 text-2xl pb-4">Follow Us</h1>
+            <h5 className="footer-sertion1-h2 text-2xl pb-4">Follow Us</h5>
             <div>
               <ul className="wrapper">
                 <li className="icon facebook">
@@ -72,13 +70,14 @@ const Footer = () => {
           </div>
 
           <div>
-            <h1 className=" text-[25px] relative bottom-12 text-white">
+            <h5 className=" text-[25px] relative bottom-12 text-white">
               The Best Digital Marketing Agency For Startups
-            </h1>
+            </h5>
           </div>
         </div>
+
         <div className="flex gap-8 max-[620px]:flex-wrap max-[980px]:justify-around">
-          <div className="flex pt-0 w-fit flex-col gap-10  ">
+          <div className="flex pt-0 w-fit flex-col gap-10">
             <div className="text-[20px] font-semibold flex gap-5 text-white">
               <div className="locationmap">
                 <FaMapLocation />
@@ -87,7 +86,7 @@ const Footer = () => {
               Atlanta, GA 30324, USA
             </div>
             <div>
-              <h1 className="text-2xl text-white">Useful Links</h1>
+              <h4 className="text-2xl text-white">Useful Links</h4>
               <div className="mt-5">
                 <Marque />
               </div>
@@ -103,27 +102,29 @@ const Footer = () => {
               <Link href="">FAQs</Link>
             </div>
           </div>
+
           <div className="flex gap-10  flex-col">
             <div className="flex gap-4">
               <div className="phone-icons">
                 <FaPhone />
               </div>
               <div className="">
-                <h1 className="text-[20px] font-semibold text-white">
+                <h4 className="text-[20px] font-semibold text-white">
                   {" "}
                   +92-303-642-4939
-                </h1>
+                </h4>
                 <p className="text-[20px] text-white"> Give us a call</p>
               </div>
             </div>
             <div className="text-2xl max-[320px]:items-center max-[320px]:justify-center  text-white">
-              <h1>Subscribe</h1>
+              <h5>Subscribe</h5>
               <div className="mt-5">
                 <Marque />
               </div>
             </div>
             <p className="text-[20px] max-[320px]:text-start text-[#75877c]">
-            Ready to launch your startup journey? <br /> Schedule a free consultation!
+              Ready to launch your startup journey? <br /> Schedule a free
+              consultation!
             </p>
             <div id="footer-email=buttton" className="flex w-[100%]">
               <input
@@ -138,7 +139,8 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <section className="flex flex-wrap relative mt-5 pt-4 pb-4 justify-around items-center w-full bg-[#202020]">
+
+      <section className="flex flex-wrap pt-4 pb-4 justify-around items-center w-full bg-[#202020]">
         <div className="text-[#696969] max-[340px]:text-center">
           Copyright © 2024, All Rights Reserved StartupMAXIM
         </div>
