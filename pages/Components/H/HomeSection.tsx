@@ -289,8 +289,8 @@ const HomeSection = () => {
 
         <section>
           <div className="cards">
-            <div className="flex flex-wrap justify-center gap-4">
-              <div className="bg-gradient-to-l from-[#00bf63] to-[#c4ff69] px-[20px] py-[20px] h-fit flex flex-col gap-4 rounded-[14px] w-[280px] shadow-md shadow-gray-300">
+            <div className="flex flex-wrap justify-center gap-8">
+              <div className="bg-gradient-to-l from-[#00bf63] to-[#c4ff69] px-[20px] py-[20px] h-fit flex flex-col gap-4 rounded-[14px] w-[300px] shadow-md shadow-gray-300">
                 <h2 className="card__heading text-[#ff6e4e]">Basic</h2>
                 <p className="card__price text-[#ff6e4e]">$9.99</p>
                 <ul role="list" className="card__bullets flow text-[#2c2c2c]">
@@ -316,7 +316,7 @@ const HomeSection = () => {
                 <button className="card__cta cta ">Buy Plan</button> */}
               </div>
 
-              <div className="bg-gradient-to-b from-[#00bf63] to-[#c4ff69] px-[20px] py-[20px] h-fit flex flex-col gap-4 rounded-[14px] w-[280px] shadow-md shadow-gray-300">
+              <div className="bg-gradient-to-b from-[#00bf63] to-[#c4ff69] px-[20px] py-[20px] h-fit flex flex-col gap-4 rounded-[14px] w-[300px] shadow-md shadow-gray-300">
                 <h2 className="card__heading text-[#ff6e4e]">Pro</h2>
                 <p className="card__price text-[#ff6e4e]">$19.99</p>
                 <ul role="list" className="card__bullets flow text-[#2c2c2c]">
@@ -342,7 +342,7 @@ const HomeSection = () => {
                 <button className="card__cta cta ">Buy Plan</button> */}
               </div>
 
-              <div className="bg-gradient-to-l from-[#00bf63] to-[#c4ff69] px-[20px] py-[20px] h-fit flex flex-col gap-4 rounded-[14px] w-[280px] shadow-md shadow-gray-300">
+              <div className="bg-gradient-to-l from-[#00bf63] to-[#c4ff69] px-[20px] py-[20px] h-fit flex flex-col gap-4 rounded-[14px] w-[300px] shadow-md shadow-gray-300">
                 <h2 className="card__heading text-[#ff6e4e]">Ultimate</h2>
                 <p className="card__price text-[#ff6e4e]">$29.99</p>
                 <ul role="list" className="card__bullets flow text-[#2c2c2c]">
