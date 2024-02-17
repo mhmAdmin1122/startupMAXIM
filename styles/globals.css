@@ -1229,12 +1229,11 @@ ul {
   will-change: background;
 }
 
-/* :not(.overlay) > .card:hover {
-  filter: brightness(165%);
-} */
 /* pricing card */
 
 /* media-query-area */
+
+/* Service-Slider-Card design Query Only */
 @media (max-width: 1000px) and (min-width: 849px) {
   /* service card slider */
   .services-Slider-Card {
@@ -1282,8 +1281,9 @@ ul {
   }
   /* service card slider */
 }
+/* Service-Slider-Card design Query Only */
 
-/* mobile-view */
+/* mobile-view overall design */
 @media (max-width: 450px) and (min-width: 200px) {
   /* Navbar, Haeder, Hero-Sections */
   .desktop-tab-view-navbar,
@@ -1338,10 +1338,13 @@ ul {
     @apply rounded-[12px];
   }
   .wrapper .icon {
-    @apply flex justify-center items-center p-[5px] w-[40px] h-[40px] gap-3;
+    @apply flex justify-center items-center p-[5px] w-[36px] h-[36px] gap-3;
   }
   .wrapper .icon:hover .tooltip {
     @apply top-[-45px] left-[-4px] opacity-[1] visible pointer-events-auto;
+  }
+  .onmob{
+    @apply !hidden;
   }
   /* footer */
 

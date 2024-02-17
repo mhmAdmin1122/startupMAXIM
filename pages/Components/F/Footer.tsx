@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex gap-8 max-[620px]:flex-wrap max-[980px]:justify-around">
+        <div className="flex gap-8 max-[620px]:flex-wrap max-[980px]:justify-around px-[20px]">
           <div className="flex pt-0 w-fit flex-col gap-10">
             <div className="text-[20px] font-semibold flex gap-5 text-white">
               <div className="locationmap">
@@ -103,7 +103,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex gap-10  flex-col">
+          <div className="flex gap-10 flex-col">
             <div className="flex gap-4">
               <div className="phone-icons">
                 <FaPhone />
@@ -132,7 +132,7 @@ const Footer = () => {
                 className="email-input"
                 placeholder="Email Address"
               />
-              <button className="button-email-submit">
+              <button className="button-email-submit text-[#fff]">
                 <FaLocationArrow />
               </button>
             </div>
@@ -142,9 +142,9 @@ const Footer = () => {
 
       <section className="flex flex-wrap pt-4 pb-4 justify-around items-center w-full bg-[#202020]">
         <div className="text-[#696969] max-[340px]:text-center">
-          Copyright © 2024, All Rights Reserved StartupMAXIM
+          &copy; 2024, All Rights Reserved by StartupMAXIM
         </div>
-        <div className="flex max-[320px]:flex-wrap max-[370px]:flex max-[320px]:h-fit max-[320px]:justify-center gap-8 h-12 items-center">
+        <div className="onmob flex max-[320px]:flex-wrap max-[370px]:flex max-[320px]:h-fit max-[320px]:justify-center gap-8 h-12 items-center">
           <Link href={"/"} className="text-[#696969]">
             Home
           </Link>
