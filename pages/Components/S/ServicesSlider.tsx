@@ -8,30 +8,44 @@ const ServicesSlider = () => {
   var settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1120,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           infinite: true,
           dots: false,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 900,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
+          initialSlide: 1,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 849,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 450,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -41,15 +55,7 @@ const ServicesSlider = () => {
   };
 
   return (
-    <div className="ServiceSlider">
-      <div className="shadow-md shadow-gray-300 w-fit p-5 border-[1px] border-gary-100 rounded-md">
-        <div className="text-[40px] text-[#00bf63] cursor-pointer pointer-events-none">
-          <IoArrowBackCircle />
-        </div>
-        <div className="text-[40px] text-[#00bf63] cursor-pointer pointer-events-none">
-          <IoArrowForwardCircle />
-        </div>
-      </div>
+    <div className="ServiceSlider relative">
       <div className="slider-container">
         <Slider {...settings}>
           <ServicesSliderCard

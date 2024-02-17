@@ -38,7 +38,7 @@ const HomeSection = () => {
       </section>
 
       {/* about bussiness model */}
-      <section className="flex flex-wrap justify-center gap-10 py-[40px]">
+      <section className="flex flex-wrap justify-center gap-10 py-[40px] px-[20px]">
         <div className="w-[360px] flex flex-col gap-3">
           <h4 className={`text-3xl ${fredoka.className}`}>
             Affordable Digital Marketing Services{" "}
@@ -116,8 +116,8 @@ const HomeSection = () => {
       </section>
 
       {/* service slider */}
-      <section className="px-[60px] py-[60px] w-full">
-        <div className="flex flex-col items-center">
+      <section className="service-slider-container px-[60px] py-[60px] w-full">
+        <div className="service-slider-headBox pl-[60px] flex flex-col items-center">
           <h1 className="text-[#9f9f9f] ">OUR SERVICES</h1>
           <h1 className="text-5xl font-bold" id="homesection4-h1">
             Our Best <span className="text-[#fa6742]">Services</span>

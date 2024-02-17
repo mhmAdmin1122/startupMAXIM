@@ -11,8 +11,8 @@
 .mobile-header-view {
   @apply hidden;
 }
-/*  Hero-HOME  */
 
+/*  Hero-HOME  */
 .Hero-Home .text-container {
   @apply relative text-right z-[9999];
 }
@@ -157,60 +157,19 @@
 .read-More-Btn {
   @apply text-[#ff6e4e] text-[18px] font-medium flex items-center;
 }
-.ServiceSlider .slider-container .slick-prev,
-.ServiceSlider .slider-container .slick-next {
-  font-size: 0;
-  line-height: 0;
-  position: absolute;
-  top: 50%;
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  transform: translate(0, -50%);
-  cursor: pointer;
-  color: transparent;
-  border: none;
-  outline: none;
-  background: transparent;
-}
-.ServiceSlider .slider-container .slick-prev::before,
-.ServiceSlider .slider-container .slick-next::before {
-  position: absolute;
-  display: grid;
-  height: 2.5rem;
-  width: 2.5rem;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  background-color: var(--secondary-color);
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-bottom: 0.5rem;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 800 !important;
-  --tw-text-opacity: 1 !important;
-  color: rgb(243 244 246 / var(--tw-text-opacity)) !important;
-  opacity: 1;
-}
-.slick-prev::before {
-  top: 0px;
-  --tw-content: "<" !important;
-  content: var(--tw-content) !important;
+.ServiceSlider .slider-container .slick-prev {
+  @apply left-[98.76%] top-[40%];
 }
 .ServiceSlider .slider-container .slick-prev::before {
-  border-radius: 50%;
-}
-.ServiceSlider .slider-container .slick-next::before {
-  border-radius: 50%;
+  @apply !rounded-md;
+  content: "<" !important;
 }
 
+.ServiceSlider .slider-container .slick-next::before {
+  @apply !rounded-md;
+  content: ">" !important;
+}
 /* Service Slider */
-/* .usedbrtn{
-  @apply border-2 border-[#ff6e4e] hover:border-t-[12px] hover:border-l-[12px] hover:bg-transparent;
-} */
 
 :root {
   --text-black: black;
@@ -1288,6 +1247,54 @@ ul {
 /* pricing card */
 
 /* media-query-area */
+@media (max-width: 1000px) and (min-width: 849px) {
+  /* service card slider */
+  .services-Slider-Card {
+    @apply w-[280px] h-[300px] p-2;
+  }
+  .ServiceSlider .slider-container .slick-prev {
+    @apply left-[98%] top-[36%];
+  }
+  /* service card slider */
+}
+
+@media (max-width: 848px) and (min-width: 601px) {
+  /* service card slider */
+  .services-Slider-Card {
+    @apply w-[310px] h-[320px] p-6;
+  }
+  .ServiceSlider .slider-container .slick-prev {
+    @apply left-[97%] top-[38%];
+  }
+  .ServiceSlider .slider-container .slick-track .slick-slide {
+    @apply flex justify-center;
+  }
+  /* service card slider */
+}
+
+@media (max-width: 600px) and (min-width: 451px) {
+  /* service card slider */
+  .services-Slider-Card {
+    @apply w-[260px] h-[270px] p-2;
+  }
+  .services-Slider-Card div img {
+    @apply !w-[100px] h-[100px];
+  }
+  .ServiceSlider .slider-container .slick-prev {
+    @apply left-[98%] top-[38%];
+  }
+  .ServiceSlider .slider-container .slick-next {
+    @apply right-[-34px];
+  }
+  .ServiceSlider .slider-container .slick-track .slick-slide {
+    @apply flex justify-center;
+  }
+  .ServiceSlider {
+    @apply my-5 w-full py-5 px-0;
+  }
+  /* service card slider */
+}
+
 /* mobile-view */
 @media (max-width: 450px) and (min-width: 200px) {
   /* Navbar, Haeder, Hero-Sections */
@@ -1349,5 +1356,32 @@ ul {
     @apply top-[-45px] left-[-4px] opacity-[1] visible pointer-events-auto;
   }
   /* footer */
+
+  /* service card slider */
+  .services-Slider-Card {
+    @apply w-[220px] h-[240px] p-2;
+  }
+  .services-Slider-Card div img {
+    @apply !w-[80px] h-[80px];
+  }
+  .services-Slider-Card .card-title-desc-box h3{
+    @apply text-[18px];
+  }
+  .ServiceSlider .slider-container .slick-prev {
+    @apply left-[98%] top-[36%];
+  }
+  .ServiceSlider .slider-container .slick-next {
+    @apply right-[-34px];
+  }
+  .ServiceSlider .slider-container .slick-track .slick-slide {
+    @apply flex justify-center;
+  }
+  .ServiceSlider {
+    @apply my-5 w-full py-5 px-0;
+  }
+  .service-slider-container{
+    @apply pl-0 pr-[55px]
+  }
+  /* service card slider */
 }
 /* media-query-area */
