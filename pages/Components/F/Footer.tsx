@@ -3,13 +3,15 @@ import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
-  FaLocationArrow,
+  FaEnvelope,
   FaMapLocation,
   FaPhone,
   FaXTwitter,
 } from "react-icons/fa6";
 import Link from "next/link";
+import Image from "next/image";
 import Marque from "../M/Marque";
+import logo from "@/public/img/logo.png";
 import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
@@ -17,11 +19,16 @@ const Footer = () => {
     <footer>
       <section className="footer">
         <div className="pr-[50px] max-[500px]:p-0 max-[500px]:w-full  pl-[20px]">
+          {/* About Form */}
           <div className="footer-section1 px-10 max-[500px]:p-3 relative bottom-20 max-[980px]:w-full bg-[#202020] pb-10 flex flex-col gap-6  pt-8  text-white">
-            <h4 className="footer-sertion1-h1 text-4xl font-bold max-[350px]:text-2xl">
-              StartupMAXIM
-            </h4>
-            <p className="footer-sertion1-para text-[var(--text-gray)] max-[350px]:text-[12px]">
+            <div className="flex items-center gap-2 footer-logo-box">
+              <Image src={logo} alt="logo" className="w-[120px]" />
+              <h4 className="footer-sertion1-h1 text-4xl font-bold max-[350px]:text-2xl">
+                Startup <br /> MAXIM
+              </h4>
+            </div>
+
+            <p className="footer-about-us text-[var(--text-gray)] max-[350px]:text-[12px] text-justify">
               We{"'"}re passionate believers in the power of startups to change
               the world, and we{"'"}re dedicated to fueling their success. Over
               the years, we{"'"}ve helped countless startups launch, scale, and
@@ -30,50 +37,47 @@ const Footer = () => {
               enterprise.
             </p>
 
-            <h5 className="footer-sertion1-h2 text-2xl pb-4">Follow Us</h5>
-            <div>
-              <ul className="wrapper">
-                <li className="icon facebook">
-                  <span className="tooltip">Facebook</span>
-                  <div>
-                    <span>
-                      <FaFacebook />
-                    </span>
-                  </div>
-                </li>
-                <li className="icon twitter">
-                  <span className="tooltip">Twitter</span>
+            <h5 className="footer-sertion1-h2 text-2xl pb-2">Follow Us</h5>
+
+            <ul className="wrapper">
+              <li className="icon facebook">
+                <span className="tooltip">Facebook</span>
+                <div>
                   <span>
-                    <FaXTwitter />
+                    <FaFacebook />
                   </span>
-                </li>
-                <li className="icon instagram">
-                  <span className="tooltip">Instagram</span>
-                  <span>
-                    <FaInstagram />
-                  </span>
-                </li>
-                <li className="icon github">
-                  <span className="tooltip">Github</span>
-                  <span>
-                    <FaGithub />
-                  </span>
-                </li>
-                <li className="icon linkedin">
-                  <span className="tooltip">Linkedin</span>
-                  <span>
-                    <FaLinkedin />
-                  </span>
-                </li>
-              </ul>
-            </div>
+                </div>
+              </li>
+              <li className="icon twitter">
+                <span className="tooltip">Twitter</span>
+                <span>
+                  <FaXTwitter />
+                </span>
+              </li>
+              <li className="icon instagram">
+                <span className="tooltip">Instagram</span>
+                <span>
+                  <FaInstagram />
+                </span>
+              </li>
+              <li className="icon github">
+                <span className="tooltip">Github</span>
+                <span>
+                  <FaGithub />
+                </span>
+              </li>
+              <li className="icon linkedin">
+                <span className="tooltip">Linkedin</span>
+                <span>
+                  <FaLinkedin />
+                </span>
+              </li>
+            </ul>
           </div>
 
-          <div>
-            <h5 className=" text-[25px] relative bottom-12 text-white">
-              The Best Digital Marketing Agency For Startups
-            </h5>
-          </div>
+          <h5 className="text-[25px] text-center relative bottom-12 text-white">
+            The Best Digital Marketing Agency For Startups
+          </h5>
         </div>
 
         <div className="flex gap-8 max-[620px]:flex-wrap max-[980px]:justify-around px-[20px]">
@@ -103,38 +107,29 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex gap-10 flex-col">
-            <div className="flex gap-4">
-              <div className="phone-icons">
-                <FaPhone />
-              </div>
+          <div className="flex flex-col">
+            <div className="flex items-center gap-4">
+              <FaPhone className="text-[#d34938] text-[22px] mt-2" />
               <div className="">
-                <h4 className="text-[20px] font-semibold text-white">
-                  {" "}
+                <Link
+                  href="tel:+923036424939"
+                  className="text-[20px] font-semibold text-white"
+                >
                   +92-303-642-4939
-                </h4>
-                <p className="text-[20px] text-white"> Give us a call</p>
+                </Link>
               </div>
             </div>
-            <div className="text-2xl max-[320px]:items-center max-[320px]:justify-center  text-white">
-              <h5>Subscribe</h5>
-              <div className="mt-5">
-                <Marque />
+
+            <div className="flex items-center gap-4">
+              <FaEnvelope className="text-[#d34938] text-[22px] mt-2" />
+              <div className="">
+                <Link
+                  href="mailto:contactus@startupmaxim.com"
+                  className="text-[20px] font-semibold text-white"
+                >
+                  contactus@startupmaxim.com
+                </Link>
               </div>
-            </div>
-            <p className="text-[20px] max-[320px]:text-start text-[#75877c]">
-              Ready to launch your startup journey? <br /> Schedule a free
-              consultation!
-            </p>
-            <div id="footer-email=buttton" className="flex w-[100%]">
-              <input
-                type="email"
-                className="email-input"
-                placeholder="Email Address"
-              />
-              <button className="button-email-submit text-[#fff]">
-                <FaLocationArrow />
-              </button>
             </div>
           </div>
         </div>

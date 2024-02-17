@@ -710,9 +710,6 @@ button#scrollBtn:hover {
 .header p {
   @apply flex gap-3;
 }
-.phone-icons svg {
-  @apply text-[#d34938] text-[22px] mt-2;
-}
 #togglebutton {
   font-size: 30px;
   position: relative;
@@ -732,7 +729,7 @@ button#scrollBtn:hover {
 }
 
 .wrapper .icon {
-  @apply relative text-[#ffffff] p-[15px] m-[10px] w-[50px] h-[50px] text-[18px] flex justify-center text-center flex-col cursor-pointer max-[435px]:p-[5px] max-[435px]:w-[40px] max-[325px]:w-[25px] max-[435px]:m-[10px] max-[325px]:text-center max-[325px]:py-[2px] max-[325px]:h-[25px] max-[280px]:h-[20px] max-[280px]:w-[24px] max-[280px]:px-[3px] max-[280px]:m-[7px];
+  @apply relative text-[#ffffff] border-[1px] border-[#1a1a1a] p-[15px] m-[10px] w-[50px] h-[50px] text-[18px] flex justify-center text-center flex-col cursor-pointer max-[435px]:p-[5px] max-[435px]:w-[40px] max-[325px]:w-[25px] max-[435px]:m-[10px] max-[325px]:text-center max-[325px]:py-[2px] max-[325px]:h-[25px] max-[280px]:h-[20px] max-[280px]:w-[24px] max-[280px]:px-[3px] max-[280px]:m-[7px];
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -765,37 +762,22 @@ button#scrollBtn:hover {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before,
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before,
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before,
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before,
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
-  background: #1877f2;
-  color: #ffffff;
-}
-
-.wrapper .twitter:hover,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip::before {
-  background: #14171a;
-  color: #ffffff;
-}
-
-.wrapper .instagram:hover,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip::before {
-  background: #e4405f;
-  color: #ffffff;
-}
-
-.wrapper .github:hover,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip::before {
-  background: #833ab4;
-}
-
-.wrapper .linkedin:hover,
-.wrapper .linkedin:hover .tooltip,
-.wrapper .linkedin:hover .tooltip::before {
-  background: #0a66c2;
+  @apply bg-[#ff6e4e];
 }
 /* social icon */
 
@@ -1343,7 +1325,7 @@ ul {
   .wrapper .icon:hover .tooltip {
     @apply top-[-45px] left-[-4px] opacity-[1] visible pointer-events-auto;
   }
-  .onmob{
+  .onmob {
     @apply !hidden;
   }
   /* footer */
