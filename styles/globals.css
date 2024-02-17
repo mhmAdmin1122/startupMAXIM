@@ -782,9 +782,7 @@ button#scrollBtn:hover {
 /* social icon */
 
 /* Footer Icon */
-.footer {
-  @apply gap-2 flex mt-16 max-[980px]:flex-col justify-around  bg-[#151414] p-8;
-}
+
 .locationmap svg {
   font-size: 40px;
   color: brown;
@@ -1265,8 +1263,142 @@ ul {
 }
 /* Service-Slider-Card design Query Only */
 
-/* mobile-view overall design */
-@media (max-width: 450px) and (min-width: 200px) {
+/* Desktop-view overall design Query */
+@media (max-width: 1130px) and (min-width: 901px) {
+  /* footer */
+  .contact-detail-footer div a,
+  .footer-address-box {
+    @apply !text-[16px];
+  }
+  /* footer */
+}
+@media (max-width: 900px) and (min-width: 801px) {
+  /* footer */
+  .footer-main-box {
+    @apply gap-8;
+  }
+  .company-footer-detail-box {
+    @apply bottom-14;
+  }
+  .contact-detail-footer div a,
+  .footer-address-box {
+    @apply !text-[16px];
+  }
+  /* footer */
+}
+
+/* footer tabs-view deisgn only */
+@media (max-width: 801px) and (min-width: 631px) {
+  /* footer */
+  .footer-main-box {
+    @apply gap-4 flex-wrap justify-center;
+  }
+  .about-contact-footer-box {
+    @apply flex-nowrap;
+  }
+  .company-footer-detail-box {
+    @apply bottom-14;
+  }
+  .contact-detail-footer div a,
+  .footer-address-box {
+    @apply !text-[18px];
+  }
+  .company-about-form-footer .best-market-textline {
+    @apply pt-16;
+  }
+  /* footer */
+}
+@media (max-width: 631px) and (min-width: 531px) {
+  /* footer */
+  .footer-main-box {
+    @apply gap-4 flex-wrap justify-center;
+  }
+  .about-contact-footer-box {
+    @apply flex-nowrap;
+  }
+  .company-footer-detail-box {
+    @apply bottom-14;
+  }
+  .contact-detail-footer div a,
+  .footer-address-box {
+    @apply !text-[14px];
+  }
+  .company-about-form-footer .best-market-textline {
+    @apply pt-16;
+  }
+  /* footer */
+}
+@media (max-width: 531px) and (min-width: 451px) {
+  /* footer */
+  .footer-main-box {
+    @apply gap-4 flex-wrap justify-center;
+  }
+  .company-about-form-footer {
+    @apply w-[360px];
+  }
+  .wrapper .icon {
+    @apply items-center w-[40px] h-[40px];
+  }
+  .about-contact-footer-box {
+    @apply flex-wrap;
+  }
+  .footer-mainbox-part2{
+    @apply px-10;
+  }
+  .company-footer-detail-box {
+    @apply bottom-14 grid justify-items-center;
+  }
+  .contact-detail-footer div a,
+  .footer-address-box {
+    @apply !text-[20px];
+  }
+  .company-about-form-footer .best-market-textline {
+    @apply pt-16;
+  }
+  .onmob{
+    @apply hidden;
+  }
+  /* footer */
+}
+/* footer tabs-view deisgn only */
+
+/* tabs-view overall design query */
+@media (max-width: 800px) and (min-width: 451px) {
+  /* Navbar, Haeder, Hero-Sections */
+  .desktop-tab-view-navbar,
+  .desktop-tabs-header-view,
+  .Hero-Home .overlay-container {
+    @apply hidden;
+  }
+  .Mobile-View-Navbar {
+    @apply bg-[#000] text-[#fff] flex flex-col items-center justify-between gap-2 px-[10px] py-[10px] text-[30px];
+  }
+  .mobile-header-view {
+    @apply flex items-center flex-wrap bg-[#fff] justify-between px-[30px] py-[12px];
+  }
+  .HeroBanner_Home {
+    @apply flex flex-col justify-center;
+  }
+  .line2 span {
+    @apply text-[60px];
+  }
+  .Hero-Home .line2 span {
+    @apply block absolute top-[30px] right-0 opacity-0;
+  }
+  .Hero-Home {
+    @apply px-6 py-4 h-[300px];
+  }
+  /* Navbar, Haeder, Hero-Sections */
+  /* AboutUs Page */
+  .about-section-aboutUs .about-section-text-abouUs,
+  .about-section-aboutUs img {
+    @apply w-full px-[30px] text-justify;
+  }
+  /* AboutUs Page */
+}
+
+/* mobile-view overall design query */
+@media (max-width: 450px) and (min-width: 300px) {
   /* Navbar, Haeder, Hero-Sections */
   .desktop-tab-view-navbar,
   .desktop-tabs-header-view,
@@ -1316,11 +1448,30 @@ ul {
   /* Audit-Section-box */
 
   /* footer */
-  .footer-section1 {
-    @apply rounded-[12px];
+  .footer-main-box {
+    @apply gap-4 flex-wrap justify-center;
+  }
+  .company-about-form-footer {
+    @apply w-[310px];
+  }
+  .about-contact-footer-box {
+    @apply flex-wrap;
+  }
+  .footer-mainbox-part2{
+    @apply px-10;
+  }
+  .company-footer-detail-box {
+    @apply bottom-14 grid justify-items-center;
+  }
+  .contact-detail-footer div a,
+  .footer-address-box {
+    @apply !text-[20px];
+  }
+  .company-about-form-footer .best-market-textline {
+    @apply pt-16;
   }
   .wrapper .icon {
-    @apply flex justify-center items-center p-[5px] w-[36px] h-[36px] gap-3;
+    @apply flex justify-center items-center p-[5px] w-[30px] h-[30px] gap-3;
   }
   .wrapper .icon:hover .tooltip {
     @apply top-[-45px] left-[-4px] opacity-[1] visible pointer-events-auto;
@@ -1356,5 +1507,11 @@ ul {
     @apply pl-0 pr-[55px];
   }
   /* service card slider */
+
+  /* AboutUs Page */
+  .about-section-aboutUs .about-section-text-abouUs,
+  .about-section-aboutUs img {
+    @apply w-full px-[30px] text-justify;
+  }
+  /* AboutUs Page */
 }
-/* media-query-area */
