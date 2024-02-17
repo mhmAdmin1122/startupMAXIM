@@ -1347,7 +1347,7 @@ ul {
 
   /* service card slider */
   .services-Slider-Card {
-    @apply w-[220px] h-[240px] p-2;
+    @apply w-[220px] h-[260px] p-2;
   }
   .services-Slider-Card div img {
     @apply !w-[80px] h-[80px];
