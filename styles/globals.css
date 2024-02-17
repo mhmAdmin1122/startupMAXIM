@@ -1275,7 +1275,7 @@ ul {
   }
 
   .Mobile-View-Navbar {
-    @apply bg-[#000] text-[#fff] flex items-center justify-between px-[30px] py-[12px] text-[30px];
+    @apply bg-[#000] text-[#fff] flex flex-col items-center justify-between gap-2 px-[10px] py-[10px] text-[30px];
   }
 
   .mobile-header-view {

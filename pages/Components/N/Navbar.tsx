@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import {
   FaEnvelope,
@@ -8,8 +9,6 @@ import {
   FaPhone,
   FaTwitter,
 } from "react-icons/fa6";
-import { MdContacts } from "react-icons/md";
-import { BsGlobeEuropeAfrica } from "react-icons/bs";
 
 const Navbar = () => {
   return (
@@ -49,12 +48,14 @@ const Navbar = () => {
 
       {/* Mobile-View-Navbar */}
       <div className="Mobile-View-Navbar">
-        <div className="contact-bar">
-          <MdContacts />
-        </div>
-        <div className="socail-bar">
-          <BsGlobeEuropeAfrica />
-        </div>
+        <Link href="mailto:contactus@startupmaxim.com" className="mail-box text-[8px] flex items-center gap-2">
+          <FaEnvelope />
+          <b>contactus@startupmaxim.com</b>
+        </Link>
+        <Link href="tel:+923036424939" className="phone-call text-[8px] flex items-center gap-2">
+          <FaPhone />
+          <b>+92-303-642-4939</b>
+        </Link>
       </div>
     </div>
   );
