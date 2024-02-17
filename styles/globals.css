@@ -16,23 +16,18 @@
 .Hero-Home .text-container {
   @apply relative text-right z-[9999];
 }
-
 .Hero-Home .line1 {
   @apply text-[22px] pb-[45px] text-white;
 }
-
 .Hero-Home .line2 {
   @apply text-[80px] font-semibold text-[var(--secondary-color)];
 }
-
 .Hero-Home .line2 span {
   @apply block absolute top-[15px] right-0 opacity-0;
 }
-
 .Hero-Home .slide-in {
   animation: slideIn 1s ease forwards;
 }
-
 @keyframes slideIn {
   from {
     transform: translateX(100%);
@@ -43,7 +38,6 @@
     opacity: 1;
   }
 }
-
 .Hero-Home .line3 {
   @apply text-[22px] pt-[45px] text-[var(--primary-color)];
 }
@@ -58,23 +52,18 @@
   transition: top 1s, left 1s, background-color 1s, border 1s, width 1s,
     height 1s; /* Added transition for width and height */
 }
-
 .Hero-Home .icones.solid-circle {
   @apply bg-[var(--secondary-color)] rounded-[50%];
 }
-
 .Hero-Home .icones.outlined-circle {
   @apply rounded-[50%] border-[2px] border-solid border-[#545454];
 }
-
 .Hero-Home .icones.dot {
   @apply bg-[#545454] rounded-[50%];
 }
-
 .Hero-Home .icones.square {
   @apply bg-[var(--secondary-color)];
 }
-
 .Hero-Home .icones.outlined-square {
   @apply border-[2px] border-solid border-[#545454];
 }
@@ -88,7 +77,6 @@
 /*  Hero-HOME  */
 
 /*  Hero-ABOUT  */
-
 .Hero-About {
   @apply m-0 relative w-full overflow-hidden h-full bg-[#c3ff6985];
 }
@@ -97,16 +85,13 @@
   animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, #c4ff69 50%, #00bf63 50%);
 }
-
 .Hero-About .bg2 {
   animation-direction: alternate-reverse;
   animation-duration: 4s;
 }
-
 .Hero-About .bg3 {
   animation-duration: 5s;
 }
-
 @keyframes slide {
   0% {
     transform: translateX(-25%);
@@ -115,8 +100,9 @@
     transform: translateX(25%);
   }
 }
-
 /*  Hero-ABOUT  */
+
+/* Header and Footer */
 /* header design */
 .main-header {
   @apply flex w-full justify-center;
@@ -131,7 +117,9 @@
   transform: rotate(-45deg);
 }
 /* header design */
+/* Header and Footer */
 
+/* Home page */
 /* Service Slider */
 .ServiceSlider {
   @apply w-full px-10 my-[20px] p-[20px];
@@ -164,12 +152,12 @@
   @apply !rounded-md;
   content: "<" !important;
 }
-
 .ServiceSlider .slider-container .slick-next::before {
   @apply !rounded-md;
   content: ">" !important;
 }
 /* Service Slider */
+/* Home page */
 
 :root {
   --text-black: black;
@@ -1364,7 +1352,7 @@ ul {
   .services-Slider-Card div img {
     @apply !w-[80px] h-[80px];
   }
-  .services-Slider-Card .card-title-desc-box h3{
+  .services-Slider-Card .card-title-desc-box h3 {
     @apply text-[18px];
   }
   .ServiceSlider .slider-container .slick-prev {
@@ -1379,8 +1367,8 @@ ul {
   .ServiceSlider {
     @apply my-5 w-full py-5 px-0;
   }
-  .service-slider-container{
-    @apply pl-0 pr-[55px]
+  .service-slider-container {
+    @apply pl-0 pr-[55px];
   }
   /* service card slider */
 }
