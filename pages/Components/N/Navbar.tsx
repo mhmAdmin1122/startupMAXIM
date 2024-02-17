@@ -48,11 +48,11 @@ const Navbar = () => {
 
       {/* Mobile-View-Navbar */}
       <div className="Mobile-View-Navbar">
-        <Link href="mailto:contactus@startupmaxim.com" className="mail-box text-[8px] flex items-center gap-2">
+        <Link href="mailto:contactus@startupmaxim.com" className="mail-box text-[10px] flex items-center gap-2">
           <FaEnvelope />
           <b>contactus@startupmaxim.com</b>
         </Link>
-        <Link href="tel:+923036424939" className="phone-call text-[8px] flex items-center gap-2">
+        <Link href="tel:+923036424939" className="phone-call text-[10px] flex items-center gap-2">
           <FaPhone />
           <b>+92-303-642-4939</b>
         </Link>

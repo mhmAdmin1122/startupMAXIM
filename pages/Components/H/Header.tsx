@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { CgMenuHotdog } from "react-icons/cg";
-import { MdMenu } from "react-icons/md";
+import { IoMenuOutline } from "react-icons/io5";
 
 const Header = () => {
   const [showSearchInput, setShowSearchInput] = useState(false);
@@ -45,11 +45,11 @@ const Header = () => {
         </div>
       </div>
       <div className="mobile-header-view">
-        <Link href="/" className="w-[100px]">
+        <Link href="/" className="w-[80px]">
           <Image src={logo} alt="logo" className="w-full" />
         </Link>
         <div>
-          <MdMenu className="text-6xl" />
+          <IoMenuOutline className="text-4xl" />
         </div>
       </div>
     </header>
