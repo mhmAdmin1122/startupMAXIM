@@ -15,7 +15,7 @@ const AboutUs = () => {
       />
       <div className="about-section-text-abouUs flex flex-col items-start justify-center w-[400px]">
         <div className="text-[#ff6e4e] text-4xl font-bold">
-          <h3 className="pb-3">
+          <h3 className="pb-3 aboutUsmain-title-box">
             <b className="text-[#000]">About</b> StartupMAXIM
           </h3>
           <Marque />

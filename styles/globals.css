@@ -1337,7 +1337,7 @@ ul {
   .client-slider-Box .slick-list {
     @apply py-12 cursor-grab pl-2;
   }
-  .client-slider-Box .slick-track .slick-slide{
+  .client-slider-Box .slick-track .slick-slide {
     @apply flex justify-center;
   }
   /* client-slider-Box */
@@ -1700,6 +1700,25 @@ ul {
   .about-section-aboutUs .about-section-text-abouUs,
   .about-section-aboutUs img {
     @apply w-full px-[30px] text-justify;
+  }
+  .heroabout-picbox {
+    @apply hidden;
+  }
+  .heroAbout-line1,
+  .heroAbout-line3 {
+    @apply text-[18px];
+  }
+  .heroAbout-line2 {
+    @apply text-[35px];
+  }
+  .heroAbout-line4 {
+    @apply text-[10px] leading-4;
+  }
+  .heroAbout-box {
+    @apply justify-end;
+  }
+  .aboutUsmain-title-box {
+    @apply text-2xl;
   }
   /* AboutUs Page */
 }
