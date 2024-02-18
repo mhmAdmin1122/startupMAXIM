@@ -16,7 +16,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="mt-10">
+    <footer className="">
       <div className="footer-main-box flex gap-12 bg-[#151414] px-8 w-full h-fit">
         <div className="company-footer-detail-box relative bottom-20 w-[420px]">
           <div className="company-about-form-footer bg-[#202020] text-white p-[30px] w-[420px] rounded-lg">

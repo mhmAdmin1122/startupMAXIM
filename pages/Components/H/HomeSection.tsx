@@ -279,7 +279,7 @@ const HomeSection = () => {
       </section>
 
       {/* Pricing */}
-      <section className="py-10">
+      <section className="pt-10 pb-[90px]">
         <div className="flex flex-col mb-10 items-center">
           <h1 className="text-[#9f9f9f] ">PRICING TABLE</h1>
           <h1 className="text-5xl pt-3 font-bold" id="homesection8-h1">

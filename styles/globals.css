@@ -177,6 +177,7 @@
   content: ">" !important;
 }
 /* team-slider-abouPage */
+
 /* testmonials-Slider-Box */
 .tesmonials-card {
   @apply relative mx-[10px] mt-[10px] border-2 border-gray-200 w-[330px] h-[300px] shadow-md shadow-gray-300 px-[30px] py-[20px] flex flex-col justify-center items-center cursor-context-menu rounded-tl-[45px] rounded-br-[45px] rounded-lg overflow-hidden;
@@ -196,6 +197,24 @@
   content: ">" !important;
 }
 /* testmonials-Slider-Box */
+
+/* client-slider-Box */
+.client-slider-Card {
+  @apply relative mx-[10px] mt-[10px] w-[300px] h-[300px] px-[30px] py-[20px] flex flex-col justify-center items-center cursor-context-menu rounded-lg overflow-hidden;
+}
+.client-slider-Box .slick-list {
+  @apply py-12 cursor-grab pl-2;
+}
+.client-slider-Box .slick-slider .slick-prev {
+  @apply left-[99%] top-[39%];
+}
+.client-slider-Box .slick-slider .slick-prev::before {
+  @apply hidden;
+}
+.client-slider-Box .slick-slider .slick-next::before {
+  @apply hidden;
+}
+/* client-slider-Box */
 
 /* Home page */
 
@@ -1266,6 +1285,17 @@ ul {
     @apply left-[98%] top-[36%];
   }
   /* service, testmonials slider */
+  /* client-slider-Box */
+  .client-slider-Card {
+    @apply w-[300px] h-[300px] p-2;
+  }
+  .client-slider-Box .slick-list {
+    @apply py-12 cursor-grab pl-2;
+  }
+  .client-slider-Box .slick-track .slick-slide {
+    @apply flex justify-center;
+  }
+  /* client-slider-Box */
 }
 
 @media (max-width: 848px) and (min-width: 601px) {
@@ -1285,7 +1315,7 @@ ul {
   .testmonials-Slider-Box .slick-slider .slick-prev {
     @apply left-[92%] top-[40%];
   }
-  .testimonials-Slider-Box .slick-track .slick-slide{
+  .testimonials-Slider-Box .slick-track .slick-slide {
     @apply flex justify-center;
   }
   .ServiceSlider .slider-container .slick-prev,
@@ -1297,6 +1327,20 @@ ul {
     @apply flex justify-center;
   }
   /* service card slider */
+  /* client-slider-Box */
+  .client-slider-Box {
+    @apply px-[55px];
+  }
+  .client-slider-Card {
+    @apply w-[200px] h-[200px] p-2;
+  }
+  .client-slider-Box .slick-list {
+    @apply py-12 cursor-grab pl-2;
+  }
+  .client-slider-Box .slick-track .slick-slide{
+    @apply flex justify-center;
+  }
+  /* client-slider-Box */
 }
 
 @media (max-width: 600px) and (min-width: 451px) {
@@ -1310,7 +1354,7 @@ ul {
   .tesmonials-card {
     @apply w-[300px] h-[320px] p-6;
   }
-  .testmonials-Slider-Box{
+  .testmonials-Slider-Box {
     @apply px-7;
   }
   .testmonials-Slider-Box .slick-list {
@@ -1319,7 +1363,7 @@ ul {
   .testmonials-Slider-Box .slick-slider .slick-prev {
     @apply left-[90%] top-[38%];
   }
-  .testimonials-Slider-Box .slick-slider .slick-list .slick-track .slick-slide{
+  .testimonials-Slider-Box .slick-slider .slick-list .slick-track .slick-slide {
     @apply flex justify-center;
   }
   .services-Slider-Card div img {
@@ -1342,6 +1386,20 @@ ul {
     @apply my-5 w-full py-5 px-0;
   }
   /* service card slider */
+  /* client-slider-Box */
+  .client-slider-Box {
+    @apply px-[45px];
+  }
+  .client-slider-Card {
+    @apply w-[130px] h-[130px] p-2;
+  }
+  .client-slider-Box .slick-list {
+    @apply py-12 cursor-grab pl-2;
+  }
+  .client-slider-Box .slick-track .slick-slide {
+    @apply flex justify-center;
+  }
+  /* client-slider-Box */
 }
 /* Service-Slider-Card design Query Only */
 
@@ -1561,8 +1619,8 @@ ul {
   .onmob {
     @apply !hidden;
   }
-  .footer-mainbox-part2{
-    @apply p-1
+  .footer-mainbox-part2 {
+    @apply p-1;
   }
   /* footer */
 
@@ -1576,7 +1634,7 @@ ul {
   .team-slider-abouPage .slick-slider .slick-prev {
     @apply left-[95%] top-[36%];
   }
-  .testimonial{
+  .testimonial {
     @apply py-0;
   }
   .tesmonials-card {
@@ -1585,7 +1643,7 @@ ul {
   .tesmonials-card .imagebox-testmonials {
     @apply w-[70px] h-[70px];
   }
-  .testmonials-Slider-Box{
+  .testmonials-Slider-Box {
     @apply px-8;
   }
   .testmonials-Slider-Box .slick-list {
@@ -1594,7 +1652,7 @@ ul {
   .testmonials-Slider-Box .slick-slider .slick-prev {
     @apply left-[88%] top-[38%];
   }
-  .testimonials-Slider-Box .slick-slider .slick-list .slick-track .slick-slide{
+  .testimonials-Slider-Box .slick-slider .slick-list .slick-track .slick-slide {
     @apply flex justify-center;
   }
   .services-Slider-Card div img {
@@ -1621,7 +1679,23 @@ ul {
     @apply pl-0 pr-[55px];
   }
   /* service card slider */
-
+  /* client-slider-Box */
+  .client-slider-Box {
+    @apply px-[40px];
+  }
+  .client-slider-Card {
+    @apply w-[200px] h-[200px] p-2;
+  }
+  .client-slider-Box .slick-list {
+    @apply py-12 cursor-grab pl-2;
+  }
+  .client-slider-Box .slick-slider .slick-prev::before,
+  .client-slider-Box .slick-slider .slick-next::before {
+    @apply hidden;
+  }
+  .client-slider-Box .slick-track .slick-slide {
+    @apply flex justify-center;
+  }
   /* AboutUs Page */
   .about-section-aboutUs .about-section-text-abouUs,
   .about-section-aboutUs img {
