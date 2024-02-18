@@ -157,6 +157,27 @@
   content: ">" !important;
 }
 /* Service Slider */
+
+/* team-slider-abouPage */
+.team-card {
+  @apply relative mx-[10px] mt-[10px] h-[360px] w-[340px] cursor-context-menu;
+}
+.team-slider-abouPage .slick-list {
+  @apply py-12 cursor-grab pl-4;
+}
+.team-slider-abouPage .slick-slider .slick-prev {
+  @apply left-[98.76%] top-[35%];
+}
+.team-slider-abouPage .slick-slider .slick-prev::before {
+  @apply !rounded-md bg-[#ff6e4e];
+  content: "<" !important;
+}
+.team-slider-abouPage .slick-slider .slick-next::before {
+  @apply !rounded-md bg-[#ff6e4e];
+  content: ">" !important;
+}
+/* team-slider-abouPage */
+
 /* Home page */
 
 :root {
@@ -369,13 +390,13 @@ button#scrollBtn:hover {
 .para-2 {
   @apply mt-[20px] mx-[20px] text-gray-400 min-[1440px]:text-[25px] min-[1575px]:text-[30px] min-[2350px]:text-[35px];
 }
-.team-section .team-heading-top {
+.team-heading-top {
   @apply text-center my-[50px];
 }
-.team-section .team-heading {
+.team-heading {
   @apply flex justify-center flex-wrap items-center gap-[8px] font-black text-[30px];
 }
-.team-section .team-heading {
+.team-heading {
   @apply text-[50px] min-[1440px]:text-[60px];
 }
 .testimonial .heading-section {
@@ -498,11 +519,6 @@ button#scrollBtn:hover {
 /*   Dynamic Button  */
 
 /*   TeamCard   */
-
-.team-card {
-  @apply relative min-[1440px]:ml-[60px] min-[1740px]:ml-[80px] min-[2040px]:ml-[100px] min-[2340px]:ml-[140px] w-[200px] h-[250px] mx-[10px] mt-[10px] min-[1500px]:w-[250px] min-[1800px]:w-[300px] min-[1500px]:h-[320px] min-[1800px]:h-[400px];
-  perspective: 1000px;
-}
 .card-inner {
   @apply w-full h-full transition-transform duration-1000;
   transform-style: preserve-3d;
@@ -1216,10 +1232,15 @@ ul {
 /* Service-Slider-Card design Query Only */
 @media (max-width: 1000px) and (min-width: 849px) {
   /* service card slider */
-  .services-Slider-Card {
+  .services-Slider-Card,
+  .team-card {
     @apply w-[280px] h-[300px] p-2;
   }
-  .ServiceSlider .slider-container .slick-prev {
+  .team-card {
+    @apply w-[280px] h-[330px] p-2;
+  }
+  .ServiceSlider .slider-container .slick-prev,
+  .team-slider-abouPage .slick-slider .slick-prev {
     @apply left-[98%] top-[36%];
   }
   /* service card slider */
@@ -1230,10 +1251,15 @@ ul {
   .services-Slider-Card {
     @apply w-[310px] h-[320px] p-6;
   }
-  .ServiceSlider .slider-container .slick-prev {
+  .team-card {
+    @apply w-[310px] h-[370px] p-6;
+  }
+  .ServiceSlider .slider-container .slick-prev,
+  .team-slider-abouPage .slick-slider .slick-prev {
     @apply left-[97%] top-[38%];
   }
-  .ServiceSlider .slider-container .slick-track .slick-slide {
+  .ServiceSlider .slider-container .slick-track .slick-slide,
+  .team-slider-abouPage .slick-track .slick-slide {
     @apply flex justify-center;
   }
   /* service card slider */
@@ -1244,16 +1270,23 @@ ul {
   .services-Slider-Card {
     @apply w-[260px] h-[270px] p-2;
   }
+  .team-card {
+    @apply w-[260px] h-[270px] p-2;
+  }
   .services-Slider-Card div img {
     @apply !w-[100px] h-[100px];
   }
   .ServiceSlider .slider-container .slick-prev {
     @apply left-[98%] top-[38%];
   }
+  .team-slider-abouPage .slick-slider .slick-prev {
+    @apply left-[95%] top-[38%];
+  }
   .ServiceSlider .slider-container .slick-next {
     @apply right-[-34px];
   }
-  .ServiceSlider .slider-container .slick-track .slick-slide {
+  .ServiceSlider .slider-container .slick-track .slick-slide,
+  .team-slider-abouPage .slick-track .slick-slide {
     @apply flex justify-center;
   }
   .ServiceSlider {
@@ -1342,7 +1375,7 @@ ul {
   .about-contact-footer-box {
     @apply flex-wrap;
   }
-  .footer-mainbox-part2{
+  .footer-mainbox-part2 {
     @apply px-10;
   }
   .company-footer-detail-box {
@@ -1355,7 +1388,7 @@ ul {
   .company-about-form-footer .best-market-textline {
     @apply pt-16;
   }
-  .onmob{
+  .onmob {
     @apply hidden;
   }
   /* footer */
@@ -1457,9 +1490,9 @@ ul {
   .about-contact-footer-box {
     @apply flex-wrap;
   }
-  .footer-mainbox-part2{
-    @apply px-10;
-  }
+  /* .footer-mainbox-part2{
+    @apply px-8;
+  } */
   .company-footer-detail-box {
     @apply bottom-14 grid justify-items-center;
   }
@@ -1485,6 +1518,12 @@ ul {
   .services-Slider-Card {
     @apply w-[220px] h-[260px] p-2;
   }
+  .team-card {
+    @apply w-[210px] h-[250px] p-2;
+  }
+  .team-slider-abouPage .slick-slider .slick-prev {
+    @apply left-[94%] top-[36%];
+  }
   .services-Slider-Card div img {
     @apply !w-[80px] h-[80px];
   }
@@ -1497,7 +1536,8 @@ ul {
   .ServiceSlider .slider-container .slick-next {
     @apply right-[-34px];
   }
-  .ServiceSlider .slider-container .slick-track .slick-slide {
+  .ServiceSlider .slider-container .slick-track .slick-slide,
+  .team-slider-abouPage .slick-track .slick-slide {
     @apply flex justify-center;
   }
   .ServiceSlider {
