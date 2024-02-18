@@ -1522,7 +1522,7 @@ ul {
     @apply w-[210px] h-[250px] p-2;
   }
   .team-slider-abouPage .slick-slider .slick-prev {
-    @apply left-[94%] top-[36%];
+    @apply left-[95%] top-[36%];
   }
   .services-Slider-Card div img {
     @apply !w-[80px] h-[80px];
@@ -1543,7 +1543,7 @@ ul {
   .ServiceSlider {
     @apply my-5 w-full py-5 px-0;
   }
-  .service-slider-container {
+  .service-slider-container, .team-slider-abouPage {
     @apply pl-0 pr-[55px];
   }
   /* service card slider */
