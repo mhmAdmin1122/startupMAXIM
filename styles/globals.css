@@ -177,6 +177,25 @@
   content: ">" !important;
 }
 /* team-slider-abouPage */
+/* testmonials-Slider-Box */
+.tesmonials-card {
+  @apply relative mx-[10px] mt-[10px] border-2 border-gray-200 w-[330px] h-[300px] shadow-md shadow-gray-300 px-[30px] py-[20px] flex flex-col justify-center items-center cursor-context-menu rounded-tl-[45px] rounded-br-[45px] rounded-lg overflow-hidden;
+}
+.testmonials-Slider-Box .slick-list {
+  @apply py-12 cursor-grab pl-2;
+}
+.testmonials-Slider-Box .slick-slider .slick-prev {
+  @apply left-[96.90%] top-[39%];
+}
+.testmonials-Slider-Box .slick-slider .slick-prev::before {
+  @apply !rounded-md bg-[#ff6e4e];
+  content: "<" !important;
+}
+.testmonials-Slider-Box .slick-slider .slick-next::before {
+  @apply !rounded-md bg-[#ff6e4e];
+  content: ">" !important;
+}
+/* testmonials-Slider-Box */
 
 /* Home page */
 
@@ -404,9 +423,6 @@ button#scrollBtn:hover {
 }
 .testimonial .heading-section .heading {
   @apply flex justify-center flex-wrap items-center gap-[8px] font-black text-[50px] min-[1440px]:text-[60px];
-}
-.slider-section {
-  @apply w-full flex justify-center items-center;
 }
 
 /*    About Us    */
@@ -1231,19 +1247,25 @@ ul {
 
 /* Service-Slider-Card design Query Only */
 @media (max-width: 1000px) and (min-width: 849px) {
-  /* service card slider */
+  /* service, testmonials slider */
   .services-Slider-Card,
   .team-card {
     @apply w-[280px] h-[300px] p-2;
   }
-  .team-card {
-    @apply w-[280px] h-[330px] p-2;
+  .tesmonials-card {
+    @apply w-[300px] h-[330px] p-2;
+  }
+  .testmonials-Slider-Box .slick-list {
+    @apply py-12 cursor-grab pl-2;
+  }
+  .testmonials-Slider-Box .slick-slider .slick-prev {
+    @apply left-[95.5%] top-[39%];
   }
   .ServiceSlider .slider-container .slick-prev,
   .team-slider-abouPage .slick-slider .slick-prev {
     @apply left-[98%] top-[36%];
   }
-  /* service card slider */
+  /* service, testmonials slider */
 }
 
 @media (max-width: 848px) and (min-width: 601px) {
@@ -1253,6 +1275,18 @@ ul {
   }
   .team-card {
     @apply w-[310px] h-[370px] p-6;
+  }
+  .tesmonials-card {
+    @apply w-[360px] h-[370px] p-6;
+  }
+  .testmonials-Slider-Box .slick-list {
+    @apply py-12 cursor-grab pl-2;
+  }
+  .testmonials-Slider-Box .slick-slider .slick-prev {
+    @apply left-[92%] top-[40%];
+  }
+  .testimonials-Slider-Box .slick-track .slick-slide{
+    @apply flex justify-center;
   }
   .ServiceSlider .slider-container .slick-prev,
   .team-slider-abouPage .slick-slider .slick-prev {
@@ -1272,6 +1306,21 @@ ul {
   }
   .team-card {
     @apply w-[260px] h-[270px] p-2;
+  }
+  .tesmonials-card {
+    @apply w-[300px] h-[320px] p-6;
+  }
+  .testmonials-Slider-Box{
+    @apply px-7;
+  }
+  .testmonials-Slider-Box .slick-list {
+    @apply py-12 cursor-grab pl-2;
+  }
+  .testmonials-Slider-Box .slick-slider .slick-prev {
+    @apply left-[90%] top-[38%];
+  }
+  .testimonials-Slider-Box .slick-slider .slick-list .slick-track .slick-slide{
+    @apply flex justify-center;
   }
   .services-Slider-Card div img {
     @apply !w-[100px] h-[100px];
@@ -1512,6 +1561,9 @@ ul {
   .onmob {
     @apply !hidden;
   }
+  .footer-mainbox-part2{
+    @apply p-1
+  }
   /* footer */
 
   /* service card slider */
@@ -1523,6 +1575,27 @@ ul {
   }
   .team-slider-abouPage .slick-slider .slick-prev {
     @apply left-[95%] top-[36%];
+  }
+  .testimonial{
+    @apply py-0;
+  }
+  .tesmonials-card {
+    @apply w-[240px] h-[280px] p-4;
+  }
+  .tesmonials-card .imagebox-testmonials {
+    @apply w-[70px] h-[70px];
+  }
+  .testmonials-Slider-Box{
+    @apply px-8;
+  }
+  .testmonials-Slider-Box .slick-list {
+    @apply py-12 cursor-grab pl-6;
+  }
+  .testmonials-Slider-Box .slick-slider .slick-prev {
+    @apply left-[88%] top-[38%];
+  }
+  .testimonials-Slider-Box .slick-slider .slick-list .slick-track .slick-slide{
+    @apply flex justify-center;
   }
   .services-Slider-Card div img {
     @apply !w-[80px] h-[80px];
@@ -1543,7 +1616,8 @@ ul {
   .ServiceSlider {
     @apply my-5 w-full py-5 px-0;
   }
-  .service-slider-container, .team-slider-abouPage {
+  .service-slider-container,
+  .team-slider-abouPage {
     @apply pl-0 pr-[55px];
   }
   /* service card slider */
