@@ -13,14 +13,14 @@ const ContactAdressCard = ({
   address,
 }: any) => {
   return (
-    <div className="text-left w-[400px] shadow-lg shadow-gray-300 hover:shadow-lg hover:shadow-gray-600 transition-all duration-700 delay-150 rounded-md overflow-hidden">
+    <div className="contact-adress-user-card-box text-left w-[400px] shadow-lg shadow-gray-300 hover:shadow-lg hover:shadow-gray-600 transition-all duration-700 delay-150 rounded-md overflow-hidden">
       {/* Detailbox */}
       <div className="flex items-center gap-2 px-3 py-2 border-t-2 border-gray-100 overflow-hidden rounded-tl-md rounded-tr-md border-b-4 border-b-[#692c1e]">
-        <div className="w-[120px] h-[120px] bg-[#ff6e4e] overflow-hidden rounded-full border-2 flex items-center justify-center">
+        <div className="contact-adress-user-card-imagebox w-[120px] h-[120px] bg-[#ff6e4e] overflow-hidden rounded-full border-2 flex items-center justify-center">
           <Image src={userPic} alt={picaltText} className="w-full h-full" />
         </div>
 
-        <div className="leading-8">
+        <div className="leading-8 contact-adress-user-card-deatailbox">
           <h3 className="text-2xl font-bold">{userName}</h3>
           <h4 className="text-[#ff6e4e] font-medium">{userPosition}</h4>
           <p>{address}</p>
@@ -28,7 +28,7 @@ const ContactAdressCard = ({
       </div>
 
       {/* contact-box */}
-      <div className="leading-6 px-4 py-2 grid items-center gap-4 bg-[#ff6e4e]">
+      <div className="leading-6 contact-adress-user-card-contactdeatailbox px-4 py-2 grid items-center gap-4 bg-[#ff6e4e]">
         <div className="grid gap-2 text-[#212121] text-[20px]">
           <div className="flex items-center gap-2">
             <FaPhone />
@@ -40,7 +40,7 @@ const ContactAdressCard = ({
             <p className="">{userEmail}</p>
           </div>
         </div>
-        <div className="flex justify-center items-center gap-2 text-[#fff] text-[16px]">
+        <div className="contact-adress-user-card-contactdeatailbtnbox flex justify-center items-center gap-2 text-[#fff] text-[16px]">
           <Link
             href={`tell:${userPhone}`}
             className="bg-[#00bf63] rounded-md text-center font-medium px-4 py-2 w-[150px]"

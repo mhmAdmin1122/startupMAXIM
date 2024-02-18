@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../B/Button";
 import Marque from "../M/Marque";
 import ContactAdressCard from "./ContactAdressCard";
 import logo from "@/public/img/logo.png";
@@ -24,7 +23,7 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center gap-10 flex-wrap py-10">
+        <div className="contact-adress-user-box flex items-center justify-center gap-10 flex-wrap py-10">
           <ContactAdressCard
             userPosition="Founder / CEO"
             userName="Imran Ahmad Lashari"
@@ -65,20 +64,6 @@ const ContactUs = () => {
             <h1 className="text-[var(--secondary-color)]">Message</h1>
           </div>
         </div>
-        {/* <form className="Contact-Form">
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Phone" />
-          <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Subject" />
-          <textarea
-            name=""
-            id=""
-            cols={22}
-            rows={7}
-            placeholder="Message"
-          ></textarea>
-          <Button dynamicText={"Contact Us"} />
-        </form> */}
         <ContactForm />
       </div>
 

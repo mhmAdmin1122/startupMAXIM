@@ -216,10 +216,10 @@
 }
 /* client-slider-Box */
 /* ContactUs-Form */
-.ContactUs-Form div input{
+.ContactUs-Form div input {
   @apply w-[35%] px-[30px] py-[10px] rounded-full;
 }
-.ContactUs-Form div textarea{
+.ContactUs-Form div textarea {
   @apply w-[73%] p-[20px] rounded-lg;
 }
 /* ContactUs-Form */
@@ -1728,4 +1728,25 @@ ul {
     @apply text-2xl;
   }
   /* AboutUs Page */
+
+  /* contact page */
+  .contact-adress-user-card-box {
+    @apply w-[280px];
+  }
+  .contact-adress-user-card-imagebox {
+    @apply w-[80px] h-[80px];
+  }
+  .contact-adress-user-card-deatailbox h3 {
+    @apply text-[16px];
+  }
+  .contact-adress-user-card-deatailbox p {
+    @apply text-[12px];
+  }
+  .contact-adress-user-card-contactdeatailbox div p, .contact-adress-user-card-contactdeatailbox div svg{
+    @apply text-[16px]
+  }
+  .contact-adress-user-card-contactdeatailbtnbox{
+    @apply flex-col;
+  }
+  /* contact page */
 }
