@@ -1,10 +1,11 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const HeroContact = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [width, setwidth] = useState<any>("");
+  const [height, setheight] = useState<any>("");
   const mouse = useRef({ x: 0, y: 0 });
-  const w = window.innerWidth;
-  const h = window.innerHeight;
+
   const rate = 60;
   const arc = 150;
   const size = 7;
@@ -15,6 +16,11 @@ const HeroContact = () => {
     const canvas = canvasRef.current;
     const ctx = canvas?.getContext("2d");
 
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+    setwidth(w);
+    setheight(h);
+
     if (!ctx) {
       console.error("Could not get 2D context from canvas");
       return;
@@ -24,8 +30,8 @@ const HeroContact = () => {
     let count = 0;
     const parts: any[] = [];
 
-    canvas?.setAttribute("width", w.toString());
-    canvas?.setAttribute("height", h.toString());
+    canvas?.setAttribute("width", width.toString());
+    canvas?.setAttribute("height", height.toString());
 
     const create = () => {
       time = 0;
@@ -33,8 +39,8 @@ const HeroContact = () => {
 
       for (let i = 0; i < arc; i++) {
         parts[i] = {
-          x: Math.ceil(Math.random() * w),
-          y: Math.ceil(Math.random() * h),
+          x: Math.ceil(Math.random() * width),
+          y: Math.ceil(Math.random() * height),
           toX: Math.random() * 5 - 1,
           toY: Math.random() * 2 - 1,
           c: colors[Math.floor(Math.random() * colors.length)],
@@ -44,7 +50,7 @@ const HeroContact = () => {
     };
 
     const particles = () => {
-      ctx.clearRect(0, 0, w, h);
+      ctx.clearRect(0, 0, width, height);
       canvas?.addEventListener("mousemove", mouseMove, false);
 
       for (let i = 0; i < arc; i++) {
@@ -61,17 +67,17 @@ const HeroContact = () => {
         li.x = li.x + li.toX * (time * 0.05);
         li.y = li.y + li.toY * (time * 0.05);
 
-        if (li.x > w) {
+        if (li.x > width) {
           li.x = 0;
         }
-        if (li.y > h) {
+        if (li.y > height) {
           li.y = 0;
         }
         if (li.x < 0) {
-          li.x = w;
+          li.x = width;
         }
         if (li.y < 0) {
-          li.y = h;
+          li.y = height;
         }
       }
 
@@ -104,15 +110,24 @@ const HeroContact = () => {
     };
   }, []);
 
-  return <div className='relative w-full h-fit'>
-  <canvas ref={canvasRef} className='absolute bg-[var(--primary-color)] top-0 left-0 w-full h-full z-[-1]' />
-  <div className='relative z-[1] text-right grid align-middle py-[50px] pr-[30px]'>
-    <h4 className="text-gray-700 text-[40px] font-bold">READY TO</h4>
-    <h4 className="text-[var(--secondary-color)] text-[60px] font-black">TALK?</h4>
-    <h4 className="text-gray-700 text-[45px] font-bold">SO ARE WE.</h4>
-    <p className="text-[var(--secondary-color)] font-bold">From queries to feedback, we value every word from you.</p>
-  </div>
-</div>;
+  return (
+    <div className="relative w-full h-fit">
+      <canvas
+        ref={canvasRef}
+        className="absolute bg-[var(--primary-color)] top-0 left-0 w-full h-full z-[-1]"
+      />
+      <div className="relative z-[1] text-right grid align-middle py-[50px] pr-[30px]">
+        <h4 className="text-gray-700 text-[40px] font-bold">READY TO</h4>
+        <h4 className="text-[var(--secondary-color)] text-[60px] font-black">
+          TALK?
+        </h4>
+        <h4 className="text-gray-700 text-[45px] font-bold">SO ARE WE.</h4>
+        <p className="text-[var(--secondary-color)] font-bold">
+          From queries to feedback, we value every word from you.
+        </p>
+      </div>
+    </div>
+  );
 };
 
 export default HeroContact;
