@@ -1,17 +1,20 @@
-import Image from "next/image";
 import React from "react";
-import { FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
-import place1 from "@/public/img/place1.png";
-import place2 from "@/public/img/place2.png";
 import Button from "../B/Button";
 import Marque from "../M/Marque";
+import ContactAdressCard from "./ContactAdressCard";
+import logo from "@/public/img/logo.png";
+import user1Pic from "@/public/img/user1.svg";
+import user2Pic from "@/public/img/user2.svg";
+import ContactForm from "./ContactForm";
 
 const ContactUs = () => {
   return (
-    <main>
-      <section className="Contact-Section">
+    <section>
+      <div className="Contact-Section">
         <div>
-          <p className="text-[var(--text-gray)] min-[1440px]:text-[20px]">CONTACT US</p>
+          <p className="text-[var(--text-gray)] min-[1440px]:text-[20px]">
+            CONTACT US
+          </p>
           <div className="Contact-Section-heading">
             <h1>Our Contact</h1>
             <h1 className="text-[var(--background-color)]">Details</h1>
@@ -20,61 +23,74 @@ const ContactUs = () => {
             <Marque />
           </div>
         </div>
-        <div className="contact-detail-div">
-          <div className="contact-detail-one">
-            <div>
-              <h1 className="text-[var(--background-color)]">Owner / CEO</h1>
-            </div>
-            <div className="first-info">
-              <FaPhone />
-              <p>009-215-5596</p>
-            </div>
-            <div className="second-info">
-              <FaEnvelope />
-              <p>mail@example.com</p>
-            </div>
-          </div>
-          <div className="contact-detail-two">
-            <div>
-              <h1 className="text-[var(--background-color)]">Managing Director</h1>
-            </div>
-            <div className="first-info">
-              <FaPhone />
-              <p>009-215-5596</p>
-            </div>
-            <div className="second-info">
-              <FaEnvelope />
-              <p>mail@example.com</p>
-            </div>
-          </div>
-          
+
+        <div className="flex items-center justify-center gap-10 flex-wrap py-10">
+          <ContactAdressCard
+            userPosition="Founder / CEO"
+            userName="Imran Ahmad Lashari"
+            userPhone="+923036424939"
+            userEmail="contactus@startupmaxim.com"
+            userPic={user1Pic}
+            picaltText="Imran_Ahmad_Lashari"
+            address="Bahawalpur, Punjab, Pakistan"
+          />
+
+          <ContactAdressCard
+            userPosition="Co-Founder / CMO"
+            userName="Muhammad Hasaan"
+            userPhone="+923257390045"
+            userEmail="contactus@startupmaxim.com"
+            userPic={user2Pic}
+            picaltText="Muhammad_Hasaan"
+            address="Bahawalpur, Punjab, Pakistan"
+          />
+
+          <ContactAdressCard
+            userPosition="Head office Detail / Help Line"
+            userName="StartupMaxim"
+            userPhone="009-215-5596"
+            userEmail="contactus@startupmaxim.com"
+            userPic={logo}
+            picaltText="comp-logo"
+            address="Bahawalpur, Punjab, Pakistan"
+          />
         </div>
-      </section>
-      <section>
+      </div>
+
+      <div className="py-10 bg-gradient-to-t from-[#00bf63] to-[#c4ff69]">
         <div className="Form-Heading">
-          <p>
-            LEAVE A MESSAGE
-          </p>
+          <p>LEAVE A MESSAGE</p>
           <div>
             <h1>Give a</h1>
             <h1 className="text-[var(--secondary-color)]">Message</h1>
           </div>
         </div>
-        <form className="Contact-Form">
+        {/* <form className="Contact-Form">
           <input type="text" placeholder="Name" />
           <input type="text" placeholder="Phone" />
           <input type="email" placeholder="Email" />
           <input type="text" placeholder="Subject" />
-          <textarea name="" id="" cols={22} rows={7} placeholder="Message"></textarea>
+          <textarea
+            name=""
+            id=""
+            cols={22}
+            rows={7}
+            placeholder="Message"
+          ></textarea>
           <Button dynamicText={"Contact Us"} />
-        </form>
-      </section>
-      <section className="Contact-Last-Section">
+        </form> */}
+        <ContactForm />
+      </div>
+
+      <div className="Contact-Last-Section pb-[30px]">
         <h1 className="text-[var(--background-color)]">Tayyab Arshad</h1>
         <h4>CEO TW-Coder</h4>
-        <p>Start working with an company that can do provide every thing at you need to generate awareness, drive traffic, connect with</p>
-      </section>
-    </main>
+        <p>
+          Start working with an company that can do provide every thing at you
+          need to generate awareness, drive traffic, connect with
+        </p>
+      </div>
+    </section>
   );
 };
 

@@ -215,7 +215,14 @@
   @apply hidden;
 }
 /* client-slider-Box */
-
+/* ContactUs-Form */
+.ContactUs-Form div input{
+  @apply w-[35%] px-[30px] py-[10px] rounded-full;
+}
+.ContactUs-Form div textarea{
+  @apply w-[73%] p-[20px] rounded-lg;
+}
+/* ContactUs-Form */
 /* Home page */
 
 :root {
