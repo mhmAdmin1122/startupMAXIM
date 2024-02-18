@@ -42,7 +42,7 @@ const ContactAdressCard = ({
         </div>
         <div className="contact-adress-user-card-contactdeatailbtnbox flex justify-center items-center gap-2 text-[#fff] text-[16px]">
           <Link
-            href={`tell:${userPhone}`}
+            href={`tel:${userPhone}`}
             className="bg-[#00bf63] rounded-md text-center font-medium px-4 py-2 w-[150px]"
           >
             Call To Me
