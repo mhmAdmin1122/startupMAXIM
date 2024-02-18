@@ -2,8 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 
 const HeroContact = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [width, setwidth] = useState<any>("");
-  const [height, setheight] = useState<any>("");
   const mouse = useRef({ x: 0, y: 0 });
 
   const rate = 60;
@@ -18,8 +16,6 @@ const HeroContact = () => {
 
     const w = window.innerWidth;
     const h = window.innerHeight;
-    setwidth(w);
-    setheight(h);
 
     if (!ctx) {
       console.error("Could not get 2D context from canvas");
@@ -30,8 +26,8 @@ const HeroContact = () => {
     let count = 0;
     const parts: any[] = [];
 
-    canvas?.setAttribute("width", width.toString());
-    canvas?.setAttribute("height", height.toString());
+    canvas?.setAttribute("width", w.toString());
+    canvas?.setAttribute("height", h.toString());
 
     const create = () => {
       time = 0;
@@ -39,8 +35,8 @@ const HeroContact = () => {
 
       for (let i = 0; i < arc; i++) {
         parts[i] = {
-          x: Math.ceil(Math.random() * width),
-          y: Math.ceil(Math.random() * height),
+          x: Math.ceil(Math.random() * w),
+          y: Math.ceil(Math.random() * h),
           toX: Math.random() * 5 - 1,
           toY: Math.random() * 2 - 1,
           c: colors[Math.floor(Math.random() * colors.length)],
@@ -50,7 +46,7 @@ const HeroContact = () => {
     };
 
     const particles = () => {
-      ctx.clearRect(0, 0, width, height);
+      ctx.clearRect(0, 0, w, h);
       canvas?.addEventListener("mousemove", mouseMove, false);
 
       for (let i = 0; i < arc; i++) {
@@ -67,17 +63,17 @@ const HeroContact = () => {
         li.x = li.x + li.toX * (time * 0.05);
         li.y = li.y + li.toY * (time * 0.05);
 
-        if (li.x > width) {
+        if (li.x > w) {
           li.x = 0;
         }
-        if (li.y > height) {
+        if (li.y > h) {
           li.y = 0;
         }
         if (li.x < 0) {
-          li.x = width;
+          li.x = w;
         }
         if (li.y < 0) {
-          li.y = height;
+          li.y = h;
         }
       }
 
