@@ -64,7 +64,7 @@ const ContactUs = () => {
             <h1 className="text-[var(--secondary-color)]">Message</h1>
           </div>
         </div>
-        <ContactForm />
+        <ContactForm /> 
       </div>
 
       <div className="Contact-Last-Section pb-[30px]">

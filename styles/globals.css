@@ -1748,5 +1748,11 @@ ul {
   .contact-adress-user-card-contactdeatailbtnbox{
     @apply flex-col;
   }
+  .ContactUs-Form div input {
+    @apply w-[80%] px-[30px] py-[10px] rounded-full;
+  }
+  .ContactUs-Form div textarea {
+    @apply w-[80%] p-[20px] rounded-lg;
+  }
   /* contact page */
 }

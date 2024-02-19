@@ -12,7 +12,7 @@ const ContactForm = () => {
       </div>
       <button type="submit" className="bg-[#ff6e4e] px-[12px] py-[8px] rounded-md w-[200px] text-[20px] font-medium text-[#fff]">Contact Us</button>
     </form>
-  );
+  ); 
 };
 
 export default ContactForm;

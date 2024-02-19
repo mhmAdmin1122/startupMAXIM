@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <Layout>
       <Head>
-        <title>Contact</title>
+        <title>Contact -StartupMAXIM</title>
       </Head>      
       <HeroContact />
       <ContactUs />
