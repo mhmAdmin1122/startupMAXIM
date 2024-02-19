@@ -33,7 +33,7 @@ const Header = () => {
         <div className="tabsBox">
           <Link href="/">Home</Link>
           <Link href="/Services">Services</Link>
-          <Link href="/Tool">Tool</Link>
+          <Link href="/Blog">Blog</Link>
           <Link href="/About">About</Link>
           <Link href="/Contact">Contact</Link>
         </div>
