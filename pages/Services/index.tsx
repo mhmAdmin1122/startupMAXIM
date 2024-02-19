@@ -7,7 +7,7 @@ const OurServices = () => {
   return (
     <div>
       <Head>
-        <title>Services</title>
+        <title>Services - StartupMAXIM</title>
       </Head>
       <Layout>
         <ServicesPage />
