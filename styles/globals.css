@@ -1742,10 +1742,11 @@ ul {
   .contact-adress-user-card-deatailbox p {
     @apply text-[12px];
   }
-  .contact-adress-user-card-contactdeatailbox div p, .contact-adress-user-card-contactdeatailbox div svg{
-    @apply text-[16px]
+  .contact-adress-user-card-contactdeatailbox div p,
+  .contact-adress-user-card-contactdeatailbox div svg {
+    @apply text-[16px];
   }
-  .contact-adress-user-card-contactdeatailbtnbox{
+  .contact-adress-user-card-contactdeatailbtnbox {
     @apply flex-col;
   }
   .ContactUs-Form div input {
@@ -1757,8 +1758,8 @@ ul {
   /* contact page */
 }
 
-
-
 /* others-alert */
-
+.alert-box {
+  box-shadow: 15px 20px 5px 5px rgba(0, 0, 0, 0.65);
+}
 /* others-alert */
