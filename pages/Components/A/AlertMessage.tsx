@@ -19,7 +19,7 @@ const AlertMessage = ({children}:any) => {
 
         <div className="px-[25px] flex flex-col gap-4 justify-center items-center">
           <p>
-            HOLD ON, WE'RE STILL PUTTING THE PIECES TOGETHER FOR A PIXEL-PERFECT
+            HOLD ON, WE{"'"}RE STILL PUTTING THE PIECES TOGETHER FOR A PIXEL-PERFECT
             EXPERIENCE.
           </p>
           <p className="flex items-start w-full">
