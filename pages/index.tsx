@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>StartupMAXIM - Home</title>
+        <title>StartupMAXIM • Home</title>
       </Head>
       <div className="relative">
         {isShown && (
